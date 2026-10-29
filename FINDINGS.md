@@ -225,7 +225,7 @@ changes, each run alone and together. (1) Position: the last token of the town n
 in the question (`river_acts.py --position entity_last`; the following "?" is always
 its own token, so no pick runs past the name). (2) `--centre country`: before fitting,
 subtract from every slot the mean of its country's *training* slots (all five cells).
-P1 was pre-registered and committed (a1fb877) before this pass ran. Figures in
+P1 was pre-registered and committed (50500b5) before this pass ran. Figures in
 `figures/river/{prompt-last,entity-last}[-country-centred]/`, numbers in
 `runs/river/<variant>/`.
 

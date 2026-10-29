@@ -61,7 +61,7 @@ Shuffled-label held-out AUCs span 0.00–1.00 in mid layers. Diagnosis
 Sign fraction ≈ 0.5 at every layer → no leak. Added permutation p, sign fraction
 and |cos(arrow, PC1)| to every summary.
 
-**11:25 · Commit 911d9e0: Step 0.** FINDINGS staged without the river-cells section
+**11:25 · Commit e61627a: Step 0.** FINDINGS staged without the river-cells section
 (blob via `git hash-object`) so the first commit is Step 0 only.
 
 **11:22 · River activations** (background, 200 slots, 0.40 s/item). Last prompt token
@@ -80,7 +80,7 @@ p 0.03–0.07); known vs country-prior drops to 0.78–0.83 (p 0.02–0.10).
 AUC 1.000 from layer 16. Wrote this up as "not a lack of data". Thomas disagreed
 (~11:35, below): it only shows a PC1-strength direction would survive.
 
-**11:30 · Commit 9a5517b: river cells and probe.** A FINDINGS edit (training-AUC
+**11:30 · Commit 221646c: river cells and probe.** A FINDINGS edit (training-AUC
 sentence, which wrongly said 1.0; it is 0.82–0.95) failed to apply before the commit
 because the file had changed on disk; fixed and amended.
 
@@ -102,7 +102,7 @@ because the file had changed on disk; fixed and amended.
 underpowered for a modest one"), second-pass targets narrowed to known-by-retrieval
 (country-balanced) and right-by-prior.
 
-**11:40 · Pre-registered P1** (`PREREGISTRATION.md`), committed (a1fb877, 11:40:57) before
+**11:40 · Pre-registered P1** (`PREREGISTRATION.md`), committed (50500b5, 11:40:57) before
 the entity-token pass started (11:41): entity token, layer 21, country-centred, arrow frozen on all of today's 200
 slots, scored once on the second pass, ≥ 30 per cell, one-sided permutation p < 0.05.
 I added two descriptive secondaries (S1: last prompt token, layer 21, since that is where
@@ -198,3 +198,9 @@ summaries| = 0.0, both sets). Fast tests: 3 passed; `knowing_probe.acts/arrow/
 analysis/plot` import against the pinned package. The graded file the river steps read
 (`../contrastset/runs/wikidata-qwen3-8b-hf-logprob-B-priors.jsonl`) is now committed in
 the contrastset repository.
+
+**15:25 · Commit history rewritten: author name, no attribution lines.** All commits
+now carry the author Thomas Misera; `Co-Authored-By` lines removed from the messages.
+Trees, author dates and committer dates are unchanged (P1's commit is still 11:40:57,
+before the pass it governs). Hashes cited in this notebook and in FINDINGS.md updated:
+911d9e0 → e61627a (Step 0), 9a5517b → 221646c (river cells), a1fb877 → 50500b5 (P1).
