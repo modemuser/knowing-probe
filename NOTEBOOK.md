@@ -7,7 +7,7 @@ the path that led there. Times are CET. Newest entries at the bottom.
 ## 2026-10-29
 
 *11:00–11:30: reconstructed after the fact from file times, git log and the
-session transcript (the notebook was started at 11:40, on Thomas's instruction).*
+session transcript (the notebook was started at ~11:37, on Thomas's instruction).*
 
 **~11:00 · Repo set up.** `~/dev/knowing-probe`, uv project, contrastset as an
 editable path dependency (HFAdapter, Template, hash check), torch 2.14.1 /
@@ -78,13 +78,13 @@ p 0.03–0.07); known vs country-prior drops to 0.78–0.83 (p 0.02–0.10).
 
 **11:28 · Power check.** Cities subsampled to the river cell sizes: median held-out
 AUC 1.000 from layer 16. Wrote this up as "not a lack of data". Thomas disagreed
-(11:40, below): it only shows a PC1-strength direction would survive.
+(~11:35, below): it only shows a PC1-strength direction would survive.
 
 **11:30 · Commit 9a5517b: river cells and probe.** A FINDINGS edit (training-AUC
 sentence, which wrongly said 1.0; it is 0.82–0.95) failed to apply before the commit
 because the file had changed on disk; fixed and amended.
 
-**11:40 · Thomas's review, decisions for next steps.**
+**~11:35 · Thomas's review, decisions for next steps.**
 - Reframe: null for a *dominant* direction, *underpowered* for a modest one (a
   direction a tenth of PC1's size would look exactly like 0.70–0.75, p ≈ 0.06, with
   an overfitting arrow at 13 + 7 known towns).
@@ -98,15 +98,55 @@ because the file had changed on disk; fixed and amended.
 - Second pass targets: known-by-retrieval balanced by country, and right-by-prior.
   Not the prior cells.
 
-**11:50 · Reframed the river null in FINDINGS** ("null for a dominant direction,
+**~11:38 · Reframed the river null in FINDINGS** ("null for a dominant direction,
 underpowered for a modest one"), second-pass targets narrowed to known-by-retrieval
 (country-balanced) and right-by-prior.
 
-**11:52 · Pre-registered P1** (`PREREGISTRATION.md`), committed before the entity-token
-pass: entity token, layer 21, country-centred, arrow frozen on all of today's 200
+**11:40 · Pre-registered P1** (`PREREGISTRATION.md`), committed (a1fb877, 11:40:57) before
+the entity-token pass started (11:41): entity token, layer 21, country-centred, arrow frozen on all of today's 200
 slots, scored once on the second pass, ≥ 30 per cell, one-sided permutation p < 0.05.
 I added two descriptive secondaries (S1: last prompt token, layer 21, since that is where
 the trend was seen; S2: right-by-prior position). They do not decide P1. Choices I
 made inside Thomas's spec, flagged for review: arrow from all 20 + 83 of today's
 towns (not the 13 + 55 training ones), country means from all 200 slots, threshold
 0.5 on today's scale.
+
+**11:41 · Entity-token pass.** `river_acts.py --position entity_last` →
+`runs/river/acts-entity`, 200 slots, 0.44 s/item. Rule: last token whose span starts
+before the end of the town name; the following "?" is always its own token, 0 picks
+run past the name, 164 distinct tokens (e.g. Tábor → "bor", Wiener Neustadt → "adt").
+
+**11:43 · P1/S1 arrows frozen** (`scripts/prereg_p1.py freeze`), before any
+entity-token probe result was looked at:
+- p1: runs/prereg/p1-arrow.npz sha256 eca30c291be69827deb4baab329070565622f491becb9984803cc301a26cc463
+- s1: runs/prereg/s1-arrow.npz sha256 33a7252ba3b6be5debf7ce524265189e73e9dd26e54917e99590a66dce0c0665
+
+*Times of the ~11:35–11:40 entries corrected at 11:44: first written as guesses (11:40/11:50/11:52), now from git commit times.*
+
+**11:44 · Four probe variants** (`river_probe.py` now writes per variant:
+prompt-last / entity-last, each raw and `--centre country`). First attempt at the
+centred runs silently did nothing: zsh does not word-split `$v`, so
+`--centre country` arrived as one argument and argparse's error was hidden by my
+grep. Rerun with explicit arguments.
+- Last prompt token: centring leaves known vs unstable at 0.70–0.75 (L19–24).
+- Entity token, centred: 0.80–0.85 over L12–28, p ≤ 0.005 at L21–28.
+- **Surprise: entity token separates at layer 0/1** (centred 0.66 / 0.76): the bare
+  subword embedding. Checked tokenisation per cell: names are 3.5–4.3 tokens on
+  average in every cell, none single-token, endings almost never word-initial. So
+  it is not length or whole-word endings; it is which subwords the names end in.
+- Right-by-prior sits with the unknown cells at the entity token (median 0.23 at
+  L21 centred), between them at the last prompt token (0.60 at L22).
+- Superseded top-level outputs (`runs/river/known-vs-*`, `figures/river/*.png`)
+  deleted. The same numbers are in `prompt-last/`.
+
+**11:47 · Registered P1a** (lexical control: same frozen procedure at layer 1; P1
+counts as beyond the surface only if AUC(L21) − AUC(L1) on new towns has a paired
+bootstrap CI above 0). Written after seeing today's entity results, labelled as
+such; P1's text untouched. `prereg_p1.py freeze p1lex`: sha256 93fef88e…bc000.
+The freeze script now refuses to refreeze a frozen name (P1/S1 hashes unchanged).
+
+**11:49 · Dry run of `prereg_p1.py score`** against a scratch copy of the frozen
+arrows, with fake "new" towns (today's slots with renamed QIDs; known doubled to pass
+the ≥ 30 gate). All paths run: hash check, size gate, permutation p, bootstraps, P1a
+paired difference, S2 interval, refusal to score twice. Real `runs/prereg/` holds
+only the three arrows and their hashes; no `p1-result.json` exists.

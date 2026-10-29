@@ -24,6 +24,8 @@ import numpy as np
 from contrastset.adapters.hf import HFAdapter
 
 POSITION_RULE = "last token of the input text (for a chat prompt: the token right before the answer would begin)"
+ENTITY_RULE = ("last token of the entity name: the last token whose character span starts before the end of the "
+               "entity string (its last occurrence in the prompt)")
 
 
 def load(model: str = "Qwen/Qwen3-8B", revision: str = "b968826d9c46dd6066d109eabc6255188de91218") -> HFAdapter:
@@ -34,9 +36,23 @@ def _blocks(adapter: HFAdapter) -> Any:
     return adapter.model.model.layers
 
 
+def entity_last_token(adapter: HFAdapter, text: str, entity: str) -> tuple[int, bool]:
+    """Token index of the entity's last token in text, and whether that token runs past the entity's end."""
+    end = text.rindex(entity) + len(entity)
+    offsets = adapter.tokenizer(text, add_special_tokens=False, return_offsets_mapping=True)["offset_mapping"]
+    index = max(i for i, (a, _b) in enumerate(offsets) if a < end)
+    return index, offsets[index][1] > end
+
+
 def read_last_token(adapter: HFAdapter, texts: Sequence[str], layers: Sequence[int] | None = None,
                     label: str = "") -> tuple[np.ndarray, list[str]]:
-    """[n_texts, n_layers, d_model] float32 residuals at each text's last token, and those tokens.
+    """[n_texts, n_layers, d_model] float32 residuals at each text's last token, and those tokens."""
+    return read_at(adapter, texts, [-1] * len(texts), layers, label)
+
+
+def read_at(adapter: HFAdapter, texts: Sequence[str], positions: Sequence[int], layers: Sequence[int] | None = None,
+            label: str = "") -> tuple[np.ndarray, list[str]]:
+    """[n_texts, n_layers, d_model] float32 residuals at token positions[k] of texts[k], and those tokens.
 
     Streams one progress line per 25 texts to stderr."""
     torch = adapter._torch
@@ -44,15 +60,16 @@ def read_last_token(adapter: HFAdapter, texts: Sequence[str], layers: Sequence[i
     n_layers = len(blocks) + 1
     layers = list(range(n_layers)) if layers is None else [l if l >= 0 else n_layers + l for l in layers]
     captured: dict[int, Any] = {}
+    target = [-1]
 
     def hook(i: int) -> Any:
         def fn(_module: Any, _inp: Any, out: Any) -> None:
             h = out[0] if isinstance(out, tuple) else out
-            captured[i] = h[0, -1].float().cpu()
+            captured[i] = h[0, target[0]].float().cpu()
         return fn
 
     def embed_hook(_module: Any, _inp: Any, out: Any) -> None:
-        captured[0] = out[0, -1].float().cpu()
+        captured[0] = out[0, target[0]].float().cpu()
 
     handles = [adapter.model.model.embed_tokens.register_forward_hook(embed_hook)]
     handles += [b.register_forward_hook(hook(i + 1)) for i, b in enumerate(blocks)]
@@ -63,10 +80,11 @@ def read_last_token(adapter: HFAdapter, texts: Sequence[str], layers: Sequence[i
         with torch.no_grad():
             for k, text in enumerate(texts):
                 ids = adapter._ids(text)
+                target[0] = positions[k]
                 captured.clear()
                 adapter.model.model(ids)  # the backbone only: no LM head, nothing generated
                 out[k] = np.stack([captured[l].numpy() for l in layers])
-                last_tokens.append(adapter.tokenizer.convert_ids_to_tokens([int(ids[0, -1])])[0])
+                last_tokens.append(adapter.tokenizer.convert_ids_to_tokens([int(ids[0, positions[k]])])[0])
                 if (k + 1) % 25 == 0 or k + 1 == len(texts):
                     el = time.time() - t0
                     print(f"{label} {k + 1}/{len(texts)}  {el / (k + 1):.2f} s/item  "

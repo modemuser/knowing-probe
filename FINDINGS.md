@@ -144,8 +144,9 @@ all 37 layers, same code path as Step 0 (`scripts/river_acts.py`). Arrow on trai
 towns only. Contrast 1: known-by-retrieval (13 train / 7 held out) vs unstable
 (55 / 28). Contrast 2: known-by-retrieval vs country-prior (41 / 20). Right-by-prior
 and parent-river never touch either arrow. 200 label shuffles per contrast.
-`scripts/river_probe.py`, `scripts/river_controls.py`; figures in `figures/river/`,
-numbers in `runs/river/*-summary.json` and `runs/river/controls.json`.
+`scripts/river_probe.py`, `scripts/river_controls.py`; figures in
+`figures/river/prompt-last/`, numbers in `runs/river/prompt-last/*-summary.json` and
+`runs/river/controls.json`.
 
 **Contrast 1, known vs unstable (the first probe).**
 
@@ -216,3 +217,64 @@ prior cells were meant to catch). The prior cells are not its target.
 layers 19–29, uncorrected p ≈ 0.03–0.07 over 36 layers) survives country-centring.
 It becomes a pre-registered test on the second pass (next entry). Per the rules: no
 logistic regression, 2D projection or ablation until this is followed up.
+
+## 2026-10-29 · Entity token and country-centring: stronger at the town name, but a lexical floor under it
+
+**Setup.** Same 200 slots, labels, split and code as the first river probe. Two
+changes, each run alone and together. (1) Position: the last token of the town name
+in the question (`river_acts.py --position entity_last`; the following "?" is always
+its own token, so no pick runs past the name). (2) `--centre country`: before fitting,
+subtract from every slot the mean of its country's *training* slots (all five cells).
+P1 was pre-registered and committed (a1fb877) before this pass ran. Figures in
+`figures/river/{prompt-last,entity-last}[-country-centred]/`, numbers in
+`runs/river/<variant>/`.
+
+**Known vs unstable, held-out AUC (permutation p):**
+
+| layer | last prompt token | + country-centred | entity token | + country-centred |
+|---|---|---|---|---|
+| 0 | zero arrow | zero arrow | 0.79 (0.00) | 0.66 (0.01) |
+| 1 | 0.52 | 0.50 | 0.86 (0.00) | 0.76 (0.015) |
+| 12 | 0.53 | 0.47 | 0.79 (0.05) | 0.85 (0.00) |
+| 21 | 0.75 (0.055) | 0.74 (0.075) | 0.84 (0.01) | 0.83 (0.005) |
+| 24 | 0.70 (0.055) | 0.72 (0.07) | 0.79 (0.02) | 0.80 (0.00) |
+| 28 | 0.69 (0.17) | 0.72 (0.035) | 0.74 (0.085) | 0.82 (0.00) |
+
+- **Country-centring does not explain the late-layer trend at the last prompt
+  token**: 0.70–0.75 in layers 19–24 either way. It was explaining the known vs
+  country-prior contrast (0.84 → 0.78–0.83 centred at the last prompt token).
+- **At the entity token the separation is stronger and survives centring**:
+  0.80–0.85 over layers 12–28, permutation p ≤ 0.005 at 21–28. The entity-recognition
+  position carries more than the end of the prompt.
+- **But part of it is surface.** Layer 0 is the bare embedding of the name's last
+  subword, with no context at all, and it already gives 0.66 centred (0.79 raw). Layer 1
+  gives 0.76. Name length in tokens and word-initial endings do not differ between
+  cells (3.5–4.3 tokens, no single-token names), so the cue is in which subwords
+  obscure and familiar names end in. Mid layers add about 0.07–0.09 AUC over layer 1.
+  Seven held-out known towns cannot tell that apart from zero. Pre-registered as
+  control P1a (after seeing this, before any new town exists): P1 only counts as
+  beyond-the-surface if AUC(L21) − AUC(L1) on the new towns has a paired bootstrap
+  interval above 0.
+- The layer-8 strip plot shows the overfitting directly. Training known towns sit
+  at 0.8–1.3, held-out known towns at 0.0–0.4 (an arrow from 13 items in 4096
+  dimensions).
+
+**Right-by-prior moves with position.** Medians on the country-centred
+known-vs-unstable arrow; held-out only for the two fitted cells:
+
+| | known (held out) | right-by-prior | parent-river | country-prior | unstable (held out) |
+|---|---|---|---|---|---|
+| last prompt token, L22 | 0.75 | 0.60 | 0.19 | 0.13 | 0.31 |
+| entity token, L21 | 0.69 | 0.23 | 0.19 | 0.07 | 0.03 |
+| entity token, L28 | 0.54 | 0.27 | 0.10 | 0.12 | 0.12 |
+
+At the town name, right-by-prior (correct, confident, and the default river of
+its region) sits with the unknown cells, 24–29 % above threshold in layers 12–28.
+At the end of the prompt it sat between. On the plan's reading, the entity-token
+arrow tracks retrieval rather than output confidence. Hint only: 17 towns, and the
+layer-1 arrow already puts them low (0.15), so a lexical template fitted on 13 known
+names may do part of this too. Registered as descriptive S2 for the second pass.
+
+**Status.** Underpowered for a modest direction, as before. The entity token is
+the better candidate, with the lexical floor as its main threat. Both are now
+fixed in PREREGISTRATION.md (P1, P1a, S1, S2), to be scored once on the second pass.

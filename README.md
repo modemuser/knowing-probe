@@ -23,8 +23,18 @@ G=../contrastset/runs/wikidata-qwen3-8b-hf-logprob-B-priors.jsonl
 uv run python scripts/river_wikidata.py $G -o data/river-mouths.json     # P403 mouth chains
 uv run python scripts/river_cells.py $G data/river-mouths.json -o data/river-cells.jsonl
 uv run python scripts/river_acts.py data/river-cells.jsonl $G -o runs/river/acts
-uv run python scripts/river_probe.py runs/river/acts                      # figures/river/
+uv run python scripts/river_acts.py data/river-cells.jsonl $G -o runs/river/acts-entity --position entity_last
+for a in runs/river/acts runs/river/acts-entity; do
+  uv run python scripts/river_probe.py $a                                 # figures/river/<position>/
+  uv run python scripts/river_probe.py $a --centre country                # .../<position>-country-centred/
+done
+uv run python scripts/river_controls.py                                   # country baseline, power check
+uv run python scripts/prereg_p1.py freeze                                 # once: PREREGISTRATION.md P1
 ```
+
+[NOTEBOOK.md](NOTEBOOK.md) is the chronological lab notebook: every run and decision,
+including mistakes. [PREREGISTRATION.md](PREREGISTRATION.md) holds tests fixed before
+their data exist.
 
 Activations (`*.npy`) are git-ignored; sidecars (`*.json`: model revision, template
 hash, position rule, layers, split seed, item list) and summaries are kept.

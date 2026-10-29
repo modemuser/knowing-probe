@@ -1,0 +1,10 @@
+W1029 11:41:37.293000 15566 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights: 100%|██████████| 399/399 [00:00<00:00, 5234.78it/s]
+river entity_last 25/200  0.94 s/item  eta 165 s
+river entity_last 50/200  0.65 s/item  eta 97 s
+river entity_last 75/200  0.55 s/item  eta 69 s
+river entity_last 100/200  0.51 s/item  eta 51 s
+river entity_last 125/200  0.48 s/item  eta 36 s
+river entity_last 150/200  0.46 s/item  eta 23 s
+river entity_last 175/200  0.45 s/item  eta 11 s
+river entity_last 200/200  0.44 s/item  eta 0 s

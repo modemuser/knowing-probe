@@ -59,9 +59,10 @@
  },
  "model": "Qwen/Qwen3-8B",
  "revision": "b968826d9c46dd6066d109eabc6255188de91218",
- "last_tokens": [
+ "last_tokens_sample": [
   "ĊĊ"
  ],
+ "centre": "none",
  "arrow_fit_on": "training towns of the two contrast cells only",
  "contrast": {
   "positive": "known-by-retrieval",
