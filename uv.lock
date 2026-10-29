@@ -234,36 +234,22 @@ wheels = [
 
 [[package]]
 name = "contrastset"
-version = "0.1.0.dev0"
-source = { editable = "../contrastset" }
+version = "0.1.0.post1"
+source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "httpx" },
     { name = "pydantic" },
     { name = "pyyaml" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/0e/ef/4783a17d95a2f27f6b57dc8e89d67a8334da119323886745193767c53a9f/contrastset-0.1.0.post1.tar.gz", hash = "sha256:1269bb07b9b2ea6da77e037e6ee70ff2fa44a5cda39f4b42196681302dce6c4c", size = 69667, upload-time = "2026-10-29T14:19:10.715Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ee/ab/2d4a551235d04b68c06eee8173f41c88966a732f719fb41f43675b509332/contrastset-0.1.0.post1-py3-none-any.whl", hash = "sha256:d4d8e6ee2cfe646924fddc43b4ab75bc75f02334a4bede11f7b3f2b5e9a3f142", size = 71232, upload-time = "2026-10-29T14:19:09.296Z" },
 ]
 
 [package.optional-dependencies]
 hf = [
     { name = "torch" },
     { name = "transformers" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "anthropic", marker = "extra == 'anthropic'", specifier = ">=2.3.0" },
-    { name = "httpx", specifier = ">=0.27" },
-    { name = "pydantic", specifier = ">=2.7" },
-    { name = "pyyaml", specifier = ">=6" },
-    { name = "torch", marker = "extra == 'hf'", specifier = ">=2.14.1" },
-    { name = "transformers", marker = "extra == 'hf'", specifier = ">=5.21.0" },
-]
-provides-extras = ["anthropic", "hf"]
-
-[package.metadata.requires-dev]
-dev = [
-    { name = "mypy", specifier = ">=1.10" },
-    { name = "pytest", specifier = ">=8" },
-    { name = "types-pyyaml" },
 ]
 
 [[package]]
@@ -747,7 +733,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "contrastset", extras = ["hf"], editable = "../contrastset" },
+    { name = "contrastset", extras = ["hf"], specifier = "==0.1.0.post1" },
     { name = "httpx", specifier = ">=0.27" },
     { name = "matplotlib", specifier = ">=3.9" },
     { name = "numpy", specifier = ">=2" },

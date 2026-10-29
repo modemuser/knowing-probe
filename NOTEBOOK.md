@@ -187,3 +187,14 @@ frozen L1 arrow applied to L21; descriptive D1 log-sitelinks, D2 projection-out)
 observation from the dry run (today's towns, in-sample): log(sitelinks) alone gives
 AUC 0.67 for known vs unstable, so fame tracks the label even inside today's pool.
 `river_cells.py` now also writes `sitelinks` (no rule change).
+
+**15:21 · contrastset pinned to the release.** `pyproject.toml`: `contrastset[hf]==0.1.0.post1`
+from PyPI instead of the editable `../contrastset` path; `uv.lock` changes only that
+entry (0.1.0.dev0 → 0.1.0.post1), torch 2.14.1 / transformers 5.21.0 unchanged.
+0.1.0.post1 has the library code these runs used: the contrastset release pass changed
+no behaviour (its baseline grade and behaviour check reproduce bit for bit), and its
+`examples/00-marks-tegmark/` reproduces Step 0 above exactly (max |AUC − runs/step0
+summaries| = 0.0, both sets). Fast tests: 3 passed; `knowing_probe.acts/arrow/
+analysis/plot` import against the pinned package. The graded file the river steps read
+(`../contrastset/runs/wikidata-qwen3-8b-hf-logprob-B-priors.jsonl`) is now committed in
+the contrastset repository.
