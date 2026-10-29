@@ -120,3 +120,101 @@ P1 counts as evidence of something beyond the name's surface only if BOTH:
   activations, then scored with the frozen L21 arrow.
 - S1 and S2 as before (S2, right-by-prior position, is the line the write-up would
   want if it replicates on ≥ 30 new right-by-prior towns).
+
+## 2026-10-29 · Before publication: hashes confirmed, ratified choices, outcome paragraphs (P1 still unrun)
+
+Appended at the publication pass. Nothing above this heading has been edited.
+**P1 has not been run.** No `runs/prereg/p1-result.json` exists, and no town of the
+second pass has been graded. The pass-2 candidate list (contrastset
+`experiments/wikidata-towns-pass2.jsonl`, 168 towns, ≥ 40 sitelinks) has been pulled,
+not graded.
+
+**Frozen arrows confirmed.** The sha256 of each committed arrow file equals the value
+recorded at freeze time (`runs/prereg/frozen-hashes.json`, NOTEBOOK.md 11:43 and 11:47).
+All three were added in commit d0bc2c7 and have not changed since:
+
+| arrow | role | sha256 |
+|---|---|---|
+| `p1-arrow.npz` | P1, town-name token, layer 21 | eca30c291be69827deb4baab329070565622f491becb9984803cc301a26cc463 |
+| `s1-arrow.npz` | S1, last prompt token, layer 21 | 33a7252ba3b6be5debf7ce524265189e73e9dd26e54917e99590a66dce0c0665 |
+| `p1lex-arrow.npz` | P1a / P1c, town-name token, layer 1 | 93fef88e077f04709d4059bbc961da799a230f17809b31f44ea056269aebc000 |
+
+`scripts/prereg_p1.py` keeps its refusals unchanged: no refreezing a frozen name; no
+second scoring once `p1-result.json` exists; no scoring if an arrow's hash differs, if
+any new town is one of today's, or if a cell is below the minimum.
+
+**Ratified choices (Thomas, 2026-10-29), stated as such.**
+1. Each frozen arrow uses all 103 of today's towns in the two cells (20
+   known-by-retrieval + 83 unstable), training and held-out alike. The new towns are
+   the held-out set.
+2. Today's arrows were fitted after centring today's slots on country means over all
+   200 of today's slots. New-pass towns are centred on new-pass country means (all new
+   slots of that country, all five cells), never on today's. Today's Italian mean is a
+   pure-unstable mean (no Italian town is known-by-retrieval today), and it would
+   centre a new known Italian town onto the unstable side by construction.
+3. P1a requires ≥ 40 new known-by-retrieval towns (P1b sets the same floor for
+   unstable). Every comparison of two AUCs is paired: both are computed on the
+   identical new towns, and the 95 % interval comes from bootstrap resamples that draw
+   the same towns for both.
+
+**What every outcome reports** (all on new towns only, from `p1-result.json`): N_k
+known-by-retrieval and N_u unstable; the P1 AUC with its 95 % bootstrap interval and
+one-sided permutation p; the layer-1 AUC (P1a's comparator); the paired differences
+for P1a and P1c with their intervals; the fame-only AUC of log(sitelinks) (D1). The
+outcome is decided by the rule below, not by reading these numbers.
+
+**Outcome A: P1 passes and both surface controls pass.** P1: AUC > 0.5 and one-sided
+permutation p < 0.05. P1a: AUC(layer 21) − AUC(layer-1 arrow at layer 1), paired
+interval above 0. P1c: AUC(layer 21) − AUC(layer-1 arrow applied to layer-21
+activations), paired interval above 0. The write-up then contains this paragraph, with
+the numbers filled in and nothing added:
+
+> On N_k new known-by-retrieval and N_u new unstable towns, all with at least 40
+> Wikipedia sitelinks and none used to fit anything, a difference-of-means direction
+> fixed in advance on 103 other towns (last token of the town name, layer 21,
+> country-centred) ranks known above unstable with held-out AUC A (95 % interval
+> [·, ·]), one-sided permutation p = P. The name's surface separates the cells too: the
+> same procedure at layer 1, where the representation is little more than the name's
+> last subwords, gives AUC A1. Layer 21 exceeds it by D (paired interval [·, ·]), and
+> exceeds the layer-1 direction read out at layer 21 by D′ (paired interval [·, ·]);
+> fame alone, log(sitelinks), gives AUC F. In Qwen3-8B under template B, layer 21 at
+> the town-name token therefore carries information about whether the model will
+> retrieve a town's river beyond what the name's surface form carries, and that
+> information transfers to towns not used to define the direction. This does not show
+> that the model uses the direction (no ablation or steering was run); that it is a
+> single or privileged direction (difference of means is one estimate, from 20 known
+> towns); that it concerns knowing in general rather than the rivers of European towns
+> under one prompt; that it holds for less famous names (every test town has ≥ 40
+> sitelinks); or that it tracks retrieval rather than answer confidence (S2 is
+> descriptive and decides nothing).
+
+**Outcome B: anything else.** Either P1 fails, or P1 passes without both P1a and P1c
+above zero. If the minimum size is not reached nothing is scored; that is not an
+outcome. The write-up then contains the paragraph that matches, with the numbers
+filled in and nothing added:
+
+> *(B1, P1 fails.)* On N_k new known-by-retrieval and N_u new unstable towns, all with
+> at least 40 Wikipedia sitelinks, the pre-registered direction (last token of the
+> town name, layer 21, country-centred, fixed in advance on 103 other towns) gives
+> held-out AUC A (95 % interval [·, ·]), one-sided permutation p = P: the test fails.
+> The same procedure at layer 1, where the representation is little more than the
+> name's last subwords, gives AUC A1, and fame alone, log(sitelinks), gives AUC F. They
+> are reported because the exploratory separation on the first 294 towns could not be
+> told apart from the name's surface (the lexical floor), and a layer-1 separation
+> next to a layer-21 failure would mean the names, not the model's processing, carried
+> it. This is a null for this one test: one direction fitted on 20 known towns, at one
+> position and one layer. It does not show that Qwen3-8B has no retrieval direction.
+> Other layers, positions, estimators and larger training sets were not tested on
+> these towns, and any later analysis of them is exploratory and labelled so.
+
+> *(B2, P1 passes, P1a or P1c not above zero.)* On N_k new known-by-retrieval and N_u
+> new unstable towns, all with at least 40 Wikipedia sitelinks, the pre-registered
+> direction ranks known above unstable (held-out AUC A, 95 % interval [·, ·], one-sided
+> permutation p = P), but no more than the name's surface does. The layer-1 direction
+> gives AUC A1. Layer 21 exceeds it by D (paired interval [·, ·]), and exceeds the
+> layer-1 direction read out at layer 21 by D′ (paired interval [·, ·]); at least one
+> of these intervals includes 0. Fame alone, log(sitelinks), gives AUC F. The result
+> separates, but no more than the name's surface does. It is consistent with the
+> arrow reading how famous or how tokenized the name is (the lexical floor), which
+> drawing both cells from one fame band reduced but did not remove. It does not show
+> a retrieval direction and is not reported as a positive result in any form.
