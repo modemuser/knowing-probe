@@ -1,0 +1,1305 @@
+{
+ "model": {
+  "adapter": "hf",
+  "model": "Qwen/Qwen3-8B",
+  "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "device": "mps",
+  "dtype": "bfloat16",
+  "sampling": {
+   "order": "top_k -> top_p (both on untempered probabilities) -> temperature -> draw",
+   "top_k": "off",
+   "top_p": "off",
+   "min_p": "off",
+   "repetition_penalty": "off",
+   "temperature": "per call (provenance.sampling)"
+  },
+  "model_sampling_defaults_not_applied": {
+   "top_k": 20,
+   "top_p": 0.95,
+   "temperature": 0.6,
+   "min_p": null,
+   "repetition_penalty": null
+  },
+  "prefix_mass": {
+   "candidates": "every token consistent with the text (byte trie)",
+   "prune_below": 1e-05,
+   "max_paths_per_step": 512,
+   "bound": "logprob.p_correct_pruned_max: mass of dropped paths"
+  },
+  "transformers": "5.21.0",
+  "torch": "2.14.1"
+ },
+ "position_rule": "last token of the input text (for a chat prompt: the token right before the answer would begin)",
+ "residual": "forward hooks on embed_tokens (layer 0) and each decoder block (layer i); pre final norm",
+ "layers": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31,
+  32,
+  33,
+  34,
+  35,
+  36
+ ],
+ "n_items": 200,
+ "texts_sha256": "e49782bcd3990941071761482e27cd6203fb8c77e07e282eca599cd708531f73",
+ "last_tokens": [
+  "ĊĊ"
+ ],
+ "template": {
+  "path": "/Users/tom/dev/contrastset/experiments/templates/qwen3-name-only.txt",
+  "sha256": "be01394753d480ebbee0b4317ce7281fd3f1bb0870b762ce4d9591f3d18bbcae"
+ },
+ "cells_file": "data/river-cells.jsonl",
+ "graded_file": "../contrastset/runs/wikidata-qwen3-8b-hf-logprob-B-priors.jsonl",
+ "items": [
+  {
+   "entity": "Seehausen",
+   "qid": "Q513395",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Brańsk",
+   "qid": "Q607410",
+   "cell": "country-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Fumel",
+   "qid": "Q659721",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Manteigas",
+   "qid": "Q986093",
+   "cell": "country-prior",
+   "held_out": true
+  },
+  {
+   "entity": "Oskarström",
+   "qid": "Q1019572",
+   "cell": "unstable",
+   "held_out": true
+  },
+  {
+   "entity": "Rösrath",
+   "qid": "Q245376",
+   "cell": "parent-river",
+   "held_out": false
+  },
+  {
+   "entity": "Ustroń",
+   "qid": "Q1001297",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Markušovce",
+   "qid": "Q1067902",
+   "cell": "unstable",
+   "held_out": true
+  },
+  {
+   "entity": "Tonneins",
+   "qid": "Q1070001",
+   "cell": "unstable",
+   "held_out": true
+  },
+  {
+   "entity": "Cusano Mutri",
+   "qid": "Q55898",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Józefów",
+   "qid": "Q985534",
+   "cell": "right-by-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Hanušovce nad Topľou",
+   "qid": "Q780527",
+   "cell": "known-by-retrieval",
+   "held_out": false
+  },
+  {
+   "entity": "Castro Daire",
+   "qid": "Q861199",
+   "cell": "country-prior",
+   "held_out": true
+  },
+  {
+   "entity": "Lengenfeld",
+   "qid": "Q46869",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Pampilhosa da Serra",
+   "qid": "Q1000099",
+   "cell": "country-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Nödinge",
+   "qid": "Q11885056",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Wysokie Mazowieckie",
+   "qid": "Q335580",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Červený Kostelec",
+   "qid": "Q158420",
+   "cell": "parent-river",
+   "held_out": false
+  },
+  {
+   "entity": "Saint-Juéry",
+   "qid": "Q1466536",
+   "cell": "unstable",
+   "held_out": true
+  },
+  {
+   "entity": "Ontinyent",
+   "qid": "Q973641",
+   "cell": "unstable",
+   "held_out": true
+  },
+  {
+   "entity": "Knislinge",
+   "qid": "Q2697738",
+   "cell": "country-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Węgrów",
+   "qid": "Q953156",
+   "cell": "parent-river",
+   "held_out": true
+  },
+  {
+   "entity": "Čelákovice",
+   "qid": "Q338616",
+   "cell": "country-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Colayrac-Saint-Cirq",
+   "qid": "Q727445",
+   "cell": "country-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Malgrate",
+   "qid": "Q42540",
+   "cell": "right-by-prior",
+   "held_out": true
+  },
+  {
+   "entity": "Norrahammar",
+   "qid": "Q2944368",
+   "cell": "country-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Ruhland",
+   "qid": "Q572601",
+   "cell": "unstable",
+   "held_out": true
+  },
+  {
+   "entity": "Horažďovice",
+   "qid": "Q641158",
+   "cell": "country-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Penacova",
+   "qid": "Q1005038",
+   "cell": "country-prior",
+   "held_out": true
+  },
+  {
+   "entity": "Runkel",
+   "qid": "Q635806",
+   "cell": "parent-river",
+   "held_out": true
+  },
+  {
+   "entity": "Oberaich",
+   "qid": "Q696285",
+   "cell": "country-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Otwock",
+   "qid": "Q745059",
+   "cell": "right-by-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Irigny",
+   "qid": "Q1364250",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Galdakao",
+   "qid": "Q1227388",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Arganil",
+   "qid": "Q426953",
+   "cell": "country-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Starachowice",
+   "qid": "Q751094",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Kostelec nad Labem",
+   "qid": "Q1785189",
+   "cell": "right-by-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Nová Ľubovňa",
+   "qid": "Q174771",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "San Biagio di Callalta",
+   "qid": "Q47312",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Cuéllar",
+   "qid": "Q1631311",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Fristad",
+   "qid": "Q3291202",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Feldkirchen bei Graz",
+   "qid": "Q672464",
+   "cell": "right-by-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Terespol",
+   "qid": "Q218897",
+   "cell": "country-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Villerest",
+   "qid": "Q1106067",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Villa d'Almè",
+   "qid": "Q101763",
+   "cell": "country-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Peso da Régua",
+   "qid": "Q757858",
+   "cell": "unstable",
+   "held_out": true
+  },
+  {
+   "entity": "Ostfildern",
+   "qid": "Q14916",
+   "cell": "parent-river",
+   "held_out": false
+  },
+  {
+   "entity": "Moravská Třebová",
+   "qid": "Q1000078",
+   "cell": "parent-river",
+   "held_out": true
+  },
+  {
+   "entity": "Strážske",
+   "qid": "Q846434",
+   "cell": "country-prior",
+   "held_out": true
+  },
+  {
+   "entity": "Horbourg-Wihr",
+   "qid": "Q83412",
+   "cell": "parent-river",
+   "held_out": true
+  },
+  {
+   "entity": "Burriana",
+   "qid": "Q385070",
+   "cell": "country-prior",
+   "held_out": true
+  },
+  {
+   "entity": "Åstorp",
+   "qid": "Q271299",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Deutschfeistritz",
+   "qid": "Q513647",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Skuteč",
+   "qid": "Q1332942",
+   "cell": "country-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Camposampiero",
+   "qid": "Q34697",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Almassora",
+   "qid": "Q1373919",
+   "cell": "country-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Surte",
+   "qid": "Q287691",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Herdecke",
+   "qid": "Q11337",
+   "cell": "unstable",
+   "held_out": true
+  },
+  {
+   "entity": "Vrchlabí",
+   "qid": "Q1008595",
+   "cell": "country-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Vráble",
+   "qid": "Q264708",
+   "cell": "country-prior",
+   "held_out": true
+  },
+  {
+   "entity": "Firenzuola",
+   "qid": "Q82693",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Balmaseda",
+   "qid": "Q4480",
+   "cell": "country-prior",
+   "held_out": true
+  },
+  {
+   "entity": "Sabugal",
+   "qid": "Q992645",
+   "cell": "country-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Klippan",
+   "qid": "Q1018739",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Bechyně",
+   "qid": "Q20492",
+   "cell": "country-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Caorle",
+   "qid": "Q47248",
+   "cell": "unstable",
+   "held_out": true
+  },
+  {
+   "entity": "Santo Tirso",
+   "qid": "Q917330",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Jarosław",
+   "qid": "Q721928",
+   "cell": "known-by-retrieval",
+   "held_out": false
+  },
+  {
+   "entity": "Noisiel",
+   "qid": "Q900479",
+   "cell": "parent-river",
+   "held_out": false
+  },
+  {
+   "entity": "Montevarchi",
+   "qid": "Q52089",
+   "cell": "right-by-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Arenas de San Pedro",
+   "qid": "Q641669",
+   "cell": "country-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Figueira da Foz",
+   "qid": "Q428459",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Lilla Edet",
+   "qid": "Q1016712",
+   "cell": "country-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Cieszyn",
+   "qid": "Q321197",
+   "cell": "country-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Lysá nad Labem",
+   "qid": "Q1018859",
+   "cell": "right-by-prior",
+   "held_out": true
+  },
+  {
+   "entity": "Jelšava",
+   "qid": "Q846853",
+   "cell": "country-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Piolenc",
+   "qid": "Q512467",
+   "cell": "country-prior",
+   "held_out": true
+  },
+  {
+   "entity": "Cavallino-Treporti",
+   "qid": "Q47995",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Sueca",
+   "qid": "Q1552240",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Přelouč",
+   "qid": "Q1018341",
+   "cell": "country-prior",
+   "held_out": false
+  },
+  {
+   "entity": "San Giovanni Valdarno",
+   "qid": "Q52097",
+   "cell": "right-by-prior",
+   "held_out": true
+  },
+  {
+   "entity": "Cullera",
+   "qid": "Q986733",
+   "cell": "unstable",
+   "held_out": true
+  },
+  {
+   "entity": "Chaves",
+   "qid": "Q504580",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Gislaved",
+   "qid": "Q1021557",
+   "cell": "country-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Chełmno",
+   "qid": "Q161962",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Saint-Pantaléon-de-Larche",
+   "qid": "Q957452",
+   "cell": "country-prior",
+   "held_out": true
+  },
+  {
+   "entity": "Foglianise",
+   "qid": "Q55904",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Simancas",
+   "qid": "Q986572",
+   "cell": "parent-river",
+   "held_out": false
+  },
+  {
+   "entity": "Forshaga",
+   "qid": "Q1303800",
+   "cell": "country-prior",
+   "held_out": true
+  },
+  {
+   "entity": "Augustów",
+   "qid": "Q464763",
+   "cell": "unstable",
+   "held_out": true
+  },
+  {
+   "entity": "Floirac",
+   "qid": "Q199682",
+   "cell": "known-by-retrieval",
+   "held_out": false
+  },
+  {
+   "entity": "Nerviano",
+   "qid": "Q42496",
+   "cell": "country-prior",
+   "held_out": false
+  },
+  {
+   "entity": "La Puebla de Cazalla",
+   "qid": "Q1146831",
+   "cell": "parent-river",
+   "held_out": false
+  },
+  {
+   "entity": "Broby",
+   "qid": "Q923113",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Dassel",
+   "qid": "Q486556",
+   "cell": "parent-river",
+   "held_out": false
+  },
+  {
+   "entity": "Mielec",
+   "qid": "Q658861",
+   "cell": "unstable",
+   "held_out": true
+  },
+  {
+   "entity": "Martinsicuro",
+   "qid": "Q51452",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Medina de Rioseco",
+   "qid": "Q1648251",
+   "cell": "country-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Landvetter",
+   "qid": "Q2718041",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Weißenfels",
+   "qid": "Q14815",
+   "cell": "known-by-retrieval",
+   "held_out": false
+  },
+  {
+   "entity": "Wolfurt",
+   "qid": "Q697083",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Blansko",
+   "qid": "Q850676",
+   "cell": "parent-river",
+   "held_out": false
+  },
+  {
+   "entity": "Žiar nad Hronom",
+   "qid": "Q393925",
+   "cell": "known-by-retrieval",
+   "held_out": false
+  },
+  {
+   "entity": "Villarreal",
+   "qid": "Q12292",
+   "cell": "unstable",
+   "held_out": true
+  },
+  {
+   "entity": "Covilhã",
+   "qid": "Q849026",
+   "cell": "country-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Crailsheim",
+   "qid": "Q16048",
+   "cell": "parent-river",
+   "held_out": true
+  },
+  {
+   "entity": "Międzyrzec Podlaski",
+   "qid": "Q34267",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Písek",
+   "qid": "Q158245",
+   "cell": "country-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Holíč",
+   "qid": "Q653326",
+   "cell": "unstable",
+   "held_out": true
+  },
+  {
+   "entity": "Tirano",
+   "qid": "Q40868",
+   "cell": "right-by-prior",
+   "held_out": true
+  },
+  {
+   "entity": "Tudela",
+   "qid": "Q244747",
+   "cell": "known-by-retrieval",
+   "held_out": false
+  },
+  {
+   "entity": "Mariestad",
+   "qid": "Q948117",
+   "cell": "country-prior",
+   "held_out": true
+  },
+  {
+   "entity": "Senica",
+   "qid": "Q750407",
+   "cell": "country-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Cabannes",
+   "qid": "Q330462",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Tivoli",
+   "qid": "Q159605",
+   "cell": "country-prior",
+   "held_out": true
+  },
+  {
+   "entity": "Brixlegg",
+   "qid": "Q252197",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Domažlice",
+   "qid": "Q986068",
+   "cell": "parent-river",
+   "held_out": false
+  },
+  {
+   "entity": "Gouvieux",
+   "qid": "Q752088",
+   "cell": "known-by-retrieval",
+   "held_out": false
+  },
+  {
+   "entity": "Orihuela",
+   "qid": "Q487786",
+   "cell": "known-by-retrieval",
+   "held_out": true
+  },
+  {
+   "entity": "Landeck",
+   "qid": "Q660183",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Sandomierz",
+   "qid": "Q193177",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Jindřichův Hradec",
+   "qid": "Q368929",
+   "cell": "country-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Šaštín-Stráže",
+   "qid": "Q135649",
+   "cell": "country-prior",
+   "held_out": true
+  },
+  {
+   "entity": "Gaillac",
+   "qid": "Q343613",
+   "cell": "known-by-retrieval",
+   "held_out": true
+  },
+  {
+   "entity": "Errenteria",
+   "qid": "Q681893",
+   "cell": "unstable",
+   "held_out": true
+  },
+  {
+   "entity": "Guimarães",
+   "qid": "Q170903",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Jenbach",
+   "qid": "Q668227",
+   "cell": "right-by-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Malbork",
+   "qid": "Q146820",
+   "cell": "unstable",
+   "held_out": true
+  },
+  {
+   "entity": "Poděbrady",
+   "qid": "Q683165",
+   "cell": "country-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Eraclea",
+   "qid": "Q47986",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Elvas",
+   "qid": "Q243849",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Olofström",
+   "qid": "Q995431",
+   "cell": "unstable",
+   "held_out": true
+  },
+  {
+   "entity": "Tczew",
+   "qid": "Q474697",
+   "cell": "right-by-prior",
+   "held_out": true
+  },
+  {
+   "entity": "Jičín",
+   "qid": "Q656603",
+   "cell": "country-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Le Trait",
+   "qid": "Q1415989",
+   "cell": "country-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Calatayud",
+   "qid": "Q496424",
+   "cell": "country-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Lerum",
+   "qid": "Q988275",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Bad Brückenau",
+   "qid": "Q504513",
+   "cell": "unstable",
+   "held_out": true
+  },
+  {
+   "entity": "Turnov",
+   "qid": "Q851419",
+   "cell": "country-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Mjölby",
+   "qid": "Q538915",
+   "cell": "unstable",
+   "held_out": true
+  },
+  {
+   "entity": "Riesa",
+   "qid": "Q8775",
+   "cell": "right-by-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Murau",
+   "qid": "Q605054",
+   "cell": "known-by-retrieval",
+   "held_out": false
+  },
+  {
+   "entity": "Mělník",
+   "qid": "Q320939",
+   "cell": "country-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Buzançais",
+   "qid": "Q454445",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Caltanissetta",
+   "qid": "Q13680",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Alzira",
+   "qid": "Q931780",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Bischofswerda",
+   "qid": "Q81717",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Imst",
+   "qid": "Q254107",
+   "cell": "right-by-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Krnov",
+   "qid": "Q1789604",
+   "cell": "parent-river",
+   "held_out": false
+  },
+  {
+   "entity": "Svidník",
+   "qid": "Q833845",
+   "cell": "country-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Lignano Sabbiadoro",
+   "qid": "Q53273",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Olivenza",
+   "qid": "Q488052",
+   "cell": "known-by-retrieval",
+   "held_out": false
+  },
+  {
+   "entity": "Hässleholm",
+   "qid": "Q847665",
+   "cell": "country-prior",
+   "held_out": true
+  },
+  {
+   "entity": "Speyer",
+   "qid": "Q6829",
+   "cell": "known-by-retrieval",
+   "held_out": false
+  },
+  {
+   "entity": "Innsbruck",
+   "qid": "Q1735",
+   "cell": "right-by-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Blagnac",
+   "qid": "Q271068",
+   "cell": "known-by-retrieval",
+   "held_out": true
+  },
+  {
+   "entity": "Lodi",
+   "qid": "Q6244",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Salamanca",
+   "qid": "Q15695",
+   "cell": "known-by-retrieval",
+   "held_out": false
+  },
+  {
+   "entity": "Topoľčany",
+   "qid": "Q750423",
+   "cell": "country-prior",
+   "held_out": true
+  },
+  {
+   "entity": "Beynost",
+   "qid": "Q10235",
+   "cell": "country-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Huesca",
+   "qid": "Q11967",
+   "cell": "country-prior",
+   "held_out": true
+  },
+  {
+   "entity": "Trollhättan",
+   "qid": "Q54339",
+   "cell": "unstable",
+   "held_out": true
+  },
+  {
+   "entity": "Jablonec nad Nisou",
+   "qid": "Q147607",
+   "cell": "known-by-retrieval",
+   "held_out": true
+  },
+  {
+   "entity": "Albi",
+   "qid": "Q132801",
+   "cell": "right-by-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Vicenza",
+   "qid": "Q6537",
+   "cell": "country-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Toledo",
+   "qid": "Q5836",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Alingsås",
+   "qid": "Q54743",
+   "cell": "country-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Meissen",
+   "qid": "Q8738",
+   "cell": "right-by-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Michalovce",
+   "qid": "Q460925",
+   "cell": "unstable",
+   "held_out": true
+  },
+  {
+   "entity": "Rueil-Malmaison",
+   "qid": "Q193920",
+   "cell": "known-by-retrieval",
+   "held_out": true
+  },
+  {
+   "entity": "Brescia",
+   "qid": "Q6221",
+   "cell": "parent-river",
+   "held_out": true
+  },
+  {
+   "entity": "Burgos",
+   "qid": "Q9580",
+   "cell": "country-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Härnösand",
+   "qid": "Q3240427",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Bottrop",
+   "qid": "Q3069",
+   "cell": "unstable",
+   "held_out": true
+  },
+  {
+   "entity": "Wiener Neustadt",
+   "qid": "Q131612",
+   "cell": "parent-river",
+   "held_out": false
+  },
+  {
+   "entity": "Langres",
+   "qid": "Q203293",
+   "cell": "unstable",
+   "held_out": true
+  },
+  {
+   "entity": "Aranjuez",
+   "qid": "Q486792",
+   "cell": "known-by-retrieval",
+   "held_out": true
+  },
+  {
+   "entity": "Kristianstad",
+   "qid": "Q26937",
+   "cell": "country-prior",
+   "held_out": true
+  },
+  {
+   "entity": "Kempten",
+   "qid": "Q3994",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Český Krumlov",
+   "qid": "Q188082",
+   "cell": "known-by-retrieval",
+   "held_out": false
+  },
+  {
+   "entity": "Modra",
+   "qid": "Q596044",
+   "cell": "country-prior",
+   "held_out": true
+  },
+  {
+   "entity": "Bar-le-Duc",
+   "qid": "Q185721",
+   "cell": "unstable",
+   "held_out": true
+  },
+  {
+   "entity": "Lucca",
+   "qid": "Q13373",
+   "cell": "country-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Ronda",
+   "qid": "Q13153",
+   "cell": "unstable",
+   "held_out": true
+  },
+  {
+   "entity": "Mölnlycke",
+   "qid": "Q25462",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Prievidza",
+   "qid": "Q208750",
+   "cell": "unstable",
+   "held_out": true
+  },
+  {
+   "entity": "Teramo",
+   "qid": "Q13137",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Tábor",
+   "qid": "Q193721",
+   "cell": "country-prior",
+   "held_out": true
+  },
+  {
+   "entity": "Chaumont",
+   "qid": "Q193880",
+   "cell": "unstable",
+   "held_out": true
+  },
+  {
+   "entity": "Ängelholm",
+   "qid": "Q54755",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Břeclav",
+   "qid": "Q581478",
+   "cell": "parent-river",
+   "held_out": false
+  },
+  {
+   "entity": "Liptovský Mikuláš",
+   "qid": "Q272040",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Fontainebleau",
+   "qid": "Q182872",
+   "cell": "known-by-retrieval",
+   "held_out": true
+  },
+  {
+   "entity": "Passau",
+   "qid": "Q4190",
+   "cell": "known-by-retrieval",
+   "held_out": false
+  },
+  {
+   "entity": "Feldkirch",
+   "qid": "Q183104",
+   "cell": "unstable",
+   "held_out": false
+  },
+  {
+   "entity": "Třebíč",
+   "qid": "Q270704",
+   "cell": "country-prior",
+   "held_out": true
+  },
+  {
+   "entity": "Humenné",
+   "qid": "Q502264",
+   "cell": "country-prior",
+   "held_out": false
+  },
+  {
+   "entity": "Évreux",
+   "qid": "Q171800",
+   "cell": "parent-river",
+   "held_out": false
+  },
+  {
+   "entity": "Pisa",
+   "qid": "Q13375",
+   "cell": "right-by-prior",
+   "held_out": true
+  },
+  {
+   "entity": "Kungälv",
+   "qid": "Q27455",
+   "cell": "unstable",
+   "held_out": true
+  }
+ ],
+ "split": {
+  "by": "town",
+  "held_out_frac": 0.3333333333333333,
+  "seed": 20261029,
+  "stratified_by": "cell"
+ },
+ "thresholds": {
+  "known_min": 0.875,
+  "unknown_max": 0.125,
+  "familiar": "country p_correct >= 0.875",
+  "p": "logprob p_correct at T = 1"
+ },
+ "shape": [
+  200,
+  37,
+  4096
+ ],
+ "dtype": "float32",
+ "npy_sha256": "a25427f9257a948c6bd80a0e6a2252d1554b0700813ac51905de4dab7289cd21"
+}

@@ -1,0 +1,8171 @@
+{
+ "source": "Wikidata P403 (mouth of the watercourse), walked transitively",
+ "retrieved": "2026-10-29",
+ "graded_file": "../contrastset/runs/wikidata-qwen3-8b-hf-logprob-B-priors.jsonl",
+ "languages": [
+  "en",
+  "de",
+  "pl",
+  "cs",
+  "sk",
+  "fr",
+  "it",
+  "es",
+  "pt",
+  "sv"
+ ],
+ "gold": [
+  "Q1025074",
+  "Q103148",
+  "Q10362158",
+  "Q10362551",
+  "Q10362704",
+  "Q10406526",
+  "Q10525222",
+  "Q10531310",
+  "Q10590341",
+  "Q10593551",
+  "Q10602214",
+  "Q1066352",
+  "Q10689505",
+  "Q1075469",
+  "Q1076019",
+  "Q1091758",
+  "Q10965",
+  "Q1130403",
+  "Q1140852",
+  "Q115457",
+  "Q11703431",
+  "Q11713978",
+  "Q118167",
+  "Q11832155",
+  "Q120189",
+  "Q12031583",
+  "Q121538",
+  "Q1242186",
+  "Q1242878",
+  "Q1244834",
+  "Q127596",
+  "Q12767784",
+  "Q12776753",
+  "Q13142473",
+  "Q131574",
+  "Q1322211",
+  "Q1331973",
+  "Q13370939",
+  "Q1338024",
+  "Q1354961",
+  "Q14087",
+  "Q1417627",
+  "Q14294",
+  "Q14299",
+  "Q14305",
+  "Q14311",
+  "Q14353",
+  "Q14355",
+  "Q14369",
+  "Q14582",
+  "Q14591",
+  "Q14608",
+  "Q14617",
+  "Q14653",
+  "Q1466877",
+  "Q1469",
+  "Q1471",
+  "Q1473319",
+  "Q14755",
+  "Q14757",
+  "Q14761",
+  "Q1477204",
+  "Q149182",
+  "Q1507602",
+  "Q153143",
+  "Q1553526",
+  "Q155841",
+  "Q156237",
+  "Q15656",
+  "Q15671",
+  "Q159467",
+  "Q1598984",
+  "Q1636357",
+  "Q163723",
+  "Q163880",
+  "Q1644",
+  "Q1648",
+  "Q1650",
+  "Q1653",
+  "Q1658",
+  "Q1663585",
+  "Q1664",
+  "Q16661",
+  "Q1667",
+  "Q1673",
+  "Q1678",
+  "Q1770345",
+  "Q177480",
+  "Q17776",
+  "Q1785545",
+  "Q179251",
+  "Q18612",
+  "Q1866578",
+  "Q1889871",
+  "Q1967185",
+  "Q1967594",
+  "Q200231",
+  "Q201341",
+  "Q20142",
+  "Q202598",
+  "Q20357",
+  "Q20380",
+  "Q204040",
+  "Q20481694",
+  "Q2049877",
+  "Q2063591",
+  "Q208174",
+  "Q2096140",
+  "Q211766",
+  "Q213230",
+  "Q213462",
+  "Q214748",
+  "Q215653",
+  "Q216488",
+  "Q217347",
+  "Q2179125",
+  "Q221200",
+  "Q23122",
+  "Q2356515",
+  "Q2370591",
+  "Q24358",
+  "Q247494",
+  "Q2549387",
+  "Q257575",
+  "Q267911",
+  "Q279943",
+  "Q283969",
+  "Q314417",
+  "Q317036",
+  "Q32240418",
+  "Q32253336",
+  "Q326204",
+  "Q330256",
+  "Q369773",
+  "Q3854786",
+  "Q3868494",
+  "Q3868667",
+  "Q3881306",
+  "Q394119",
+  "Q394311",
+  "Q3991837",
+  "Q4008243",
+  "Q41983",
+  "Q41986",
+  "Q429769",
+  "Q45094",
+  "Q466865",
+  "Q5077",
+  "Q524569",
+  "Q546600",
+  "Q548",
+  "Q5566",
+  "Q5568",
+  "Q5602",
+  "Q569068",
+  "Q570008",
+  "Q577026",
+  "Q582675",
+  "Q584",
+  "Q602",
+  "Q63109",
+  "Q643525",
+  "Q6444545",
+  "Q644669",
+  "Q657615",
+  "Q660208",
+  "Q668472",
+  "Q672208",
+  "Q679808",
+  "Q681354",
+  "Q688454",
+  "Q694389",
+  "Q698586",
+  "Q7166886",
+  "Q747929",
+  "Q754718",
+  "Q819278",
+  "Q8343335",
+  "Q8346607",
+  "Q846744",
+  "Q852308",
+  "Q857589",
+  "Q895966",
+  "Q9071816",
+  "Q9072129",
+  "Q907254",
+  "Q9174874",
+  "Q925450",
+  "Q9264025",
+  "Q927195",
+  "Q958359"
+ ],
+ "mouth": {
+  "Q1025074": [
+   "Q14355",
+   "Q2731872"
+  ],
+  "Q103148": [
+   "Q584"
+  ],
+  "Q10362158": [
+   "Q97"
+  ],
+  "Q10362551": [
+   "Q14591"
+  ],
+  "Q10362704": [
+   "Q15671"
+  ],
+  "Q10406526": [
+   "Q326204"
+  ],
+  "Q10525222": [
+   "Q1675882"
+  ],
+  "Q10531310": [
+   "Q1537948"
+  ],
+  "Q10590341": [
+   "Q1537948"
+  ],
+  "Q10593551": [
+   "Q214748"
+  ],
+  "Q10602214": [],
+  "Q1066352": [
+   "Q644669"
+  ],
+  "Q10689505": [
+   "Q10590318"
+  ],
+  "Q1075469": [
+   "Q3216689"
+  ],
+  "Q1076019": [
+   "Q155045"
+  ],
+  "Q1091758": [
+   "Q1644"
+  ],
+  "Q10965": [
+   "Q4918"
+  ],
+  "Q1130403": [
+   "Q548"
+  ],
+  "Q1140852": [
+   "Q1636357"
+  ],
+  "Q115457": [
+   "Q42820"
+  ],
+  "Q11703431": [
+   "Q14756"
+  ],
+  "Q11713978": [
+   "Q1130403"
+  ],
+  "Q118167": [
+   "Q208174"
+  ],
+  "Q11832155": [
+   "Q1331973"
+  ],
+  "Q120189": [
+   "Q2208706"
+  ],
+  "Q12031583": [
+   "Q821992"
+  ],
+  "Q121538": [
+   "Q13234218"
+  ],
+  "Q1242186": [
+   "Q214551"
+  ],
+  "Q1242878": [
+   "Q23798"
+  ],
+  "Q1244834": [
+   "Q13924"
+  ],
+  "Q127596": [
+   "Q708356"
+  ],
+  "Q12767784": [
+   "Q756302"
+  ],
+  "Q12776753": [],
+  "Q13142473": [
+   "Q319041"
+  ],
+  "Q131574": [
+   "Q1644"
+  ],
+  "Q1322211": [
+   "Q857160"
+  ],
+  "Q1331973": [
+   "Q552"
+  ],
+  "Q13370939": [
+   "Q1473319"
+  ],
+  "Q1338024": [
+   "Q173596"
+  ],
+  "Q1354961": [
+   "Q214748"
+  ],
+  "Q14087": [
+   "Q13924"
+  ],
+  "Q1417627": [
+   "Q5602"
+  ],
+  "Q14294": [
+   "Q97"
+  ],
+  "Q14299": [
+   "Q97"
+  ],
+  "Q14305": [
+   "Q117157"
+  ],
+  "Q14311": [
+   "Q4918"
+  ],
+  "Q14353": [
+   "Q2731872"
+  ],
+  "Q14355": [
+   "Q2731872"
+  ],
+  "Q14369": [
+   "Q1653"
+  ],
+  "Q14582": [
+   "Q97"
+  ],
+  "Q14591": [
+   "Q97"
+  ],
+  "Q14608": [
+   "Q14299"
+  ],
+  "Q14617": [
+   "Q14299"
+  ],
+  "Q14653": [
+   "Q14299"
+  ],
+  "Q1466877": [
+   "Q179251"
+  ],
+  "Q1469": [
+   "Q41573",
+   "Q3059070"
+  ],
+  "Q1471": [
+   "Q34640"
+  ],
+  "Q1473319": [
+   "Q202598"
+  ],
+  "Q14755": [
+   "Q14299"
+  ],
+  "Q14757": [
+   "Q14299"
+  ],
+  "Q14761": [
+   "Q14760"
+  ],
+  "Q1477204": [
+   "Q548"
+  ],
+  "Q149182": [
+   "Q1644"
+  ],
+  "Q1507602": [
+   "Q131574"
+  ],
+  "Q153143": [
+   "Q393161"
+  ],
+  "Q1553526": [
+   "Q1908951"
+  ],
+  "Q155841": [
+   "Q1653"
+  ],
+  "Q156237": [
+   "Q60055"
+  ],
+  "Q15656": [
+   "Q97"
+  ],
+  "Q15671": [
+   "Q14294"
+  ],
+  "Q159467": [
+   "Q1653"
+  ],
+  "Q1598984": [
+   "Q45254"
+  ],
+  "Q1636357": [
+   "Q179251"
+  ],
+  "Q163723": [
+   "Q1644"
+  ],
+  "Q163880": [
+   "Q643525"
+  ],
+  "Q1644": [
+   "Q1693",
+   "Q321837",
+   "Q702691"
+  ],
+  "Q1648": [
+   "Q218377"
+  ],
+  "Q1650": [
+   "Q1693"
+  ],
+  "Q1653": [
+   "Q166"
+  ],
+  "Q1658": [
+   "Q79185"
+  ],
+  "Q1663585": [
+   "Q279943"
+  ],
+  "Q1664": [
+   "Q584"
+  ],
+  "Q16661": [
+   "Q14294"
+  ],
+  "Q1667": [
+   "Q584"
+  ],
+  "Q1673": [
+   "Q584"
+  ],
+  "Q1678": [
+   "Q1644"
+  ],
+  "Q1770345": [
+   "Q1673"
+  ],
+  "Q177480": [
+   "Q1670"
+  ],
+  "Q17776": [
+   "Q14309"
+  ],
+  "Q1785545": [
+   "Q104662"
+  ],
+  "Q179251": [
+   "Q1653"
+  ],
+  "Q18612": [
+   "Q4918"
+  ],
+  "Q1866578": [
+   "Q156237"
+  ],
+  "Q1889871": [
+   "Q156237"
+  ],
+  "Q1967185": [
+   "Q369773"
+  ],
+  "Q1967594": [
+   "Q576032"
+  ],
+  "Q200231": [
+   "Q1471"
+  ],
+  "Q201341": [
+   "Q602"
+  ],
+  "Q20142": [
+   "Q4918"
+  ],
+  "Q202598": [
+   "Q1653"
+  ],
+  "Q20357": [
+   "Q10965"
+  ],
+  "Q20380": [
+   "Q10965"
+  ],
+  "Q204040": [
+   "Q171009"
+  ],
+  "Q20481694": [
+   "Q1503349"
+  ],
+  "Q2049877": [
+   "Q15656"
+  ],
+  "Q2063591": [
+   "Q4918"
+  ],
+  "Q208174": [
+   "Q213517"
+  ],
+  "Q2096140": [
+   "Q17952"
+  ],
+  "Q211766": [
+   "Q5077"
+  ],
+  "Q213230": [
+   "Q1653"
+  ],
+  "Q213462": [
+   "Q13924"
+  ],
+  "Q214748": [
+   "Q131716"
+  ],
+  "Q215653": [
+   "Q5077"
+  ],
+  "Q216488": [
+   "Q548"
+  ],
+  "Q217347": [
+   "Q1469"
+  ],
+  "Q2179125": [
+   "Q2111062"
+  ],
+  "Q221200": [
+   "Q548"
+  ],
+  "Q23122": [
+   "Q20380"
+  ],
+  "Q2356515": [
+   "Q688880"
+  ],
+  "Q2370591": [
+   "Q1574296"
+  ],
+  "Q24358": [
+   "Q206975"
+  ],
+  "Q247494": [
+   "Q42820"
+  ],
+  "Q2549387": [
+   "Q659817"
+  ],
+  "Q257575": [
+   "Q848670"
+  ],
+  "Q267911": [
+   "Q1653"
+  ],
+  "Q279943": [
+   "Q131574"
+  ],
+  "Q283969": [
+   "Q643"
+  ],
+  "Q314417": [
+   "Q44729"
+  ],
+  "Q317036": [
+   "Q1653"
+  ],
+  "Q32240418": [
+   "Q458829"
+  ],
+  "Q32253336": [
+   "Q6978986"
+  ],
+  "Q326204": [
+   "Q1584106"
+  ],
+  "Q330256": [
+   "Q1644"
+  ],
+  "Q369773": [
+   "Q202598"
+  ],
+  "Q3854786": [
+   "Q4008243"
+  ],
+  "Q3868494": [
+   "Q5566"
+  ],
+  "Q3868667": [
+   "Q3980128"
+  ],
+  "Q3881306": [
+   "Q2090594"
+  ],
+  "Q394119": [
+   "Q369773"
+  ],
+  "Q394311": [
+   "Q4918"
+  ],
+  "Q3991837": [
+   "Q572191"
+  ],
+  "Q4008243": [],
+  "Q41983": [
+   "Q1471"
+  ],
+  "Q41986": [
+   "Q1693"
+  ],
+  "Q429769": [
+   "Q173596"
+  ],
+  "Q45094": [
+   "Q45254"
+  ],
+  "Q466865": [
+   "Q161051"
+  ],
+  "Q5077": [
+   "Q213517"
+  ],
+  "Q524569": [
+   "Q576032"
+  ],
+  "Q546600": [
+   "Q13712"
+  ],
+  "Q548": [
+   "Q213367"
+  ],
+  "Q5566": [
+   "Q1804710"
+  ],
+  "Q5568": [
+   "Q5566"
+  ],
+  "Q5602": [
+   "Q552"
+  ],
+  "Q569068": [
+   "Q658594"
+  ],
+  "Q570008": [
+   "Q279943"
+  ],
+  "Q577026": [
+   "Q552"
+  ],
+  "Q582675": [
+   "Q1644"
+  ],
+  "Q584": [
+   "Q1693"
+  ],
+  "Q602": [
+   "Q4918"
+  ],
+  "Q63109": [
+   "Q643"
+  ],
+  "Q643525": [
+   "Q1670"
+  ],
+  "Q6444545": [
+   "Q6444540"
+  ],
+  "Q644669": [
+   "Q828570"
+  ],
+  "Q657615": [
+   "Q156237"
+  ],
+  "Q660208": [
+   "Q179251"
+  ],
+  "Q668472": [
+   "Q584"
+  ],
+  "Q672208": [
+   "Q13924"
+  ],
+  "Q679808": [
+   "Q14366",
+   "Q14379"
+  ],
+  "Q681354": [
+   "Q41983"
+  ],
+  "Q688454": [
+   "Q584"
+  ],
+  "Q694389": [
+   "Q643525"
+  ],
+  "Q698586": [
+   "Q4127"
+  ],
+  "Q7166886": [
+   "Q16513"
+  ],
+  "Q747929": [
+   "Q13924"
+  ],
+  "Q754718": [
+   "Q602"
+  ],
+  "Q819278": [
+   "Q1673"
+  ],
+  "Q8343335": [
+   "Q14299"
+  ],
+  "Q8346607": [
+   "Q6980744"
+  ],
+  "Q846744": [
+   "Q576032"
+  ],
+  "Q852308": [
+   "Q603664"
+  ],
+  "Q857589": [
+   "Q572191"
+  ],
+  "Q895966": [
+   "Q504922"
+  ],
+  "Q9071816": [
+   "Q14305"
+  ],
+  "Q9072129": [
+   "Q4918"
+  ],
+  "Q907254": [
+   "Q63109"
+  ],
+  "Q9174874": [
+   "Q1331973"
+  ],
+  "Q925450": [
+   "Q156237"
+  ],
+  "Q9264025": [
+   "Q548"
+  ],
+  "Q927195": [
+   "Q548"
+  ],
+  "Q958359": [
+   "Q131716"
+  ],
+  "Q104662": [],
+  "Q10590318": [],
+  "Q117157": [],
+  "Q131716": [],
+  "Q13234218": [],
+  "Q13712": [
+   "Q38882"
+  ],
+  "Q13924": [],
+  "Q14309": [
+   "Q117157"
+  ],
+  "Q14366": [
+   "Q643"
+  ],
+  "Q14379": [],
+  "Q14756": [
+   "Q14299"
+  ],
+  "Q14760": [
+   "Q14757"
+  ],
+  "Q1503349": [
+   "Q827033"
+  ],
+  "Q1537948": [
+   "Q131716"
+  ],
+  "Q155045": [
+   "Q1644"
+  ],
+  "Q1574296": [],
+  "Q1584106": [],
+  "Q161051": [
+   "Q1967803"
+  ],
+  "Q16513": [
+   "Q14294"
+  ],
+  "Q166": [],
+  "Q1670": [
+   "Q584"
+  ],
+  "Q1675882": [],
+  "Q1693": [],
+  "Q171009": [
+   "Q1653"
+  ],
+  "Q173596": [],
+  "Q17952": [
+   "Q4918"
+  ],
+  "Q1804710": [],
+  "Q1908951": [
+   "Q41983"
+  ],
+  "Q206975": [],
+  "Q2090594": [],
+  "Q2111062": [
+   "Q668156"
+  ],
+  "Q213367": [],
+  "Q213517": [
+   "Q97"
+  ],
+  "Q214551": [
+   "Q13924"
+  ],
+  "Q218377": [],
+  "Q2208706": [],
+  "Q23798": [
+   "Q1471"
+  ],
+  "Q2731872": [],
+  "Q3059070": [],
+  "Q319041": [],
+  "Q3216689": [
+   "Q283969"
+  ],
+  "Q321837": [],
+  "Q34640": [],
+  "Q393161": [
+   "Q152484"
+  ],
+  "Q3980128": [
+   "Q1894499"
+  ],
+  "Q4127": [],
+  "Q41573": [],
+  "Q42820": [],
+  "Q44729": [
+   "Q1678"
+  ],
+  "Q45254": [
+   "Q660208"
+  ],
+  "Q458829": [
+   "Q271112"
+  ],
+  "Q4918": [],
+  "Q504922": [
+   "Q584"
+  ],
+  "Q552": [
+   "Q545",
+   "Q161385"
+  ],
+  "Q572191": [
+   "Q38882"
+  ],
+  "Q576032": [
+   "Q134350"
+  ],
+  "Q60055": [
+   "Q548"
+  ],
+  "Q603664": [
+   "Q828570"
+  ],
+  "Q643": [
+   "Q13924"
+  ],
+  "Q6444540": [],
+  "Q658594": [
+   "Q13924"
+  ],
+  "Q659817": [
+   "Q763066"
+  ],
+  "Q688880": [
+   "Q131574"
+  ],
+  "Q6978986": [
+   "Q2208706"
+  ],
+  "Q6980744": [
+   "Q14311"
+  ],
+  "Q702691": [],
+  "Q708356": [
+   "Q1670"
+  ],
+  "Q756302": [
+   "Q840694"
+  ],
+  "Q79185": [],
+  "Q821992": [
+   "Q1088409"
+  ],
+  "Q828570": [
+   "Q134350"
+  ],
+  "Q848670": [
+   "Q643"
+  ],
+  "Q857160": [
+   "Q60055"
+  ],
+  "Q97": [],
+  "Q1088409": [
+   "Q1644"
+  ],
+  "Q134350": [
+   "Q1653"
+  ],
+  "Q152484": [
+   "Q584"
+  ],
+  "Q161385": [],
+  "Q1894499": [
+   "Q76925"
+  ],
+  "Q1967803": [
+   "Q1650"
+  ],
+  "Q271112": [
+   "Q545"
+  ],
+  "Q38882": [],
+  "Q545": [],
+  "Q668156": [
+   "Q23152"
+  ],
+  "Q763066": [
+   "Q1653"
+  ],
+  "Q827033": [
+   "Q131574"
+  ],
+  "Q840694": [
+   "Q548"
+  ],
+  "Q23152": [
+   "Q23145"
+  ],
+  "Q76925": [],
+  "Q23145": [
+   "Q10965"
+  ]
+ },
+ "names": {
+  "Q1025074": {
+   "labels": {
+    "fr": "Kadagua",
+    "en": "Cadagua",
+    "de": "Cadagua",
+    "es": "Cadagua",
+    "sv": "Cadagua"
+   },
+   "aliases": {
+    "de": [
+     "Kadagua"
+    ],
+    "es": [
+     "Kadagua",
+     "Cadagua (río)",
+     "Rio Cadagua",
+     "Cadagua (rio)"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q103148": {
+   "labels": {
+    "pl": "Lahn",
+    "fr": "Lahn",
+    "es": "Río Lahn",
+    "it": "Lahn",
+    "de": "Lahn",
+    "en": "Lahn",
+    "sv": "Lahn",
+    "pt": "Rio Lahn",
+    "cs": "Lahn",
+    "sk": "Lahn"
+   },
+   "aliases": {
+    "es": [
+     "Rio Lahn",
+     "Lahn"
+    ],
+    "pt": [
+     "Lahn"
+    ],
+    "de": [
+     "Die Lahn"
+    ],
+    "en": [
+     "Lahn (Rhine tributary)"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q10362158": {
+   "labels": {
+    "pt": "Rio Leça",
+    "es": "Río Leça",
+    "en": "Leça River"
+   },
+   "aliases": {
+    "pt": [
+     "Rio leça"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q10362551": {
+   "labels": {
+    "pt": "Rio Selho",
+    "en": "Rio Selho",
+    "de": "Rio Selho",
+    "fr": "Rio Selho"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q10362704": {
+   "labels": {
+    "pt": "Rio Unhais",
+    "de": "Unhais"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q10406526": {
+   "labels": {
+    "sv": "Almaån",
+    "en": "Almaån"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q104662": {
+   "labels": {
+    "pl": "Sund",
+    "fr": "Øresund",
+    "es": "Oresund",
+    "it": "Øresund",
+    "de": "Öresund",
+    "sv": "Öresund",
+    "pt": "Öresund",
+    "sk": "Öresund",
+    "en": "Øresund",
+    "cs": "Öresund"
+   },
+   "aliases": {
+    "fr": [
+     "Oresund",
+     "Öresund",
+     "Détroit du Sund"
+    ],
+    "es": [
+     "Öresund",
+     "Øresund",
+     "Sund",
+     "Estrecho del Sund"
+    ],
+    "it": [
+     "Oresund",
+     "Öresund",
+     "Stretto di Øresund",
+     "Stretto di Oresund",
+     "Oeresund"
+    ],
+    "de": [
+     "Øresund"
+    ],
+    "pt": [
+     "Oresund",
+     "Øresund",
+     "Estreito de Oeresund",
+     "Estreito de Øresund",
+     "Oeresund",
+     "Estreito de Öre",
+     "Estreito de Öresund"
+    ],
+    "sk": [
+     "Oresund"
+    ],
+    "cs": [
+     "Øresund",
+     "Sund",
+     "Oresund"
+    ],
+    "en": [
+     "the Sound",
+     "Öresund",
+     "Oresund"
+    ]
+   },
+   "instance_of": [
+    "Q37901"
+   ]
+  },
+  "Q10525222": {
+   "labels": {
+    "sv": "Holjeån",
+    "en": "Holjeån",
+    "pt": "Rio Holje"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q10531310": {
+   "labels": {
+    "sv": "Häggån"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q10590318": {
+   "labels": {
+    "sv": "Munksjön",
+    "de": "Munksjön",
+    "en": "Munksjön",
+    "fr": "Munksjön",
+    "pt": "Lago Munk"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q23397",
+    "Q30092776"
+   ]
+  },
+  "Q10590341": {
+   "labels": {
+    "sv": "Munkån"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q10593551": {
+   "labels": {
+    "sv": "Mölndalsån",
+    "en": "Mölndalsån",
+    "pt": "Mölndalsån"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q10602214": {
+   "labels": {
+    "sv": "Nordre älv",
+    "pt": "Nordre älv",
+    "en": "Nordre älv"
+   },
+   "aliases": {
+    "en": [
+     "Nordre Älv"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q1066352": {
+   "labels": {
+    "de": "Töpl",
+    "pl": "Topľa",
+    "cs": "Topľa",
+    "sk": "Topľa",
+    "es": "Río Topľa",
+    "it": "Topľa"
+   },
+   "aliases": {
+    "pl": [
+     "Topla"
+    ],
+    "es": [
+     "Rio Topla"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q10689505": {
+   "labels": {
+    "sv": "Tabergsån",
+    "de": "Tabergsån",
+    "en": "Tabergsån"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q1075469": {
+   "labels": {
+    "de": "Olona",
+    "fr": "Olona",
+    "es": "Olona",
+    "en": "Olona",
+    "it": "Olona",
+    "sv": "Olona",
+    "cs": "Olona"
+   },
+   "aliases": {
+    "es": [
+     "río Olona",
+     "rio Olona"
+    ],
+    "it": [
+     "fiume Olona"
+    ],
+    "en": [
+     "Olona river"
+    ],
+    "fr": [
+     "rivière Olona"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q1076019": {
+   "labels": {
+    "cs": "Chomutovka",
+    "de": "Chomutovka",
+    "fr": "Chomutovka",
+    "sk": "Chomutovka",
+    "sv": "Chomutovka",
+    "en": "Chomutovka"
+   },
+   "aliases": {
+    "de": [
+     "Kometau",
+     "Assigbach"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q1088409": {
+   "labels": {
+    "en": "Chrudimka",
+    "cs": "Chrudimka",
+    "de": "Chrudimka",
+    "fr": "Chrudimka",
+    "sk": "Chrudimka",
+    "sv": "Chrudimka",
+    "it": "Chrudimka"
+   },
+   "aliases": {
+    "cs": [
+     "Ohebka",
+     "Stříbrná řeka"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q1091758": {
+   "labels": {
+    "sk": "Cidlina",
+    "en": "Cidlina",
+    "cs": "Cidlina",
+    "de": "Cidlina",
+    "pl": "Cidlina",
+    "fr": "Cidlina",
+    "sv": "Cidlina",
+    "es": "Río Cidlina"
+   },
+   "aliases": {
+    "de": [
+     "Zidlina"
+    ],
+    "pl": [
+     "Cydlina"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q10965": {
+   "labels": {
+    "es": "río Ebro",
+    "fr": "Èbre",
+    "it": "Ebro",
+    "en": "Ebro",
+    "de": "Ebro",
+    "cs": "Ebro",
+    "pl": "Ebro",
+    "pt": "Rio Ebro",
+    "sk": "Ebro",
+    "sv": "Ebro"
+   },
+   "aliases": {
+    "it": [
+     "Ebre"
+    ],
+    "es": [
+     "río Ebro",
+     "Ebro",
+     "Ebre"
+    ],
+    "sv": [
+     "Ebro (vattendrag)"
+    ]
+   },
+   "instance_of": [
+    "Q573344",
+    "Q4022",
+    "Q125941113"
+   ]
+  },
+  "Q1130403": {
+   "labels": {
+    "pt": "Rio Wieprz",
+    "pl": "Wieprz",
+    "fr": "Wieprz",
+    "en": "Wieprz",
+    "es": "Río Wieprz",
+    "de": "Wieprz",
+    "cs": "Wieprz",
+    "it": "Wieprz",
+    "sk": "Wieprz"
+   },
+   "aliases": {
+    "es": [
+     "Wieprz",
+     "Rio Wieprz"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q1140852": {
+   "labels": {
+    "de": "Teplica",
+    "sk": "Teplica",
+    "cs": "Teplica",
+    "en": "Teplica"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q115457": {
+   "labels": {
+    "pl": "Arno",
+    "es": "Arno",
+    "sv": "Arno",
+    "pt": "Rio Arno",
+    "fr": "Arno",
+    "it": "Arno",
+    "de": "Arno",
+    "en": "Arno",
+    "sk": "Arno",
+    "cs": "Arno"
+   },
+   "aliases": {
+    "es": [
+     "Río Arno",
+     "Rio Arno"
+    ],
+    "it": [
+     "fiume Arno"
+    ]
+   },
+   "instance_of": [
+    "Q573344"
+   ]
+  },
+  "Q11703431": {
+   "labels": {
+    "es": "río Sequillo",
+    "fr": "Sequillo",
+    "de": "Sequillo",
+    "sv": "río Sequillo",
+    "en": "río Sequillo",
+    "pt": "Rio Sequillo"
+   },
+   "aliases": {
+    "es": [
+     "Sequillo",
+     "rio Sequillo"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q11713978": {
+   "labels": {
+    "pl": "Irenka",
+    "en": "Irenka"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q117157": {
+   "labels": {
+    "pt": "Golfo de Cádiz",
+    "pl": "Zatoka Kadyksu",
+    "fr": "golfe de Cadix",
+    "es": "Golfo de Cádiz",
+    "en": "Gulf of Cádiz",
+    "it": "Golfo di Cadice",
+    "de": "Golf von Cádiz",
+    "sv": "Cádizbukten",
+    "cs": "Cádizský záliv",
+    "sk": "Cádizský záliv"
+   },
+   "aliases": {
+    "pt": [
+     "Golfo de Cádis"
+    ],
+    "es": [
+     "Golfo de cadiz"
+    ],
+    "de": [
+     "Golf von Cadiz"
+    ],
+    "sv": [
+     "Golfo de Cádiz",
+     "Cadízbukten",
+     "Cadizbukten"
+    ],
+    "en": [
+     "Gulf of Cadiz"
+    ]
+   },
+   "instance_of": [
+    "Q1322134",
+    "Q15069452"
+   ]
+  },
+  "Q118167": {
+   "labels": {
+    "de": "Vézère",
+    "cs": "Vézère",
+    "en": "Vézère",
+    "es": "Río Vézère",
+    "fr": "Vézère",
+    "pt": "Rio Vézère",
+    "sv": "Vézère",
+    "sk": "Vézère",
+    "it": "Vézère",
+    "pl": "Vézère"
+   },
+   "aliases": {
+    "en": [
+     "Vezere"
+    ],
+    "es": [
+     "Rio Vezere"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q11832155": {
+   "labels": {
+    "pl": "Puńcówka",
+    "en": "Puńcówka"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q120189": {
+   "labels": {
+    "de": "Rönne å",
+    "en": "Rönne River",
+    "fr": "Rönne å",
+    "sv": "Rönne å",
+    "pl": "Rönne å"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q12031583": {
+   "labels": {
+    "cs": "Krounka",
+    "en": "Krounka"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q121538": {
+   "labels": {
+    "pl": "Torne",
+    "fr": "Torne",
+    "es": "Río Torne",
+    "it": "Torne",
+    "de": "Torne älv",
+    "sv": "Torne älv",
+    "pt": "Rio Torne",
+    "en": "Torne River",
+    "cs": "Torne"
+   },
+   "aliases": {
+    "pl": [
+     "Tornionjoki"
+    ],
+    "fr": [
+     "Tornéa",
+     "Tornionjoki",
+     "Torne älv"
+    ],
+    "es": [
+     "Rio Torne",
+     "Torne alv",
+     "Torne älv"
+    ],
+    "it": [
+     "Torniojoki",
+     "Tornionjoki",
+     "Torneälven",
+     "Torne älv"
+    ],
+    "de": [
+     "Torne",
+     "Tornionjoki",
+     "Torneälv",
+     "Torneälven"
+    ],
+    "sv": [
+     "Torneälv",
+     "Torneälven",
+     "Tornionjoki",
+     "Torniojoki",
+     "Duortneseatnu",
+     "Tornionväylä"
+    ],
+    "cs": [
+     "Tornionjoki",
+     "Torne älv"
+    ],
+    "en": [
+     "Tornio River",
+     "Tornionjoki",
+     "Torniojoki",
+     "Torne älv",
+     "Torneälv",
+     "Torneälven",
+     "Duortneseatnu",
+     "Tornionväylä"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q1242186": {
+   "labels": {
+    "pl": "Bacchiglione",
+    "fr": "Bacchiglione",
+    "en": "Bacchiglione",
+    "it": "Bacchiglione",
+    "es": "Bacchiglione",
+    "de": "Bacchiglione"
+   },
+   "aliases": {
+    "it": [
+     "fiume Bacchiglione"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q1242878": {
+   "labels": {
+    "pt": "Rio Iton",
+    "de": "Iton",
+    "fr": "Iton",
+    "en": "Iton",
+    "es": "Iton",
+    "pl": "Iton",
+    "it": "Iton"
+   },
+   "aliases": {
+    "pt": [
+     "Iton"
+    ],
+    "es": [
+     "río Iton",
+     "rio Iton"
+    ],
+    "fr": [
+     "Iton rivière"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q1244834": {
+   "labels": {
+    "de": "Livenza",
+    "fr": "Livenza",
+    "it": "Livenza",
+    "en": "Livenza",
+    "es": "Livenza",
+    "cs": "Livenza",
+    "sk": "Livenza",
+    "pl": "Livenza"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q51205815"
+   ]
+  },
+  "Q127596": {
+   "labels": {
+    "de": "Sinn",
+    "en": "Sinn",
+    "it": "Sinn",
+    "fr": "Sinn",
+    "cs": "Sinn",
+    "es": "Sinn",
+    "pl": "Sinn",
+    "pt": "Sinn",
+    "sk": "Sinn",
+    "sv": "Sinn"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q12767784": {
+   "labels": {
+    "sk": "Jakubianka",
+    "cs": "Jakubianka",
+    "en": "Jakubianka",
+    "pl": "Jakubianka"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q12776753": {
+   "labels": {
+    "sk": "Stoličný potok (prítok Čiernej vody)",
+    "en": "Stoličný potok",
+    "de": "Stoličný potok"
+   },
+   "aliases": {
+    "en": [
+     "Stoličný Potok"
+    ]
+   },
+   "instance_of": [
+    "Q47521",
+    "Q4022"
+   ]
+  },
+  "Q13142473": {
+   "labels": {
+    "de": "Alpenrhein",
+    "fr": "Rhin alpin",
+    "en": "Alpine Rhine",
+    "es": "Rin Alpino",
+    "sv": "Rhein",
+    "cs": "Alpský Rýn",
+    "sk": "Rýn",
+    "pl": "Alpenrhein"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022",
+    "Q57208171"
+   ]
+  },
+  "Q131574": {
+   "labels": {
+    "pl": "Wełtawa",
+    "es": "Moldava",
+    "sv": "Vltava",
+    "pt": "Rio Moldava",
+    "fr": "Vltava",
+    "it": "Moldava",
+    "de": "Moldau",
+    "en": "Vltava",
+    "sk": "Vltava",
+    "cs": "Vltava"
+   },
+   "aliases": {
+    "pl": [
+     "Vltava"
+    ],
+    "es": [
+     "Vltava",
+     "Rio Moldava",
+     "Río Moldava",
+     "Rio Vltava",
+     "Moldau",
+     "Río Vltava",
+     "Rio Moldova",
+     "Río Moldova"
+    ],
+    "pt": [
+     "Vltava",
+     "Moldava",
+     "Rio vltava"
+    ],
+    "fr": [
+     "Moldau"
+    ],
+    "it": [
+     "Vltava"
+    ],
+    "de": [
+     "Vltava"
+    ],
+    "sv": [
+     "Vltava (vattendrag i Tjeckien)"
+    ],
+    "en": [
+     "Veltava"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q131716": {
+   "labels": {
+    "pl": "Kattegat",
+    "es": "Categat",
+    "sv": "Kattegatt",
+    "pt": "Kattegat",
+    "fr": "Cattégat",
+    "it": "Kattegat",
+    "de": "Kattegat",
+    "en": "Kattegat",
+    "sk": "Kattegat",
+    "cs": "Kattegat"
+   },
+   "aliases": {
+    "es": [
+     "estrecho de Categat",
+     "Kattegat",
+     "estrecho de Kattegat"
+    ],
+    "sv": [
+     "Kattegat"
+    ],
+    "pt": [
+     "Categate",
+     "Kattegatt"
+    ],
+    "fr": [
+     "Cattegat",
+     "Kattegatt",
+     "Kattegat"
+    ],
+    "it": [
+     "Cattegat"
+    ],
+    "de": [
+     "Kattegatt"
+    ],
+    "cs": [
+     "Kattegatt"
+    ],
+    "en": [
+     "Categat",
+     "Kategat",
+     "t'Schager Rack",
+     "Categate",
+     "Kattegatt",
+     "Cattegat"
+    ]
+   },
+   "instance_of": [
+    "Q37901",
+    "Q1322134"
+   ]
+  },
+  "Q1322211": {
+   "labels": {
+    "de": "Netta",
+    "pl": "Netta",
+    "en": "Netta",
+    "fr": "Netta"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q13234218": {
+   "labels": {
+    "de": "Bottenwiek",
+    "en": "Bothnian Bay",
+    "sv": "Bottenviken",
+    "pl": "Botnik Północny",
+    "fr": "baie de Botnie",
+    "es": "Bahía de Botnia",
+    "pt": "Baía de Bótnia",
+    "cs": "Botnická zátoka",
+    "sk": "Botnický záliv",
+    "it": "Baia di Botnia"
+   },
+   "aliases": {
+    "de": [
+     "Bottenviken",
+     "Perämeri"
+    ],
+    "en": [
+     "Bay of Bothnia",
+     "Bottenviken",
+     "Perämeri",
+     "North Bodom Bay",
+     "Bothnic Bay"
+    ],
+    "sv": [
+     "Perämeri"
+    ],
+    "pl": [
+     "Perämeri",
+     "Bottenviken"
+    ],
+    "es": [
+     "Bahia de Botnia"
+    ]
+   },
+   "instance_of": [
+    "Q1322134"
+   ]
+  },
+  "Q1331973": {
+   "labels": {
+    "pl": "Olza",
+    "sk": "Olše",
+    "fr": "Olza",
+    "en": "Olza",
+    "it": "Olza",
+    "de": "Olsa",
+    "cs": "Olše",
+    "es": "Río Olza"
+   },
+   "aliases": {
+    "sk": [
+     "Olza"
+    ],
+    "de": [
+     "Olše",
+     "Oelsa"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q13370939": {
+   "labels": {
+    "sk": "Čierňanka",
+    "en": "Čierňanka",
+    "de": "Čierňanka",
+    "pl": "Čierňanka"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q1338024": {
+   "labels": {
+    "pt": "Klarälven",
+    "pl": "Klar",
+    "fr": "Klarälven",
+    "es": "Río Klara",
+    "en": "Klarälven",
+    "de": "Klarälven",
+    "cs": "Klarälven",
+    "sv": "Klarälven",
+    "it": "Klarälven"
+   },
+   "aliases": {
+    "pl": [
+     "Klarälven",
+     "Trysilelva"
+    ],
+    "fr": [
+     "Klaralven"
+    ],
+    "es": [
+     "Rio Klara",
+     "Río Klaralven",
+     "Rio Klarälven",
+     "Klaralven",
+     "Klarälven",
+     "Río Klarälven",
+     "Rio Klaralven"
+    ],
+    "de": [
+     "Femundselva",
+     "Isterfossen",
+     "Trysilelva",
+     "Klarälv",
+     "Gløta"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q134350": {
+   "labels": {
+    "pl": "Cisa",
+    "es": "Tisza",
+    "sv": "Tisza",
+    "pt": "Rio Tisza",
+    "fr": "Tisza",
+    "it": "Tibisco",
+    "de": "Theiß",
+    "en": "Tisza",
+    "sk": "Tisa",
+    "cs": "Tisa"
+   },
+   "aliases": {
+    "pl": [
+     "Tisza"
+    ],
+    "es": [
+     "Tibisco",
+     "Tida",
+     "Rio Tisza",
+     "Río Tisza"
+    ],
+    "sv": [
+     "Tysa",
+     "Pathissus",
+     "Tisa",
+     "Tisia",
+     "Theiß",
+     "Theiss",
+     "Tissus"
+    ],
+    "pt": [
+     "Rio Tisa",
+     "Tisa"
+    ],
+    "fr": [
+     "Tisa",
+     "Rivière Tisza",
+     "Theiss"
+    ],
+    "it": [
+     "Fiume Tibisco",
+     "Tisa",
+     "Tisza",
+     "Parthiscus"
+    ],
+    "cs": [
+     "Tisza"
+    ],
+    "en": [
+     "Tisa",
+     "Theiss"
+    ]
+   },
+   "instance_of": [
+    "Q4022",
+    "Q4366834"
+   ]
+  },
+  "Q1354961": {
+   "labels": {
+    "pt": "Säveån",
+    "de": "Säveån",
+    "sv": "Säveån",
+    "en": "Säveån",
+    "es": "Säveån",
+    "fr": "Säveån",
+    "it": "Säveån"
+   },
+   "aliases": {
+    "en": [
+     "Säve river"
+    ]
+   },
+   "instance_of": [
+    "Q3529419",
+    "Q4022"
+   ]
+  },
+  "Q13712": {
+   "labels": {
+    "it": "Tevere",
+    "fr": "Tibre",
+    "en": "Tiber",
+    "de": "Tiber",
+    "es": "río Tíber",
+    "cs": "Tibera",
+    "pl": "Tyber",
+    "pt": "Rio Tibre",
+    "sv": "Tibern",
+    "sk": "Tiber"
+   },
+   "aliases": {
+    "en": [
+     "Tiberis",
+     "Tevere",
+     "Rumon"
+    ],
+    "es": [
+     "Tiber",
+     "Tíber",
+     "Tiberis",
+     "Tevere",
+     "Tibera",
+     "Tiberen",
+     "Tibero",
+     "Tibre",
+     "Tibro",
+     "Tibr",
+     "Tibern",
+     "Tibru",
+     "Tebro"
+    ],
+    "it": [
+     "Tebro"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q13924": {
+   "labels": {
+    "fr": "mer Adriatique",
+    "en": "Adriatic Sea",
+    "de": "Adriatisches Meer",
+    "cs": "Jaderské moře",
+    "es": "mar Adriático",
+    "it": "mare Adriatico",
+    "pl": "Morze Adriatyckie",
+    "pt": "Mar Adriático",
+    "sk": "Jadranské more",
+    "sv": "Adriatiska havet"
+   },
+   "aliases": {
+    "de": [
+     "Adriaraum",
+     "Adriatische",
+     "Adriaküste",
+     "Jadransko More",
+     "Adria"
+    ],
+    "it": [
+     "mar Adriatico",
+     "Adriatico",
+     "Mar Adriatico"
+    ],
+    "en": [
+     "Adria",
+     "Mare Adriatico",
+     "Riviera Adriatica",
+     "Adriatic Riviera",
+     "the Adriatic",
+     "Gulf of Venice",
+     "Gulph of Venice",
+     "Jadran"
+    ],
+    "es": [
+     "Adriatico"
+    ],
+    "cs": [
+     "Jadran",
+     "Adriatické moře"
+    ],
+    "pt": [
+     "Adria"
+    ]
+   },
+   "instance_of": [
+    "Q165",
+    "Q166620"
+   ]
+  },
+  "Q14087": {
+   "labels": {
+    "it": "Tronto",
+    "fr": "Tronto",
+    "en": "Tronto",
+    "de": "Tronto",
+    "es": "Tronto",
+    "pl": "Tronto",
+    "cs": "Tronto",
+    "pt": "Tronto",
+    "sv": "Tronto"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q1417627": {
+   "labels": {
+    "de": "Jeřice",
+    "cs": "Jeřice",
+    "en": "Jeřice"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q14294": {
+   "labels": {
+    "it": "Tago",
+    "fr": "Tage",
+    "en": "Tagus River",
+    "de": "Tajo",
+    "es": "Tajo",
+    "cs": "Tajo",
+    "pl": "Tag",
+    "pt": "Rio Tejo",
+    "sv": "Tajo",
+    "sk": "Tajo"
+   },
+   "aliases": {
+    "it": [
+     "Tajo",
+     "Tejo"
+    ],
+    "de": [
+     "Rio Tejo",
+     "Rio Tajo",
+     "Tagus",
+     "Tejo"
+    ],
+    "pt": [
+     "Tajo",
+     "Tejo",
+     "Rio Tajo"
+    ],
+    "es": [
+     "río Tajo",
+     "rio Tajo",
+     "El Tajo"
+    ],
+    "en": [
+     "Tagus",
+     "Tejo",
+     "Tejo River",
+     "Tajo",
+     "Tajo River"
+    ],
+    "fr": [
+     "Tajo",
+     "Tejo"
+    ]
+   },
+   "instance_of": [
+    "Q4022",
+    "Q125941113",
+    "Q573344"
+   ]
+  },
+  "Q14299": {
+   "labels": {
+    "it": "Duero",
+    "fr": "Douro",
+    "en": "Douro River",
+    "de": "Douro",
+    "es": "Duero",
+    "cs": "Douro",
+    "pl": "Duero",
+    "pt": "Rio Douro",
+    "sv": "Duero",
+    "sk": "Douro"
+   },
+   "aliases": {
+    "it": [
+     "Douro"
+    ],
+    "de": [
+     "Durius",
+     "Rio Douro",
+     "Duoro",
+     "Río Duero"
+    ],
+    "fr": [
+     "Duero"
+    ],
+    "en": [
+     "Duero",
+     "Duero River",
+     "Douro River"
+    ],
+    "es": [
+     "Río Duero"
+    ],
+    "cs": [
+     "Duero"
+    ]
+   },
+   "instance_of": [
+    "Q4022",
+    "Q125941113",
+    "Q573344"
+   ]
+  },
+  "Q14305": {
+   "labels": {
+    "it": "Guadiana",
+    "fr": "Guadiana",
+    "en": "Guadiana",
+    "de": "Guadiana",
+    "es": "río Guadiana",
+    "cs": "Guadiana",
+    "pl": "Gwadiana",
+    "pt": "Guadiana",
+    "sv": "Guadiana",
+    "sk": "Guadiana"
+   },
+   "aliases": {
+    "de": [
+     "Rio Guadiana"
+    ],
+    "pt": [
+     "Odiana",
+     "Rio Guadiana"
+    ],
+    "es": [
+     "rio Guadiana",
+     "Guadiana"
+    ],
+    "en": [
+     "Guadiana River"
+    ]
+   },
+   "instance_of": [
+    "Q15069452",
+    "Q125941113",
+    "Q573344",
+    "Q4022"
+   ]
+  },
+  "Q14309": {
+   "labels": {
+    "it": "Guadalquivir",
+    "fr": "Guadalquivir",
+    "en": "Guadalquivir",
+    "de": "Guadalquivir",
+    "es": "Guadalquivir",
+    "cs": "Guadalquivir",
+    "pl": "Gwadalkiwir",
+    "pt": "Rio Guadalquivir",
+    "sv": "Guadalquivir",
+    "sk": "Guadalquivir"
+   },
+   "aliases": {
+    "es": [
+     "Río Guadalquivir",
+     "Rio Guadalquivir",
+     "Baetis",
+     "Betis"
+    ],
+    "en": [
+     "Baetis river"
+    ]
+   },
+   "instance_of": [
+    "Q4022",
+    "Q125941113",
+    "Q573344"
+   ]
+  },
+  "Q14311": {
+   "labels": {
+    "it": "Júcar",
+    "fr": "Júcar",
+    "en": "Júcar",
+    "de": "Júcar",
+    "es": "Júcar",
+    "pt": "Rio Júcar",
+    "sv": "Júcar",
+    "cs": "Júcar",
+    "pl": "Júcar"
+   },
+   "aliases": {
+    "it": [
+     "Xúquer"
+    ],
+    "de": [
+     "Xúquer",
+     "Riu Xúquer",
+     "Rio Júcar"
+    ],
+    "en": [
+     "Júcar river"
+    ],
+    "es": [
+     "río Júcar"
+    ]
+   },
+   "instance_of": [
+    "Q4022",
+    "Q573344"
+   ]
+  },
+  "Q14353": {
+   "labels": {
+    "it": "Nervión",
+    "fr": "Nervion",
+    "en": "Nervión",
+    "de": "Nervión",
+    "es": "Nervión",
+    "pt": "Rio Nervión",
+    "pl": "Nervión",
+    "sv": "Nerbioi / Nervión",
+    "cs": "Nervión"
+   },
+   "aliases": {
+    "de": [
+     "Ría de Bilbao",
+     "Nervion"
+    ],
+    "es": [
+     "Rio de Nervion",
+     "Nervion"
+    ],
+    "en": [
+     "Nervion"
+    ]
+   },
+   "instance_of": [
+    "Q4022",
+    "Q573344"
+   ]
+  },
+  "Q14355": {
+   "labels": {
+    "it": "Ibaizabal",
+    "fr": "Ibaizabal",
+    "en": "Ibaizabal",
+    "es": "Ibaizábal",
+    "pt": "Rio Ibaizábal",
+    "de": "Ibaizabal"
+   },
+   "aliases": {
+    "it": [
+     "Ibaizábal"
+    ],
+    "es": [
+     "Ibaizabal"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q14366": {
+   "labels": {
+    "de": "Tessin",
+    "en": "Ticino",
+    "fr": "Tessin",
+    "it": "Ticino",
+    "cs": "Ticino",
+    "es": "Tesino",
+    "pl": "Ticino",
+    "pt": "Rio Ticino",
+    "sv": "Ticino"
+   },
+   "aliases": {
+    "en": [
+     "Ticino river"
+    ],
+    "fr": [
+     "Ticino"
+    ],
+    "de": [
+     "Ticino"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q14369": {
+   "labels": {
+    "de": "Inn",
+    "en": "Inn",
+    "fr": "Inn",
+    "it": "Inn",
+    "cs": "Inn",
+    "es": "Eno",
+    "pl": "Inn",
+    "pt": "Rio Inn",
+    "sk": "Inn",
+    "sv": "Inn"
+   },
+   "aliases": {
+    "en": [
+     "Inn river",
+     "Inn River"
+    ],
+    "it": [
+     "Eno"
+    ],
+    "es": [
+     "Inn"
+    ],
+    "de": [
+     "Oenus",
+     "Sela"
+    ],
+    "cs": [
+     "Jin"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q14379": {
+   "labels": {
+    "de": "Lago Maggiore",
+    "en": "Lake Maggiore",
+    "fr": "lac Majeur",
+    "it": "lago Maggiore",
+    "cs": "Lago Maggiore",
+    "es": "Lago Mayor",
+    "pl": "Maggiore",
+    "pt": "Lago Maior",
+    "sk": "Lago Maggiore",
+    "sv": "Lago Maggiore"
+   },
+   "aliases": {
+    "en": [
+     "Lake Verbano",
+     "Lago Maggiore",
+     "Verbano",
+     "Verbannus"
+    ],
+    "de": [
+     "Langensee"
+    ],
+    "it": [
+     "Verbano"
+    ],
+    "fr": [
+     "Verbano"
+    ],
+    "pl": [
+     "Verbano"
+    ],
+    "sv": [
+     "Lago Verbano"
+    ]
+   },
+   "instance_of": [
+    "Q23397",
+    "Q14811181"
+   ]
+  },
+  "Q14582": {
+   "labels": {
+    "it": "Cávado",
+    "en": "Cávado River",
+    "de": "Cávado",
+    "es": "Cávado",
+    "fr": "Cávado",
+    "pt": "Rio Cávado",
+    "sv": "Cávado"
+   },
+   "aliases": {
+    "es": [
+     "Cavado"
+    ],
+    "en": [
+     "Cavado River"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q14591": {
+   "labels": {
+    "it": "Ave",
+    "de": "Ave",
+    "en": "Ave River",
+    "es": "Ave",
+    "fr": "Ave",
+    "pt": "Rio Ave"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q14608": {
+   "labels": {
+    "it": "Támega",
+    "fr": "Tâmega",
+    "en": "Tâmega River",
+    "de": "Tâmega",
+    "es": "Támega",
+    "pt": "Rio Tâmega",
+    "pl": "Tâmega"
+   },
+   "aliases": {
+    "it": [
+     "Tâmega"
+    ],
+    "es": [
+     "Tamega"
+    ],
+    "en": [
+     "Tamega River"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q14617": {
+   "labels": {
+    "it": "Paiva",
+    "en": "Paiva River",
+    "es": "Paiva",
+    "de": "Rio Paiva",
+    "fr": "Paiva",
+    "pt": "Rio Paiva"
+   },
+   "aliases": {
+    "en": [
+     "Rio Paiva"
+    ],
+    "es": [
+     "Río Paiva"
+    ]
+   },
+   "instance_of": [
+    "Q4022",
+    "Q15069452",
+    "Q796174"
+   ]
+  },
+  "Q14653": {
+   "labels": {
+    "it": "Côa",
+    "en": "Côa",
+    "de": "Côa",
+    "es": "Côa",
+    "pl": "Côa",
+    "pt": "Rio Coa",
+    "fr": "Côa",
+    "sv": "Coafloden"
+   },
+   "aliases": {
+    "en": [
+     "Coa River",
+     "Côa River"
+    ],
+    "es": [
+     "Coa"
+    ],
+    "pt": [
+     "Rio Côa"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q1466877": {
+   "labels": {
+    "de": "Třebůvka",
+    "pl": "Třebůvka",
+    "cs": "Třebůvka",
+    "fr": "Třebůvka",
+    "en": "Třebůvka",
+    "sv": "Třebůvka"
+   },
+   "aliases": {
+    "de": [
+     "Mährische Triebe",
+     "Trebuvka"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q1469": {
+   "labels": {
+    "fr": "Loire",
+    "en": "Loire",
+    "de": "Loire",
+    "es": "Loira",
+    "cs": "Loira",
+    "it": "Loira",
+    "pl": "Loara",
+    "pt": "Rio Loire",
+    "sk": "Loira",
+    "sv": "Loire"
+   },
+   "aliases": {
+    "en": [
+     "River Loire",
+     "Loire River"
+    ],
+    "sv": [
+     "Floden Loire"
+    ]
+   },
+   "instance_of": [
+    "Q4022",
+    "Q573344"
+   ]
+  },
+  "Q1471": {
+   "labels": {
+    "fr": "Seine",
+    "en": "Seine",
+    "de": "Seine",
+    "es": "Sena",
+    "it": "Senna",
+    "pt": "Rio Sena",
+    "cs": "Seina",
+    "pl": "Sekwana",
+    "sk": "Seina",
+    "sv": "Seine"
+   },
+   "aliases": {
+    "en": [
+     "river Seine",
+     "Seine River",
+     "the Seine"
+    ],
+    "fr": [
+     "la Seine"
+    ]
+   },
+   "instance_of": [
+    "Q573344",
+    "Q4022"
+   ]
+  },
+  "Q1473319": {
+   "labels": {
+    "de": "Kysuca",
+    "cs": "Kysuca",
+    "en": "Kysuca",
+    "it": "Kysuca",
+    "pl": "Kisuca",
+    "sk": "Kysuca",
+    "fr": "Kysuca"
+   },
+   "aliases": {
+    "pl": [
+     "Kysuca"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q14755": {
+   "labels": {
+    "it": "Tormes",
+    "fr": "Tormes",
+    "en": "Tormes",
+    "de": "Tormes",
+    "es": "Tormes",
+    "pt": "Rio Tormes",
+    "pl": "Tormes",
+    "sv": "Tormes",
+    "cs": "Tormes"
+   },
+   "aliases": {
+    "es": [
+     "río Tormes"
+    ],
+    "en": [
+     "river Tormes"
+    ],
+    "fr": [
+     "rivière Tormes"
+    ],
+    "pt": [
+     "rio Tormes"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q14756": {
+   "labels": {
+    "it": "Valderaduey",
+    "en": "Valderaduey",
+    "es": "Valderaduey",
+    "fr": "Valderaduey",
+    "de": "Río Valderaduey",
+    "pt": "Rio Valderaduey",
+    "sv": "Río Valderaduey"
+   },
+   "aliases": {
+    "en": [
+     "Valderaduey River"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q14757": {
+   "labels": {
+    "it": "Pisuerga",
+    "fr": "Pisuerga",
+    "en": "Pisuerga River",
+    "de": "Pisuerga",
+    "cs": "Pisuerga",
+    "es": "Pisuerga",
+    "pl": "Pisuerga",
+    "pt": "Rio Pisuerga",
+    "sv": "Pisuerga"
+   },
+   "aliases": {
+    "es": [
+     "río Pisuerga"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q14760": {
+   "labels": {
+    "it": "Arlanza",
+    "fr": "Arlanza",
+    "en": "Arlanza River",
+    "de": "Arlanza",
+    "es": "Arlanza",
+    "sv": "Río Arlanza",
+    "pt": "Rio Arlanza",
+    "pl": "Arlanza"
+   },
+   "aliases": {
+    "es": [
+     "río Arlanza"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q14761": {
+   "labels": {
+    "it": "Arlanzón",
+    "fr": "Arlanzón",
+    "en": "Arlanzón River",
+    "de": "Río Arlanzón",
+    "es": "Arlanzón",
+    "cs": "Arlanzón",
+    "pl": "Arlanzón",
+    "sv": "Río Arlanzón",
+    "pt": "Rio Arlanzón"
+   },
+   "aliases": {
+    "es": [
+     "río Arlanzón",
+     "Arlanzon",
+     "rio Arlanzon"
+    ],
+    "en": [
+     "Arlanzon river"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q1477204": {
+   "labels": {
+    "de": "Kamienna",
+    "pl": "Kamienna",
+    "it": "Kamienna",
+    "en": "Kamienna",
+    "fr": "Kamienna",
+    "es": "Kamienna",
+    "cs": "Kamienna"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q149182": {
+   "labels": {
+    "pt": "Rio Schwarze Elster",
+    "pl": "Czarna Elstera",
+    "fr": "Elster noire",
+    "en": "Black Elster",
+    "es": "Río Schwarze Elster",
+    "de": "Schwarze Elster",
+    "cs": "Černý Halštrov",
+    "sv": "Schwarze Elster",
+    "it": "Elster Nera"
+   },
+   "aliases": {
+    "pl": [
+     "Carny Halšter",
+     "Čorny Halštrow",
+     "Schwarze Elster"
+    ],
+    "fr": [
+     "Elster-Noir",
+     "Elster Noir",
+     "Schwarze Elster"
+    ],
+    "es": [
+     "Schwarze Elster",
+     "Rio Schwarze Elster"
+    ],
+    "de": [
+     "Čorny Halštrow"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q1503349": {
+   "labels": {
+    "sk": "Radbuza",
+    "pl": "Radbuza",
+    "fr": "Radbuza",
+    "en": "Radbuza",
+    "de": "Radbuza",
+    "cs": "Radbuza",
+    "es": "Río Radbuza",
+    "sv": "Radbuza",
+    "it": "Radbuza"
+   },
+   "aliases": {
+    "de": [
+     "Radbusa"
+    ],
+    "es": [
+     "Rio Radbuza"
+    ],
+    "en": [
+     "Radbusa"
+    ],
+    "pl": [
+     "Radbusa"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q1507602": {
+   "labels": {
+    "sk": "Otava",
+    "pl": "Otava",
+    "en": "Otava",
+    "es": "Río Otava",
+    "de": "Otava",
+    "cs": "Otava",
+    "fr": "Otava",
+    "sv": "Otava",
+    "it": "Otava"
+   },
+   "aliases": {
+    "es": [
+     "Rio Otava",
+     "Otava"
+    ],
+    "de": [
+     "Wottawa"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q152484": {
+   "labels": {
+    "pt": "Sieg",
+    "pl": "Sieg",
+    "fr": "Sieg",
+    "en": "Sieg",
+    "it": "Sieg",
+    "de": "Sieg",
+    "cs": "Sieg",
+    "sv": "Sieg",
+    "es": "Sieg",
+    "sk": "Sieg"
+   },
+   "aliases": {
+    "pl": [
+     "Sigambrer"
+    ],
+    "de": [
+     "Siegtal",
+     "Siegquelle"
+    ],
+    "pt": [
+     "Rio Sieg"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q153143": {
+   "labels": {
+    "de": "Sülz",
+    "en": "Sülz",
+    "cs": "Sülz",
+    "es": "Sülz",
+    "fr": "Sülz",
+    "it": "Sülz",
+    "pl": "Sülz",
+    "pt": "Sülz",
+    "sk": "Sülz",
+    "sv": "Sülz"
+   },
+   "aliases": {
+    "en": [
+     "Sülz-Bach",
+     "Sülzbach"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q1537948": {
+   "labels": {
+    "pt": "Viskan",
+    "de": "Viskan",
+    "pl": "Viskan",
+    "fr": "Viskan",
+    "en": "Viskan",
+    "it": "Viskan",
+    "sv": "Viskan"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q3529419"
+   ]
+  },
+  "Q155045": {
+   "labels": {
+    "pl": "Ohrza",
+    "fr": "Ohře",
+    "es": "Ohře",
+    "it": "Ohře",
+    "de": "Eger",
+    "sv": "Ohře",
+    "pt": "Rio Ohře",
+    "sk": "Ohře",
+    "en": "Ohře",
+    "cs": "Ohře"
+   },
+   "aliases": {
+    "fr": [
+     "Ohre"
+    ],
+    "es": [
+     "Río Eger",
+     "Rio Eger",
+     "Rio Ohře",
+     "Rio Ohre",
+     "Ohre",
+     "Río Ohře",
+     "Río Ohre"
+    ],
+    "pt": [
+     "Rio Ohre",
+     "Rio Eger"
+    ],
+    "cs": [
+     "Oharka"
+    ],
+    "en": [
+     "Agara"
+    ],
+    "sk": [
+     "Agara",
+     "Ohrza"
+    ],
+    "pl": [
+     "Agara"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q1553526": {
+   "labels": {
+    "de": "Ornain",
+    "en": "Ornain",
+    "es": "Ornain",
+    "fr": "Ornain",
+    "pt": "Ornain",
+    "pl": "Ornain",
+    "it": "Ornain"
+   },
+   "aliases": {
+    "es": [
+     "río Ornain",
+     "rio Ornain"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q155841": {
+   "labels": {
+    "pl": "Lech",
+    "fr": "Lech",
+    "es": "Lech",
+    "it": "Lech",
+    "de": "Lech",
+    "sv": "Lech",
+    "pt": "Rio Lech",
+    "sk": "Lech",
+    "en": "Lech",
+    "cs": "Lech"
+   },
+   "aliases": {
+    "es": [
+     "Rio Lech",
+     "Río Lech"
+    ],
+    "it": [
+     "Fiume Lech"
+    ]
+   },
+   "instance_of": [
+    "Q12099220"
+   ]
+  },
+  "Q156237": {
+   "labels": {
+    "pl": "Bug",
+    "fr": "Bug",
+    "es": "Río Bug Occidental",
+    "it": "Bug Occidentale",
+    "de": "Bug",
+    "en": "Western Bug",
+    "sv": "Västra Bug",
+    "pt": "Rio Bug Ocidental",
+    "cs": "Západní Bug"
+   },
+   "aliases": {
+    "fr": [
+     "Buh",
+     "Boug occidental",
+     "Bug occidental",
+     "Boug"
+    ],
+    "es": [
+     "Bug Occidental",
+     "Río Bug",
+     "Rio Bug Occidental",
+     "Rio Bug"
+    ],
+    "it": [
+     "Buh occidentale"
+    ],
+    "de": [
+     "Westlicher Bug"
+    ],
+    "pt": [
+     "Bug Ocidental",
+     "Rio Bug"
+    ],
+    "en": [
+     "Bug River"
+    ],
+    "cs": [
+     "Západní Buh",
+     "Zachidnyj Buh",
+     "Zachodni Buh"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q15656": {
+   "labels": {
+    "it": "Mondego",
+    "fr": "Mondego",
+    "en": "Mondego River",
+    "de": "Mondego",
+    "es": "Mondego",
+    "pt": "Rio Mondego",
+    "sv": "Mondego",
+    "cs": "Mondego",
+    "pl": "Mondego"
+   },
+   "aliases": {
+    "pt": [
+     "Mondego"
+    ],
+    "en": [
+     "Mondego",
+     "Rio Mondego"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q15671": {
+   "labels": {
+    "it": "Zêzere",
+    "fr": "Zêzere",
+    "en": "Zêzere River",
+    "es": "Cécere",
+    "de": "Rio Zêzere",
+    "pt": "Rio Zêzere",
+    "sv": "Zêzere",
+    "pl": "Zêzere"
+   },
+   "aliases": {
+    "en": [
+     "Zezere River"
+    ],
+    "es": [
+     "Zêzere"
+    ],
+    "pt": [
+     "Zêzere"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q1574296": {
+   "labels": {
+    "de": "Roxen",
+    "en": "Roxen",
+    "fr": "Roxen",
+    "sv": "Roxen",
+    "pl": "Roxen",
+    "pt": "Roxen",
+    "it": "Roxen (lago)",
+    "es": "Roxen"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q23397",
+    "Q30092776"
+   ]
+  },
+  "Q1584106": {
+   "labels": {
+    "en": "Hanö Bay",
+    "de": "Hanöbucht",
+    "sv": "Hanöbukten",
+    "fr": "baie de Hanö",
+    "pl": "Hanöbukten",
+    "pt": "Baía de Hano",
+    "it": "baia di Hanö"
+   },
+   "aliases": {
+    "de": [
+     "Hanöbukten"
+    ],
+    "pl": [
+     "Zatoka Hanöbukten"
+    ],
+    "en": [
+     "Hanöbukten",
+     "Hanö Bight"
+    ]
+   },
+   "instance_of": [
+    "Q17018380"
+   ]
+  },
+  "Q159467": {
+   "labels": {
+    "pl": "Iller",
+    "fr": "Iller",
+    "es": "Iller",
+    "it": "Iller",
+    "de": "Iller",
+    "pt": "Rio Iller",
+    "en": "Iller",
+    "cs": "Iller",
+    "sk": "Iller",
+    "sv": "Iller"
+   },
+   "aliases": {
+    "es": [
+     "Rio Iller",
+     "Río Iller"
+    ],
+    "en": [
+     "River Iller",
+     "Iller River"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q1598984": {
+   "labels": {
+    "de": "Jihlava",
+    "cs": "Jihlava",
+    "en": "Jihlava",
+    "fr": "Jihlava",
+    "sk": "Jihlava",
+    "pl": "Igława",
+    "sv": "Jihlava",
+    "es": "Río Jihlava"
+   },
+   "aliases": {
+    "de": [
+     "Igel"
+    ],
+    "cs": [
+     "Igel"
+    ],
+    "en": [
+     "Igel"
+    ],
+    "es": [
+     "Igel"
+    ],
+    "fr": [
+     "Igel"
+    ],
+    "pl": [
+     "Jihlava",
+     "Igel"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q161051": {
+   "labels": {
+    "pl": "Leine",
+    "fr": "Leine",
+    "it": "Leine",
+    "de": "Leine",
+    "sv": "Leine",
+    "pt": "Rio Leine",
+    "en": "Leine",
+    "cs": "Leine",
+    "es": "Leine",
+    "sk": "Leine"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q161385": {
+   "labels": {
+    "pl": "Zalew Szczeciński",
+    "fr": "lagune de Szczecin",
+    "es": "Laguna de Szczecin",
+    "en": "Szczecin Lagoon",
+    "de": "Stettiner Haff",
+    "cs": "Štětínský záliv",
+    "pt": "Lagoa de Szczecin",
+    "sv": "Oderlagunen",
+    "it": "laguna di Stettino",
+    "sk": "Štetínsky záliv"
+   },
+   "aliases": {
+    "es": [
+     "Bahia de Pomerania",
+     "Stettiner Haff",
+     "Bahia de Szczecin",
+     "Bahía de Szczecin"
+    ],
+    "de": [
+     "Kleines Haff",
+     "Oderhaff",
+     "Großes Haff",
+     "pommersches Haff"
+    ],
+    "it": [
+     "laguna dell'Odra"
+    ]
+   },
+   "instance_of": [
+    "Q3705882"
+   ]
+  },
+  "Q1636357": {
+   "labels": {
+    "de": "Myjava",
+    "cs": "Myjava",
+    "sk": "Myjava",
+    "en": "Myjava",
+    "fr": "Myjava",
+    "es": "Río Myjava",
+    "pl": "Myjava"
+   },
+   "aliases": {
+    "de": [
+     "Miawa",
+     "Miava"
+    ],
+    "es": [
+     "Rio Myjava"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q163723": {
+   "labels": {
+    "de": "Wesenitz",
+    "en": "Wesenitz",
+    "fr": "Wesenitz",
+    "cs": "Wesenitz"
+   },
+   "aliases": {
+    "de": [
+     "Ulmenbach",
+     "Weßnitz"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q163880": {
+   "labels": {
+    "pt": "Rio Pegnitz",
+    "pl": "Pegnitz",
+    "fr": "Pegnitz",
+    "en": "Pegnitz",
+    "es": "Pegnitz",
+    "it": "Pegnitz",
+    "de": "Pegnitz",
+    "sv": "Pegnitz",
+    "cs": "Pegnitz",
+    "sk": "Pegnitz"
+   },
+   "aliases": {
+    "es": [
+     "Rio Pegnitz",
+     "Río Pegnitz"
+    ],
+    "en": [
+     "Pegnitz River"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q1644": {
+   "labels": {
+    "de": "Elbe",
+    "en": "Elbe",
+    "fr": "Elbe",
+    "cs": "Labe",
+    "es": "Elba",
+    "it": "Elba",
+    "pl": "Łaba",
+    "pt": "Rio Elba",
+    "sk": "Labe",
+    "sv": "Elbe"
+   },
+   "aliases": {
+    "en": [
+     "Labe",
+     "Łaba",
+     "Łobjo",
+     "Elba",
+     "Elbe River"
+    ],
+    "es": [
+     "rio Elba",
+     "río Elba",
+     "río Elva",
+     "Elva"
+    ],
+    "sv": [
+     "Labe"
+    ],
+    "de": [
+     "Albim"
+    ]
+   },
+   "instance_of": [
+    "Q4022",
+    "Q1009249"
+   ]
+  },
+  "Q1648": {
+   "labels": {
+    "de": "Ems",
+    "en": "Ems",
+    "fr": "Ems",
+    "cs": "Emže",
+    "es": "río Ems",
+    "it": "Ems",
+    "pl": "Ems",
+    "pt": "Rio Ems",
+    "sv": "Ems",
+    "sk": "Emža"
+   },
+   "aliases": {
+    "es": [
+     "rio Ems"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q1650": {
+   "labels": {
+    "de": "Weser",
+    "en": "Weser",
+    "fr": "Weser",
+    "cs": "Vezera",
+    "es": "Weser",
+    "it": "Weser",
+    "pl": "Wezera",
+    "pt": "Rio Weser",
+    "sv": "Weser",
+    "sk": "Weser"
+   },
+   "aliases": {
+    "en": [
+     "Werser"
+    ],
+    "sk": [
+     "Vesera"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q16513": {
+   "labels": {
+    "it": "Alberche",
+    "en": "Alberche",
+    "de": "Alberche",
+    "es": "Alberche",
+    "fr": "Alberche",
+    "pl": "Alberche",
+    "sv": "Río Alberche",
+    "pt": "Rio Alberche"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q1653": {
+   "labels": {
+    "de": "Donau",
+    "fr": "Danube",
+    "en": "Danube",
+    "it": "Danubio",
+    "cs": "Dunaj",
+    "es": "Danubio",
+    "pl": "Dunaj",
+    "pt": "Rio Danúbio",
+    "sk": "Dunaj",
+    "sv": "Donau"
+   },
+   "aliases": {
+    "en": [
+     "Donau",
+     "Danube River",
+     "River Danube"
+    ],
+    "it": [
+     "Istro"
+    ]
+   },
+   "instance_of": [
+    "Q4022",
+    "Q4366834"
+   ]
+  },
+  "Q1658": {
+   "labels": {
+    "de": "Peene",
+    "en": "Peene",
+    "fr": "Peene",
+    "cs": "Pěna",
+    "it": "Peene",
+    "pl": "Piana",
+    "pt": "Rio Peene",
+    "sv": "Peene",
+    "es": "Peene",
+    "sk": "Peene"
+   },
+   "aliases": {
+    "en": [
+     "Teterower Peene"
+    ],
+    "cs": [
+     "Peene"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q166": {
+   "labels": {
+    "fr": "mer Noire",
+    "en": "Black Sea",
+    "it": "mar Nero",
+    "cs": "Černé moře",
+    "de": "Schwarzes Meer",
+    "es": "mar Negro",
+    "pl": "Morze Czarne",
+    "pt": "Mar Negro",
+    "sk": "Čierne more",
+    "sv": "Svarta havet"
+   },
+   "aliases": {
+    "fr": [
+     "Pont Euxin"
+    ],
+    "en": [
+     "Euxine",
+     "Rucenum mare",
+     "Ponto mare"
+    ]
+   },
+   "instance_of": [
+    "Q1973404"
+   ]
+  },
+  "Q1663585": {
+   "labels": {
+    "de": "Smutná",
+    "cs": "Smutná",
+    "fr": "Smutná",
+    "sv": "Smutná",
+    "en": "Smutná"
+   },
+   "aliases": {
+    "cs": [
+     "Cedron"
+    ],
+    "de": [
+     "Cedron"
+    ],
+    "en": [
+     "Cedron"
+    ],
+    "fr": [
+     "Cedron"
+    ],
+    "sv": [
+     "Cedron"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q1664": {
+   "labels": {
+    "de": "Ruhr",
+    "en": "Ruhr",
+    "fr": "Ruhr",
+    "cs": "Rúr",
+    "es": "río Ruhr",
+    "it": "Ruhr",
+    "pl": "Ruhra",
+    "pt": "Rio Ruhr",
+    "sv": "Ruhr",
+    "sk": "Rúra"
+   },
+   "aliases": {
+    "es": [
+     "rio Ruhr"
+    ],
+    "sk": [
+     "Ruhr"
+    ],
+    "cs": [
+     "Roura"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q16661": {
+   "labels": {
+    "it": "Tiétar",
+    "en": "Tiétar",
+    "de": "Tiétar",
+    "es": "Tiétar",
+    "fr": "Tiétar",
+    "pt": "Rio Tiétar",
+    "sv": "Río Tiétar"
+   },
+   "aliases": {
+    "de": [
+     "Tietar"
+    ],
+    "es": [
+     "Río Tiétar",
+     "Rio Tietar",
+     "Tietar"
+    ],
+    "en": [
+     "Tietar"
+    ]
+   },
+   "instance_of": [
+    "Q4022",
+    "Q15069452"
+   ]
+  },
+  "Q1667": {
+   "labels": {
+    "de": "Mosel",
+    "en": "Moselle",
+    "fr": "Moselle",
+    "cs": "Mosela",
+    "es": "Mosela",
+    "it": "Mosella",
+    "pl": "Mozela",
+    "pt": "Rio Mosela",
+    "sk": "Mosela",
+    "sv": "Mosel"
+   },
+   "aliases": {
+    "es": [
+     "río Mosela",
+     "Moselle",
+     "Mosel",
+     "rio Mosela"
+    ],
+    "en": [
+     "Mosel",
+     "Moselle River",
+     "Mosel River",
+     "Mosella River"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q1670": {
+   "labels": {
+    "de": "Main",
+    "fr": "Main",
+    "en": "Main",
+    "cs": "Mohan",
+    "es": "río Meno",
+    "it": "Meno",
+    "pl": "Men",
+    "pt": "Rio Meno",
+    "sk": "Mohan",
+    "sv": "Main"
+   },
+   "aliases": {
+    "fr": [
+     "Mein"
+    ],
+    "es": [
+     "rio Meno"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q1673": {
+   "labels": {
+    "de": "Neckar",
+    "fr": "Neckar",
+    "en": "Neckar",
+    "it": "Neckar",
+    "cs": "Neckar",
+    "es": "río Neckar",
+    "pl": "Neckar",
+    "pt": "Rio Neckar",
+    "sv": "Neckar",
+    "sk": "Neckar"
+   },
+   "aliases": {
+    "es": [
+     "rio Neckar"
+    ],
+    "en": [
+     "NSU-Fiat"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q1675882": {
+   "labels": {
+    "de": "Ivösjön",
+    "en": "Ivö Lake",
+    "sv": "Ivösjön",
+    "it": "lago di Ivö",
+    "pt": "Ivösjön",
+    "pl": "Ivösjön",
+    "fr": "Ivösjön"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q23397",
+    "Q30092776"
+   ]
+  },
+  "Q1678": {
+   "labels": {
+    "de": "Saale",
+    "fr": "Saale",
+    "en": "Saale",
+    "cs": "Sála",
+    "es": "Saale",
+    "it": "Saale",
+    "pl": "Soława",
+    "pt": "Rio Saale",
+    "sv": "Saale",
+    "sk": "Saale"
+   },
+   "aliases": {
+    "en": [
+     "Saxon Saale",
+     "Thuringian Saale"
+    ],
+    "pl": [
+     "Saale"
+    ],
+    "de": [
+     "Salam"
+    ]
+   },
+   "instance_of": [
+    "Q4022",
+    "Q618123"
+   ]
+  },
+  "Q1693": {
+   "labels": {
+    "de": "Nordsee",
+    "fr": "mer du Nord",
+    "en": "North Sea",
+    "it": "mare del Nord",
+    "cs": "Severní moře",
+    "es": "mar del Norte",
+    "pl": "Morze Północne",
+    "pt": "Mar do Norte",
+    "sk": "Severné more",
+    "sv": "Nordsjön"
+   },
+   "aliases": {
+    "sv": [
+     "Västerhavet"
+    ],
+    "en": [
+     "German Sea",
+     "the North Sea",
+     "German Ocean",
+     "the German Sea",
+     "British Ocean",
+     "the British Ocean",
+     "Cumbric Sea",
+     "Cymbric Sea",
+     "Cimbric Sea"
+    ],
+    "de": [
+     "Deutsches Meer"
+    ]
+   },
+   "instance_of": [
+    "Q165"
+   ]
+  },
+  "Q171009": {
+   "labels": {
+    "pl": "Drawa",
+    "fr": "Drave",
+    "es": "Drava",
+    "it": "Drava",
+    "de": "Drau",
+    "sv": "Drava",
+    "pt": "Rio Drava",
+    "sk": "Dráva",
+    "en": "Drava",
+    "cs": "Dráva"
+   },
+   "aliases": {
+    "pl": [
+     "Drava",
+     "Drau"
+    ],
+    "fr": [
+     "Drava"
+    ],
+    "es": [
+     "Drau",
+     "río Drava",
+     "Drave",
+     "rio Drava"
+    ],
+    "it": [
+     "Dráva",
+     "Drau"
+    ],
+    "de": [
+     "Drava",
+     "Dráva"
+    ],
+    "sv": [
+     "Dráva",
+     "Drau"
+    ],
+    "pt": [
+     "Drava"
+    ],
+    "cs": [
+     "Drau"
+    ],
+    "en": [
+     "Drave"
+    ]
+   },
+   "instance_of": [
+    "Q4022",
+    "Q4366834",
+    "Q108822533"
+   ]
+  },
+  "Q173596": {
+   "labels": {
+    "pl": "Wener",
+    "fr": "Vänern",
+    "es": "lago Vänern",
+    "it": "Vänern",
+    "de": "Vänern",
+    "sv": "Vänern",
+    "pt": "Lago Vänern",
+    "sk": "Vänern",
+    "en": "Vänern",
+    "cs": "Vänern"
+   },
+   "aliases": {
+    "pl": [
+     "Jezioro Wener",
+     "Vänern"
+    ],
+    "fr": [
+     "Vanern",
+     "Lac Vänern",
+     "Vener",
+     "Lac Väner",
+     "Lac Vanern"
+    ],
+    "es": [
+     "Lago Vanern",
+     "Vanern",
+     "Vänern"
+    ],
+    "it": [
+     "Lago Vänern"
+    ],
+    "de": [
+     "Värmlandssjön",
+     "Dalbosjön",
+     "Vänersee"
+    ],
+    "sv": [
+     "Dalbosjön",
+     "Värmlandssjön"
+    ],
+    "pt": [
+     "Vänern"
+    ],
+    "cs": [
+     "Vanern",
+     "Vänernské jezero"
+    ],
+    "en": [
+     "Wener",
+     "Lake Wener"
+    ]
+   },
+   "instance_of": [
+    "Q23397"
+   ]
+  },
+  "Q1770345": {
+   "labels": {
+    "de": "Körsch",
+    "en": "Körsch",
+    "fr": "Körsch"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q177480": {
+   "labels": {
+    "de": "Tauber",
+    "en": "Tauber",
+    "cs": "Tauber",
+    "fr": "Tauber",
+    "pl": "Tauber",
+    "sv": "Tauber",
+    "es": "Tauber",
+    "it": "Tauber",
+    "pt": "Tauber",
+    "sk": "Tauber"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q17776": {
+   "labels": {
+    "it": "Corbones",
+    "es": "Corbones",
+    "en": "Corbones",
+    "fr": "Corbones",
+    "de": "Corbones",
+    "sv": "Río Corbones"
+   },
+   "aliases": {
+    "es": [
+     "rio Corbones",
+     "río Corbones"
+    ],
+    "fr": [
+     "Río Corbones"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q1785545": {
+   "labels": {
+    "de": "Kävlingeån",
+    "en": "Kävlinge River",
+    "sv": "Kävlingeån",
+    "pt": "Kävlingeån",
+    "fr": "Kävlinge",
+    "es": "Río Kävlinge"
+   },
+   "aliases": {
+    "de": [
+     "Kävlingean",
+     "Lödde å"
+    ],
+    "sv": [
+     "Lödde å"
+    ],
+    "en": [
+     "Kävlingeån"
+    ]
+   },
+   "instance_of": [
+    "Q3529419",
+    "Q4022"
+   ]
+  },
+  "Q179251": {
+   "labels": {
+    "pl": "Morawa",
+    "fr": "Morava",
+    "es": "Río Morava",
+    "it": "Morava",
+    "de": "March",
+    "sv": "Morava",
+    "pt": "Rio Morava",
+    "sk": "Morava",
+    "en": "Morava",
+    "cs": "Morava"
+   },
+   "aliases": {
+    "es": [
+     "Rio Morava",
+     "Morava"
+    ],
+    "en": [
+     "Morava river",
+     "Marus"
+    ],
+    "de": [
+     "Morava"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q17952": {
+   "labels": {
+    "it": "Guadiaro",
+    "es": "Guadiaro",
+    "en": "Guadiaro",
+    "fr": "Guadiaro",
+    "de": "Guadiaro",
+    "sv": "Guadiaro",
+    "pt": "Rio Guadiaro",
+    "pl": "Guadiaro"
+   },
+   "aliases": {
+    "sv": [
+     "Río Guadiaro"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q1804710": {
+   "labels": {
+    "de": "Obere Adria",
+    "it": "Alto Adriatico",
+    "es": "Alto Adriático",
+    "en": "Upper Adriatic",
+    "fr": "mer Adriatique supérieure"
+   },
+   "aliases": {
+    "it": [
+     "Adriatico settentrionale"
+    ],
+    "es": [
+     "Adriático septentrional"
+    ],
+    "en": [
+     "Northern Adriatic"
+    ],
+    "fr": [
+     "Adriatique supérieure",
+     "Adriatique nord"
+    ]
+   },
+   "instance_of": [
+    "Q82794",
+    "Q15324"
+   ]
+  },
+  "Q18612": {
+   "labels": {
+    "it": "Segura",
+    "es": "Segura",
+    "cs": "Segura",
+    "de": "Río Segura",
+    "en": "Segura",
+    "fr": "Segura",
+    "pl": "Segura",
+    "pt": "Rio Segura",
+    "sv": "Segura"
+   },
+   "aliases": {
+    "es": [
+     "Río Segura",
+     "Rio Segura",
+     "segura"
+    ],
+    "en": [
+     "Río Segura"
+    ],
+    "fr": [
+     "Río Segura"
+    ]
+   },
+   "instance_of": [
+    "Q4022",
+    "Q573344"
+   ]
+  },
+  "Q1866578": {
+   "labels": {
+    "en": "Liwiec",
+    "de": "Liwiec",
+    "pl": "Liwiec",
+    "fr": "Liwiec",
+    "cs": "Liwiec",
+    "sk": "Liwiec"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q1889871": {
+   "labels": {
+    "de": "Nurzec",
+    "pl": "Nurzec",
+    "en": "Nurzec",
+    "fr": "Nurzec"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q1894499": {
+   "labels": {
+    "fr": "Naviglio del Brenta",
+    "it": "Naviglio del Brenta",
+    "en": "Naviglio del Brenta",
+    "cs": "Naviglio del Brenta"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q12284"
+   ]
+  },
+  "Q1908951": {
+   "labels": {
+    "de": "Saulx",
+    "en": "Saulx",
+    "fr": "Saulx",
+    "pt": "Rio Saulx",
+    "es": "Saulx",
+    "pl": "Saulx",
+    "it": "Saulx"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q1967185": {
+   "labels": {
+    "cs": "Handlovka",
+    "pl": "Handlovka",
+    "sk": "Handlovka",
+    "en": "Handlovka",
+    "de": "Handlovka",
+    "fr": "Handlovka"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q1967594": {
+   "labels": {
+    "sk": "Muráň",
+    "pl": "Muráň",
+    "de": "Muráň",
+    "cs": "Muráň",
+    "en": "Muráň"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q1967803": {
+   "labels": {
+    "cs": "Aller",
+    "de": "Aller",
+    "en": "Aller",
+    "es": "Río Aller",
+    "fr": "Aller",
+    "it": "Aller",
+    "pl": "Aller",
+    "pt": "Rio Aller",
+    "sv": "Aller",
+    "sk": "Aller"
+   },
+   "aliases": {
+    "es": [
+     "Rio Aller"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q200231": {
+   "labels": {
+    "pl": "Oise",
+    "fr": "Oise",
+    "es": "Oise",
+    "it": "Oise",
+    "de": "Oise",
+    "sv": "Oise",
+    "pt": "Rio Oise",
+    "en": "Oise",
+    "cs": "Oise"
+   },
+   "aliases": {
+    "fr": [
+     "Rivière Oise"
+    ],
+    "es": [
+     "río Oise",
+     "rio Oise"
+    ],
+    "pt": [
+     "Oise"
+    ],
+    "en": [
+     "Rivière Oise"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q201341": {
+   "labels": {
+    "pl": "Isère",
+    "fr": "Isère",
+    "es": "Isère",
+    "it": "Isère",
+    "de": "Isère",
+    "sv": "Isère",
+    "pt": "Rio Isère",
+    "sk": "Isère",
+    "en": "Isère",
+    "cs": "Isère"
+   },
+   "aliases": {
+    "fr": [
+     "Isere"
+    ],
+    "es": [
+     "Isere",
+     "río Isère",
+     "río Isere",
+     "rio Isere"
+    ],
+    "de": [
+     "Isere"
+    ],
+    "pt": [
+     "Isère"
+    ],
+    "cs": [
+     "Isere"
+    ],
+    "en": [
+     "Isere"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q20142": {
+   "labels": {
+    "it": "Mijares",
+    "es": "río Mijares",
+    "en": "Mijares River",
+    "de": "Mijares",
+    "fr": "Mijares",
+    "pl": "Mijares",
+    "sv": "Río Mijares"
+   },
+   "aliases": {
+    "it": [
+     "Millars"
+    ],
+    "pl": [
+     "Río Mijares",
+     "Millars",
+     "Riu Millars"
+    ],
+    "en": [
+     "Mijares"
+    ],
+    "es": [
+     "Mijares"
+    ]
+   },
+   "instance_of": [
+    "Q4022",
+    "Q573344"
+   ]
+  },
+  "Q202598": {
+   "labels": {
+    "pl": "Wag",
+    "fr": "Váh",
+    "es": "Río Váh",
+    "it": "Váh",
+    "de": "Waag",
+    "sv": "Waag",
+    "pt": "Rio Váh",
+    "sk": "Váh",
+    "en": "Váh",
+    "cs": "Váh"
+   },
+   "aliases": {
+    "pl": [
+     "Váh"
+    ],
+    "fr": [
+     "Vah",
+     "Waag"
+    ],
+    "es": [
+     "Rio Vah",
+     "Rio Váh",
+     "Váh",
+     "Vah",
+     "Río Vah"
+    ],
+    "it": [
+     "Fiume Váh",
+     "Waag"
+    ],
+    "de": [
+     "Váh",
+     "Vah"
+    ],
+    "sv": [
+     "Vah",
+     "Váh",
+     "Wag"
+    ],
+    "pt": [
+     "Váh"
+    ],
+    "en": [
+     "Vah",
+     "Waag",
+     "Vág"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q20357": {
+   "labels": {
+    "it": "Aragón",
+    "es": "río Aragón",
+    "cs": "Aragón",
+    "de": "Aragón",
+    "en": "Aragón",
+    "fr": "Aragon",
+    "pt": "Rio Aragón",
+    "pl": "Aragón",
+    "sv": "Río Aragón"
+   },
+   "aliases": {
+    "es": [
+     "Aragón",
+     "Río Aragón",
+     "Aragon",
+     "rio Aragon"
+    ],
+    "en": [
+     "Aragon"
+    ],
+    "it": [
+     "Aragona"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q20380": {
+   "labels": {
+    "it": "Jalón",
+    "es": "río Jalón",
+    "de": "Jalón",
+    "en": "Jalón River",
+    "fr": "Jalón",
+    "pt": "Rio Jalón",
+    "sv": "Jalón",
+    "pl": "Jalón"
+   },
+   "aliases": {
+    "es": [
+     "Río de Jalón",
+     "Jalon",
+     "Rio de Jalon",
+     "Rio Jalon",
+     "Jalón"
+    ],
+    "en": [
+     "Río Jalón",
+     "Jalon",
+     "Rio Jalon",
+     "Jalón"
+    ],
+    "it": [
+     "Río Jalón"
+    ],
+    "pt": [
+     "Río Jalón"
+    ],
+    "sv": [
+     "Río Jalón"
+    ],
+    "pl": [
+     "Río Jalón",
+     "Jalon"
+    ]
+   },
+   "instance_of": [
+    "Q4022",
+    "Q125941113"
+   ]
+  },
+  "Q204040": {
+   "labels": {
+    "pl": "Mura",
+    "fr": "Mur",
+    "es": "Río Mura",
+    "it": "Mura",
+    "de": "Mur",
+    "sv": "Mura",
+    "pt": "Rio Mur",
+    "sk": "Mura",
+    "en": "Mur",
+    "cs": "Mura"
+   },
+   "aliases": {
+    "fr": [
+     "Mura"
+    ],
+    "es": [
+     "Rio Mura"
+    ],
+    "it": [
+     "Mur"
+    ],
+    "pt": [
+     "Rio Mura"
+    ],
+    "cs": [
+     "Mur"
+    ],
+    "en": [
+     "Mura"
+    ]
+   },
+   "instance_of": [
+    "Q4022",
+    "Q108822533",
+    "Q4366834"
+   ]
+  },
+  "Q20481694": {
+   "labels": {
+    "de": "Zubřina",
+    "cs": "Zubřina",
+    "en": "Zubřina",
+    "sk": "Zubřina",
+    "sv": "Řubřina"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022",
+    "Q47521"
+   ]
+  },
+  "Q2049877": {
+   "labels": {
+    "en": "Alva River",
+    "pt": "Alva",
+    "es": "Alva",
+    "de": "Alva",
+    "fr": "Alva"
+   },
+   "aliases": {
+    "pt": [
+     "Rio Alva"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q2063591": {
+   "labels": {
+    "de": "Tech",
+    "fr": "Tech",
+    "es": "Tec",
+    "en": "Tech",
+    "it": "Tech",
+    "cs": "Tech",
+    "pl": "Tech"
+   },
+   "aliases": {
+    "fr": [
+     "Vallée du Tech"
+    ],
+    "es": [
+     "río Tec",
+     "Tech",
+     "río Tech",
+     "rio Tec",
+     "rio Tech"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q206975": {
+   "labels": {
+    "pl": "Cieśnina Sycylijska",
+    "fr": "canal de Sicile",
+    "es": "canal de Sicilia",
+    "it": "Stretto di Sicilia",
+    "de": "Straße von Sizilien",
+    "sv": "Siciliensundet",
+    "pt": "Estreito da Sicília",
+    "en": "Strait of Sicily",
+    "cs": "Sicilský průliv",
+    "sk": "Sicílsky prieliv"
+   },
+   "aliases": {
+    "fr": [
+     "détroit de Sicile"
+    ],
+    "es": [
+     "Estrecho de Sicilia"
+    ],
+    "en": [
+     "Stretto di Sicilia",
+     "Strait of Sicilia"
+    ]
+   },
+   "instance_of": [
+    "Q37901"
+   ]
+  },
+  "Q208174": {
+   "labels": {
+    "pl": "Dordogne",
+    "fr": "Dordogne",
+    "es": "Dordoña",
+    "it": "Dordogna",
+    "de": "Dordogne",
+    "sv": "Dordogne",
+    "pt": "Rio Dordogne",
+    "sk": "Dordogne",
+    "en": "Dordogne",
+    "cs": "Dordogne"
+   },
+   "aliases": {
+    "fr": [
+     "Duranius"
+    ],
+    "es": [
+     "río Dordoña",
+     "Dordogne",
+     "río Dordogne",
+     "rio Dordogne"
+    ],
+    "pt": [
+     "Dordogne",
+     "Rio Dordonha"
+    ],
+    "en": [
+     "Duranius"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q2090594": {
+   "labels": {
+    "es": "mar Cantábrico",
+    "fr": "mer Cantabrique",
+    "it": "Mar Cantabrico",
+    "en": "Cantabrian Sea",
+    "de": "Kantabrisches Meer",
+    "cs": "Kantaberské moře",
+    "pt": "Mar Cantábrico",
+    "sv": "Kantabriska sjön"
+   },
+   "aliases": {
+    "es": [
+     "Mar Cantabrico"
+    ]
+   },
+   "instance_of": [
+    "Q204894"
+   ]
+  },
+  "Q2096140": {
+   "labels": {
+    "en": "Guadalevín",
+    "es": "Guadalevín",
+    "it": "Guadalevín",
+    "pl": "Guadaletin",
+    "fr": "Guadalevín",
+    "de": "Guadalevín"
+   },
+   "aliases": {
+    "es": [
+     "Guadalevin"
+    ],
+    "en": [
+     "Guadalevin"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q2111062": {
+   "labels": {
+    "es": "río Flumen",
+    "sv": "Río Flumen",
+    "de": "Río Flumen",
+    "en": "Río Flumen"
+   },
+   "aliases": {
+    "es": [
+     "Rio Flumen",
+     "Flumen"
+    ],
+    "de": [
+     "Flumen"
+    ],
+    "en": [
+     "Flumen"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q211766": {
+   "labels": {
+    "pl": "Lot",
+    "fr": "Lot",
+    "es": "Lot",
+    "it": "Lot",
+    "de": "Lot",
+    "pt": "Rio Lot",
+    "en": "Lot",
+    "cs": "Lot",
+    "sv": "Lot"
+   },
+   "aliases": {
+    "fr": [
+     "Vallée du Lot"
+    ],
+    "es": [
+     "río Lot",
+     "rio Lot"
+    ],
+    "pt": [
+     "Lot"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q213230": {
+   "labels": {
+    "pl": "Hron",
+    "fr": "Hron",
+    "es": "Río Hron",
+    "it": "Hron",
+    "de": "Hron",
+    "sv": "Hron",
+    "pt": "Rio Hron",
+    "sk": "Hron",
+    "en": "Hron",
+    "cs": "Hron"
+   },
+   "aliases": {
+    "es": [
+     "Rio Hron",
+     "Hron"
+    ],
+    "it": [
+     "Fiume Hron"
+    ],
+    "de": [
+     "Gran"
+    ],
+    "pt": [
+     "Hron"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q213367": {
+   "labels": {
+    "pl": "Zatoka Gdańska",
+    "fr": "baie de Gdańsk",
+    "es": "Golfo de Gdansk",
+    "it": "baia di Danzica",
+    "de": "Danziger Bucht",
+    "sv": "Danzigbukten",
+    "pt": "Baía de Gdańsk",
+    "en": "Gdańsk Bay",
+    "cs": "Gdaňský záliv",
+    "sk": "Gdanská zátoka"
+   },
+   "aliases": {
+    "fr": [
+     "Baie de Dantzig",
+     "Golfe Vénédique",
+     "Golfe de Dantzig",
+     "Golfe de Gdansk",
+     "Golfe de Gdańsk",
+     "Bassin de Gdańsk",
+     "Vénédique",
+     "Baie de Gdansk"
+    ],
+    "es": [
+     "Bahia de Gdansk",
+     "Golfo de Gdańsk",
+     "Bahia de Gdańsk",
+     "Bahía de Gdansk",
+     "Bahía de Gdańsk",
+     "Bahía de Danzig",
+     "Bahia de Danzig",
+     "Golfo de Gdan'sk"
+    ],
+    "de": [
+     "Zatoka Gdańska"
+    ],
+    "sv": [
+     "Gdanskbukten"
+    ],
+    "cs": [
+     "Gdaňská zátoka"
+    ],
+    "en": [
+     "Gulf of Gdańsk",
+     "Bay of Gdańsk"
+    ]
+   },
+   "instance_of": [
+    "Q39594"
+   ]
+  },
+  "Q213462": {
+   "labels": {
+    "pl": "Piawa",
+    "fr": "Piave",
+    "es": "Piave",
+    "it": "Piave",
+    "de": "Piave",
+    "sv": "Piave",
+    "pt": "Rio Piave",
+    "sk": "Piava",
+    "en": "Piave",
+    "cs": "Piava"
+   },
+   "aliases": {
+    "pl": [
+     "Piave"
+    ],
+    "es": [
+     "río Piave",
+     "rio Piave"
+    ],
+    "it": [
+     "Fiume Piave",
+     "Fiume Sacro alla Patria"
+    ],
+    "sv": [
+     "Piavefloden"
+    ],
+    "pt": [
+     "Piave"
+    ],
+    "cs": [
+     "Piave",
+     "Plavá"
+    ],
+    "de": [
+     "Ploden"
+    ]
+   },
+   "instance_of": [
+    "Q4022",
+    "Q1973416"
+   ]
+  },
+  "Q213517": {
+   "labels": {
+    "pl": "Żyronda",
+    "fr": "estuaire de la Gironde",
+    "es": "Gironda",
+    "it": "Estuario della Gironda",
+    "de": "Gironde",
+    "pt": "Estuário da Gironda",
+    "en": "Gironde estuary",
+    "cs": "Gironde",
+    "sv": "Girondeestuariet"
+   },
+   "aliases": {
+    "fr": [
+     "Gironde"
+    ],
+    "es": [
+     "estuario de la Gironda",
+     "estuario de la Gironde",
+     "estuario de Gironda",
+     "La Gironda"
+    ],
+    "pt": [
+     "Estuário do Garona"
+    ]
+   },
+   "instance_of": [
+    "Q47053",
+    "Q15069452"
+   ]
+  },
+  "Q214551": {
+   "labels": {
+    "fr": "Brenta",
+    "es": "Brenta",
+    "it": "Brenta",
+    "de": "Brenta",
+    "sv": "Brenta",
+    "en": "Brenta",
+    "cs": "Brenta",
+    "pl": "Brenta"
+   },
+   "aliases": {
+    "es": [
+     "río Brenta",
+     "rio Brenta"
+    ],
+    "it": [
+     "fiume Brenta"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q214748": {
+   "labels": {
+    "pl": "Göta älv",
+    "fr": "Göta älv",
+    "es": "Río Göta",
+    "it": "Göta älv",
+    "de": "Göta älv",
+    "sv": "Göta älv",
+    "pt": "Göta älv",
+    "en": "Göta älv",
+    "cs": "Göta"
+   },
+   "aliases": {
+    "pl": [
+     "Göta",
+     "Göta alv"
+    ],
+    "fr": [
+     "Gothelbe",
+     "Gota alv"
+    ],
+    "es": [
+     "Göta Älv",
+     "Göta",
+     "Gota",
+     "Göta alv",
+     "Rio Gota",
+     "Río Gota",
+     "Rio Göta",
+     "Gota älv",
+     "Gota alv"
+    ],
+    "de": [
+     "Götaälv"
+    ],
+    "sv": [
+     "Göta Älvdalen",
+     "Götaälven",
+     "Gautelfr"
+    ],
+    "pt": [
+     "Göta älven"
+    ],
+    "cs": [
+     "Göta älv"
+    ],
+    "en": [
+     "Göta River",
+     "Göta Älv"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q215653": {
+   "labels": {
+    "pl": "Tarn",
+    "fr": "Tarn",
+    "es": "Tarn",
+    "it": "Tarn",
+    "de": "Tarn",
+    "sv": "Tarn",
+    "pt": "Rio Tarn",
+    "en": "Tarn",
+    "cs": "Tarn"
+   },
+   "aliases": {
+    "es": [
+     "río Tarn",
+     "rio Tarn"
+    ],
+    "pt": [
+     "Tarn"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q216488": {
+   "labels": {
+    "pl": "San",
+    "fr": "San",
+    "es": "Río San",
+    "it": "San",
+    "de": "San",
+    "sv": "San",
+    "pt": "Rio San",
+    "sk": "San",
+    "en": "San",
+    "cs": "San"
+   },
+   "aliases": {
+    "es": [
+     "San",
+     "Rio San"
+    ],
+    "cs": [
+     "Sjan"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q217347": {
+   "labels": {
+    "pl": "Indre",
+    "fr": "Indre",
+    "es": "Indre",
+    "it": "Indre",
+    "de": "Indre",
+    "en": "Indre River",
+    "pt": "Rio Indre"
+   },
+   "aliases": {
+    "es": [
+     "río Indre",
+     "rio Indre"
+    ],
+    "pt": [
+     "Indre"
+    ],
+    "en": [
+     "Indre"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q2179125": {
+   "labels": {
+    "de": "Río Isuela",
+    "es": "río Isuela",
+    "en": "Isuela",
+    "fr": "Isuela",
+    "it": "Isuela",
+    "sv": "Río Isuela"
+   },
+   "aliases": {
+    "es": [
+     "Isuela",
+     "Isuela (provincia de Huesca)",
+     "Rio Isuela (Huesca)",
+     "Río Isuela (Huesca)"
+    ],
+    "en": [
+     "Río Isuela",
+     "river Isuela",
+     "Isuela river"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q218377": {
+   "labels": {
+    "pl": "Dollart",
+    "fr": "Dollard",
+    "en": "Dollart",
+    "de": "Dollart",
+    "sv": "Dollart",
+    "it": "Dollard",
+    "es": "Dollard"
+   },
+   "aliases": {
+    "fr": [
+     "Dollart"
+    ],
+    "sv": [
+     "Dollard"
+    ],
+    "en": [
+     "Dollart Zee"
+    ]
+   },
+   "instance_of": [
+    "Q39594",
+    "Q15239622"
+   ]
+  },
+  "Q2208706": {
+   "labels": {
+    "sv": "Skälderviken",
+    "en": "Skälder Bay"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q39594"
+   ]
+  },
+  "Q221200": {
+   "labels": {
+    "cs": "Wisłoka",
+    "de": "Wisłoka",
+    "en": "Wisłoka",
+    "pl": "Wisłoka",
+    "it": "Wisłoka",
+    "fr": "Wisłoka",
+    "es": "Wisłoka"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q23122": {
+   "labels": {
+    "it": "Jiloca",
+    "es": "río Jiloca",
+    "en": "Jiloca",
+    "fr": "rivière Jiloca",
+    "de": "Jiloca",
+    "sv": "Río Jiloca"
+   },
+   "aliases": {
+    "es": [
+     "Jiloca",
+     "rio Jiloca",
+     "río Cella",
+     "Cella"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q23145": {
+   "labels": {
+    "it": "Segre",
+    "es": "Segre",
+    "cs": "Segre",
+    "de": "Segre",
+    "en": "Segre",
+    "fr": "Sègre",
+    "pl": "Segre",
+    "pt": "Rio Segre",
+    "sv": "Segre"
+   },
+   "aliases": {
+    "en": [
+     "Sicoris"
+    ]
+   },
+   "instance_of": [
+    "Q4022",
+    "Q125941113"
+   ]
+  },
+  "Q23152": {
+   "labels": {
+    "it": "Cinca",
+    "en": "Cinca River",
+    "es": "Cinca",
+    "de": "Cinca",
+    "fr": "Cinca",
+    "pl": "Cinca",
+    "sv": "Río Cinca"
+   },
+   "aliases": {
+    "es": [
+     "Río Cinca"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q2356515": {
+   "labels": {
+    "cs": "Stropnice",
+    "de": "Strobnitz",
+    "fr": "Stropnice",
+    "sv": "Stropnice",
+    "en": "Stropnice"
+   },
+   "aliases": {
+    "de": [
+     "Stropnice"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q2370591": {
+   "labels": {
+    "de": "Svartån (Roxen)",
+    "sv": "Svartån",
+    "en": "Svartån",
+    "pt": "Rio Negro",
+    "es": "Svartån"
+   },
+   "aliases": {
+    "sv": [
+     "Svartån, Småland",
+     "Svartån (Östergötland)"
+    ]
+   },
+   "instance_of": [
+    "Q3529419",
+    "Q4022"
+   ]
+  },
+  "Q23798": {
+   "labels": {
+    "es": "río Eure",
+    "en": "Eure",
+    "de": "Eure",
+    "fr": "Eure",
+    "it": "Eure",
+    "pt": "Rio Eure",
+    "pl": "Eure (rzeka)",
+    "cs": "Eure"
+   },
+   "aliases": {
+    "es": [
+     "Eure"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q24358": {
+   "labels": {
+    "de": "Imera Meridionale",
+    "pl": "Salso",
+    "es": "Salso",
+    "en": "Salso",
+    "it": "Imera meridionale",
+    "fr": "Imera méridionale",
+    "cs": "Salso"
+   },
+   "aliases": {
+    "pl": [
+     "Imera Meridionale"
+    ],
+    "es": [
+     "Río Imera Meridionale",
+     "Imera Meridionale",
+     "Rio Imera Meridionale"
+    ],
+    "en": [
+     "Imera Meridionale",
+     "Salso River",
+     "Himera river (south)"
+    ],
+    "it": [
+     "Himeras",
+     "Imera Meridionale - Salso"
+    ],
+    "fr": [
+     "Himère",
+     "Imera",
+     "Salso"
+    ],
+    "de": [
+     "Salso"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q247494": {
+   "labels": {
+    "de": "Serchio",
+    "fr": "Serchio",
+    "es": "Serchio",
+    "en": "Serchio",
+    "sv": "Serchio",
+    "it": "Serchio",
+    "pt": "Rio Serchio",
+    "cs": "Serchio",
+    "pl": "Serchio"
+   },
+   "aliases": {
+    "es": [
+     "río Serchio",
+     "rio Serchio"
+    ],
+    "it": [
+     "Auser"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q2549387": {
+   "labels": {
+    "de": "Warme Fischa",
+    "en": "Warme Fischa",
+    "sv": "Fischabach"
+   },
+   "aliases": {
+    "de": [
+     "Hammerbach",
+     "Fischabach"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q257575": {
+   "labels": {
+    "en": "Mella",
+    "it": "Mella",
+    "fr": "Mella",
+    "de": "Mella",
+    "es": "Río Mella",
+    "cs": "Mella"
+   },
+   "aliases": {
+    "es": [
+     "Rio Mella"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q267911": {
+   "labels": {
+    "cs": "Ilz",
+    "de": "Ilz",
+    "en": "Ilz",
+    "fr": "Ilz",
+    "sk": "Ilz",
+    "pl": "Ilz",
+    "es": "Ilz",
+    "it": "Ilz",
+    "pt": "Ilz",
+    "sv": "Ilz"
+   },
+   "aliases": {
+    "de": [
+     "Ilz (Donau)"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q271112": {
+   "labels": {
+    "fr": "Ångermanälven",
+    "de": "Ångermanälven",
+    "pt": "Ångermanälven",
+    "sv": "Ångermanälven",
+    "it": "Ångermanälven",
+    "pl": "Ångermanälven",
+    "cs": "Ångermanälven",
+    "es": "Río Ångerman",
+    "en": "Ångermanälven"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q2731872": {
+   "labels": {
+    "pt": "Ria de Bilbau",
+    "fr": "Ria de Bilbao",
+    "es": "Ría de Bilbao",
+    "en": "Estuary of Bilbao",
+    "sv": "Bilboko itsasadarra / Ría de Bilbao"
+   },
+   "aliases": {
+    "pt": [
+     "Ria do Nervión"
+    ],
+    "es": [
+     "Ría del Nervión",
+     "Ria del Nervion",
+     "Ría del Ibaizabal",
+     "Ría del Nervion",
+     "Ria de bilbao",
+     "Ria del Ibaizabal",
+     "Ria del Nervión"
+    ]
+   },
+   "instance_of": [
+    "Q554394",
+    "Q47053"
+   ]
+  },
+  "Q279943": {
+   "labels": {
+    "pl": "Lužnice",
+    "sk": "Lužnice",
+    "fr": "Lužnice",
+    "es": "Río Lužnice",
+    "en": "Lužnice",
+    "de": "Lainsitz",
+    "cs": "Lužnice",
+    "sv": "Lainsitz",
+    "it": "Lužnice (fiume)"
+   },
+   "aliases": {
+    "es": [
+     "Rio Lužnice",
+     "Rio Luznice",
+     "Río Luznice",
+     "Lainsitz"
+    ],
+    "cs": [
+     "Stará řeka",
+     "Lainsitz"
+    ],
+    "sv": [
+     "Lužnice",
+     "Lužnice (vattendrag)",
+     "Stará řeka"
+    ],
+    "fr": [
+     "Lainsitz"
+    ],
+    "de": [
+     "Lužnice"
+    ],
+    "en": [
+     "Lainsitz"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q283969": {
+   "labels": {
+    "de": "Lambro",
+    "cs": "Lambro",
+    "en": "Lambro",
+    "es": "Lambro",
+    "fr": "Lambro",
+    "it": "Lambro",
+    "sv": "Lambro",
+    "pl": "Lambro (dopływ Padu)"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q3059070": {
+   "labels": {
+    "fr": "estuaire de la Loire",
+    "en": "Loire estuary"
+   },
+   "aliases": {
+    "en": [
+     "estuary of Loire"
+    ]
+   },
+   "instance_of": [
+    "Q47053",
+    "Q15069452"
+   ]
+  },
+  "Q314417": {
+   "labels": {
+    "de": "Göltzsch",
+    "pl": "Göltzsch",
+    "en": "Göltzsch",
+    "fr": "Göltzsch"
+   },
+   "aliases": {
+    "de": [
+     "Unteres Göltzschtal",
+     "Göltzschtal"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q317036": {
+   "labels": {
+    "pl": "Regen",
+    "fr": "Regen",
+    "es": "Regen",
+    "en": "Regen",
+    "it": "Regen",
+    "de": "Regen",
+    "cs": "Řezná",
+    "pt": "Rio Regen",
+    "sv": "Regen"
+   },
+   "aliases": {
+    "es": [
+     "Rio Regen",
+     "Río Regen"
+    ],
+    "de": [
+     "Regental"
+    ],
+    "cs": [
+     "Schwarzer Regen",
+     "Grosser Regen",
+     "Regen"
+    ],
+    "sv": [
+     "Großer Regen",
+     "Schwarzer Regen"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q319041": {
+   "labels": {
+    "de": "Obersee",
+    "pl": "Ober",
+    "fr": "Obersee",
+    "en": "Obersee",
+    "sv": "Obersee",
+    "es": "Lago Ober",
+    "cs": "Obersee"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q3267675"
+   ]
+  },
+  "Q3216689": {
+   "labels": {
+    "fr": "Lambro méridional",
+    "it": "Lambro Meridionale",
+    "en": "Lambro Meridionale"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q12284"
+   ]
+  },
+  "Q321837": {
+   "labels": {
+    "fr": "baie Allemande",
+    "en": "German Bight",
+    "es": "bahía Alemana",
+    "de": "Deutsche Bucht",
+    "sv": "Tyska bukten",
+    "it": "Baia Tedesca",
+    "pl": "Zatoka Niemiecka",
+    "cs": "Německý záliv"
+   },
+   "aliases": {
+    "fr": [
+     "Duitse Bocht",
+     "Dútske bocht",
+     "Tyske Bugt",
+     "Deutsche Bucht"
+    ],
+    "de": [
+     "German Bight"
+    ],
+    "sv": [
+     "Tyskabukten"
+    ],
+    "es": [
+     "Deutsche Bucht",
+     "bahia Alemana"
+    ],
+    "en": [
+     "Deutsche Bucht"
+    ]
+   },
+   "instance_of": [
+    "Q39594",
+    "Q17018380"
+   ]
+  },
+  "Q32240418": {
+   "labels": {
+    "en": "Gideån",
+    "sv": "Gideån"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q32253336": {
+   "labels": {
+    "en": "Humlebäcken"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q326204": {
+   "labels": {
+    "de": "Helge å",
+    "pl": "Helge å",
+    "en": "Helge å",
+    "sv": "Helge å",
+    "fr": "Helge"
+   },
+   "aliases": {
+    "de": [
+     "Helge a",
+     "Helgeån"
+    ],
+    "sv": [
+     "Helga å"
+    ],
+    "fr": [
+     "Helge å"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q330256": {
+   "labels": {
+    "sk": "Úpa",
+    "en": "Úpa",
+    "cs": "Úpa",
+    "de": "Úpa",
+    "pl": "Úpa",
+    "fr": "Úpa",
+    "sv": "Úpa"
+   },
+   "aliases": {
+    "de": [
+     "Aupa"
+    ],
+    "en": [
+     "Upa"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q34640": {
+   "labels": {
+    "pl": "Kanał La Manche",
+    "es": "canal de la Mancha",
+    "sv": "Engelska kanalen",
+    "pt": "Canal da Mancha",
+    "fr": "Manche",
+    "it": "la Manica",
+    "de": "Ärmelkanal",
+    "en": "English Channel",
+    "sk": "Lamanšský prieliv",
+    "cs": "Lamanšský průliv"
+   },
+   "aliases": {
+    "pl": [
+     "Kanał Angielski"
+    ],
+    "es": [
+     "mar de la Mancha"
+    ],
+    "pt": [
+     "Canal Inglês",
+     "Canal Britânico",
+     "Mar da Mancha"
+    ],
+    "fr": [
+     "Mer Manche",
+     "Mer de la Manche"
+    ],
+    "it": [
+     "Stretto della Manica",
+     "Canale della manica"
+    ],
+    "de": [
+     "Ärmel Kanal"
+    ],
+    "sk": [
+     "Lamanšský kanál"
+    ],
+    "cs": [
+     "Lamanšský kanál",
+     "Kanál La Manche",
+     "Průliv La Manche",
+     "Anglický kanál"
+    ],
+    "en": [
+     "the Channel",
+     "British Ocean",
+     "Britannic Ocean",
+     "the English Channel",
+     "British Channel"
+    ]
+   },
+   "instance_of": [
+    "Q37901",
+    "Q165"
+   ]
+  },
+  "Q369773": {
+   "labels": {
+    "cs": "Nitra",
+    "de": "Nitra",
+    "en": "Nitra",
+    "es": "Río Nitra",
+    "fr": "Nitra",
+    "it": "Nitra",
+    "pl": "Nitra",
+    "sk": "Nitra",
+    "sv": "Nitra (flod)"
+   },
+   "aliases": {
+    "es": [
+     "Rio Nitra"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q3854786": {
+   "labels": {
+    "it": "Meolo",
+    "en": "Meolo"
+   },
+   "aliases": {
+    "it": [
+     "Fiume Meolo"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q3868494": {
+   "labels": {
+    "it": "Musestre",
+    "en": "Musestre River"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q3868667": {
+   "labels": {
+    "it": "Muson Vecchio"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q51205815"
+   ]
+  },
+  "Q3881306": {
+   "labels": {
+    "en": "Oiartzun",
+    "it": "Oiartzun",
+    "es": "Oiartzun",
+    "fr": "Oiartzun",
+    "sv": "Oiartzun"
+   },
+   "aliases": {
+    "es": [
+     "Río Oyarzun"
+    ],
+    "en": [
+     "Oiartzun River"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q38882": {
+   "labels": {
+    "pl": "Morze Tyrreńskie",
+    "es": "mar Tirreno",
+    "sv": "Tyrrenska havet",
+    "pt": "Mar Tirreno",
+    "fr": "mer Tyrrhénienne",
+    "it": "mar Tirreno",
+    "de": "Tyrrhenisches Meer",
+    "en": "Tyrrhenian Sea",
+    "sk": "Tyrrhenské more",
+    "cs": "Tyrhénské moře"
+   },
+   "aliases": {
+    "es": [
+     "El Tirreno",
+     "Tirreno"
+    ],
+    "sv": [
+     "Tyrrhenska havet"
+    ],
+    "pt": [
+     "Tirreno"
+    ],
+    "fr": [
+     "mer Tyrrhenienne",
+     "Tyrrhénien"
+    ],
+    "it": [
+     "Mare Tirreno",
+     "Tirreno"
+    ],
+    "de": [
+     "Mare Tyrrhenum"
+    ],
+    "sk": [
+     "Mare Tirreno"
+    ],
+    "cs": [
+     "Tyrrhenské moře"
+    ]
+   },
+   "instance_of": [
+    "Q165"
+   ]
+  },
+  "Q393161": {
+   "labels": {
+    "de": "Agger",
+    "en": "Agger",
+    "cs": "Agger",
+    "fr": "Agger",
+    "es": "Agger",
+    "it": "Agger",
+    "pl": "Agger",
+    "pt": "Agger",
+    "sk": "Agger",
+    "sv": "Agger"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q394119": {
+   "labels": {
+    "en": "Žitava",
+    "de": "Žitava",
+    "sk": "Žitava",
+    "cs": "Žitava",
+    "pl": "Žitava",
+    "fr": "Žitava",
+    "it": "Žitava"
+   },
+   "aliases": {
+    "de": [
+     "Zsitva",
+     "Zitava"
+    ],
+    "pl": [
+     "Stara Žitava",
+     "Zitava"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q394311": {
+   "labels": {
+    "fr": "Agly",
+    "en": "Agly",
+    "pl": "Agly",
+    "de": "Agly",
+    "es": "Agly",
+    "cs": "Agly",
+    "it": "Agly"
+   },
+   "aliases": {
+    "fr": [
+     "Vallée de l'Agly"
+    ],
+    "es": [
+     "Aglí",
+     "Agli"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q3980128": {
+   "labels": {
+    "it": "Taglio Nuovo",
+    "en": "Canale di Mirano",
+    "fr": "Canale di Mirano"
+   },
+   "aliases": {
+    "it": [
+     "Canale di Mirano",
+     "Canale Taglio",
+     "Canale Taglio di Mirano"
+    ]
+   },
+   "instance_of": [
+    "Q12284"
+   ]
+  },
+  "Q3991837": {
+   "labels": {
+    "it": "Titerno",
+    "en": "Titerno"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q4008243": {
+   "labels": {
+    "it": "Vallio",
+    "en": "Vallio"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q4127": {
+   "labels": {
+    "de": "Bodensee",
+    "fr": "lac de Constance",
+    "en": "Lake Constance",
+    "it": "lago di Costanza",
+    "cs": "Bodamské jezero",
+    "es": "lago de Constanza",
+    "pl": "Jezioro Bodeńskie",
+    "pt": "lago de Constança",
+    "sk": "Bodamské jazero",
+    "sv": "Bodensjön"
+   },
+   "aliases": {
+    "it": [
+     "lago Bodanico"
+    ],
+    "fr": [
+     "Bodensee"
+    ],
+    "en": [
+     "Bodensee",
+     "Lac de Constance",
+     "Lake Boden"
+    ],
+    "sv": [
+     "Lac de Constance",
+     "Konstanzsjön"
+    ],
+    "de": [
+     "Schwäbisches Meer"
+    ],
+    "es": [
+     "Bodensee",
+     "Constanza"
+    ],
+    "pl": [
+     "Bodensee"
+    ]
+   },
+   "instance_of": [
+    "Q14811181",
+    "Q3267675",
+    "Q3488975",
+    "Q11726979",
+    "Q3293106",
+    "Q1267889"
+   ]
+  },
+  "Q41573": {
+   "labels": {
+    "pl": "Zatoka Biskajska",
+    "es": "golfo de Vizcaya",
+    "sv": "Biscayabukten",
+    "pt": "Golfo da Biscaia",
+    "fr": "golfe de Gascogne",
+    "it": "Golfo di Biscaglia",
+    "de": "Biskaya",
+    "en": "Bay of Biscay",
+    "sk": "Biskajský záliv",
+    "cs": "Biskajský záliv"
+   },
+   "aliases": {
+    "es": [
+     "Golf de gascogne",
+     "Golfo de Bizkaia",
+     "Golfo de Gascunya",
+     "Golfo de Bizcaya",
+     "Golfo de Gascuña",
+     "Golfo de Bizcaia"
+    ],
+    "sv": [
+     "Biscajabukten",
+     "Biskajabukten",
+     "Biskayabukten",
+     "Spanska sjön"
+    ],
+    "pt": [
+     "Golfo de gascogne",
+     "Faixa Cantábrica",
+     "Golfo da gasconha",
+     "Mar Cantábrico",
+     "Golfo de gasconha",
+     "Golfo de biscaia",
+     "Baía de biscaia",
+     "Baía da Biscaia"
+    ],
+    "fr": [
+     "Golfe de Biscaye"
+    ],
+    "it": [
+     "Golfo di Guascogna"
+    ],
+    "de": [
+     "Golfe de Gascogne",
+     "Mar Cantabrico",
+     "Golf von Biscaya",
+     "Mar Cantábrico",
+     "Sinus Cantabricus",
+     "Golfo de Vizcaya",
+     "Bucht von Biscaya",
+     "Golf von Biskaya",
+     "Mare Cantabricum",
+     "Biscaya",
+     "Kantabrisches Meer",
+     "Golfo de Biscaia",
+     "Bizkaiko Golkoa",
+     "Kantauri Itsasoa",
+     "Mer Cantabrique",
+     "Kantabrische See"
+    ],
+    "cs": [
+     "Gaskoňský záliv"
+    ]
+   },
+   "instance_of": [
+    "Q39594"
+   ]
+  },
+  "Q41983": {
+   "labels": {
+    "pl": "Marna",
+    "fr": "Marne",
+    "es": "Marne",
+    "it": "Marna",
+    "de": "Marne",
+    "sv": "Marne",
+    "pt": "Rio Marne",
+    "en": "Marne",
+    "cs": "Marna",
+    "sk": "Marna"
+   },
+   "aliases": {
+    "es": [
+     "río Marne",
+     "rio Marne"
+    ],
+    "it": [
+     "Fiume Marna"
+    ],
+    "pt": [
+     "Marne"
+    ],
+    "cs": [
+     "Marne"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q41986": {
+   "labels": {
+    "pl": "Moza",
+    "es": "Mosa",
+    "sv": "Meuse",
+    "pt": "Rio Mosa",
+    "fr": "Meuse",
+    "it": "Mosa",
+    "de": "Maas",
+    "sk": "Mása",
+    "en": "Meuse",
+    "cs": "Máza"
+   },
+   "aliases": {
+    "es": [
+     "Rio Mosa",
+     "Maas"
+    ],
+    "sv": [
+     "Maas"
+    ],
+    "pt": [
+     "Rio meuse",
+     "Rio maas",
+     "Meuse",
+     "Mosa"
+    ],
+    "fr": [
+     "Fleuve Meuse",
+     "Mosan",
+     "vallée de la Meuse"
+    ],
+    "de": [
+     "Moûze",
+     "Mouze",
+     "Maos"
+    ],
+    "cs": [
+     "Mása",
+     "Maasa"
+    ],
+    "en": [
+     "Meuse River",
+     "Maas",
+     "Mosa",
+     "Mouze",
+     "Maos",
+     "Moûze"
+    ],
+    "it": [
+     "Mosa (fiume)"
+    ],
+    "sk": [
+     "Mása (rieka)"
+    ]
+   },
+   "instance_of": [
+    "Q573344",
+    "Q4022"
+   ]
+  },
+  "Q42820": {
+   "labels": {
+    "pl": "Morze Liguryjskie",
+    "es": "mar de Liguria",
+    "sv": "Liguriska havet",
+    "pt": "Mar Lígure",
+    "fr": "mer ligure",
+    "it": "Mar Ligure",
+    "de": "Ligurisches Meer",
+    "en": "Ligurian Sea",
+    "sk": "Ligúrske more",
+    "cs": "Ligurské moře"
+   },
+   "aliases": {
+    "es": [
+     "Mar Ligur"
+    ],
+    "pt": [
+     "Mar de Ligúria",
+     "Mar da ligúria",
+     "Mar da liguria"
+    ],
+    "fr": [
+     "Mer de Ligurie",
+     "Mer Ligurienne"
+    ],
+    "de": [
+     "Mare Ligusticum",
+     "Golf von Genua"
+    ],
+    "sk": [
+     "Ligurské more"
+    ],
+    "it": [
+     "Mare ligustico"
+    ]
+   },
+   "instance_of": [
+    "Q204894"
+   ]
+  },
+  "Q429769": {
+   "labels": {
+    "de": "Tidan",
+    "en": "Tidan",
+    "sv": "Tidan",
+    "pt": "Rio Tidan",
+    "es": "río Tidan"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q44729": {
+   "labels": {
+    "pl": "Biała Elstera",
+    "fr": "Elster Blanche",
+    "en": "Weisse Elster",
+    "es": "Río Weiße Elster",
+    "it": "Elster Bianco",
+    "de": "Weiße Elster",
+    "cs": "Bílý Halštrov",
+    "sv": "Weisse Elster"
+   },
+   "aliases": {
+    "pl": [
+     "Weiße Elster",
+     "Běły Halštrow",
+     "Weisse Elster"
+    ],
+    "fr": [
+     "Elster Blanc",
+     "Weiße Elster",
+     "Elster-Blanc"
+    ],
+    "es": [
+     "Rio WeiBe Elster",
+     "Rio Weiße Elster",
+     "Weiße Elster",
+     "Río WeiBe Elster",
+     "WeiBe Elster"
+    ],
+    "de": [
+     "Weisse Elster"
+    ],
+    "cs": [
+     "Bílý Halštrof",
+     "Weisse Elster"
+    ],
+    "en": [
+     "Běły Halštrow",
+     "Bílý Halštrov",
+     "Weiße Elster"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q45094": {
+   "labels": {
+    "sk": "Svitava",
+    "pl": "Svitava",
+    "fr": "Svitava",
+    "en": "Svitava",
+    "it": "Svitava",
+    "de": "Svitava",
+    "cs": "Svitava",
+    "sv": "Svitava",
+    "es": "Río Svitava"
+   },
+   "aliases": {
+    "de": [
+     "Zwitta"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q45254": {
+   "labels": {
+    "pl": "Svratka",
+    "sk": "Svratka",
+    "fr": "Svratka",
+    "en": "Svratka",
+    "it": "Svratka",
+    "de": "Svratka",
+    "cs": "Svratka",
+    "sv": "Svratka",
+    "es": "Río Svratka"
+   },
+   "aliases": {
+    "de": [
+     "Schwarza",
+     "Schwarzach",
+     "Schwarzawa"
+    ],
+    "cs": [
+     "Švarcava"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q458829": {
+   "labels": {
+    "de": "Faxälven",
+    "en": "Faxälven",
+    "sv": "Faxälven",
+    "cs": "Faxälven"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q466865": {
+   "labels": {
+    "de": "Ilme",
+    "en": "Ilme",
+    "es": "Ilme",
+    "sv": "Ilme",
+    "fr": "Ilme"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q4918": {
+   "labels": {
+    "it": "mar Mediterraneo",
+    "en": "Mediterranean Sea",
+    "de": "Mittelmeer",
+    "fr": "mer Méditerranée",
+    "cs": "Středozemní moře",
+    "es": "Mediterráneo",
+    "pl": "Morze Śródziemne",
+    "pt": "Mar Mediterrâneo",
+    "sk": "Stredozemné more",
+    "sv": "Medelhavet"
+   },
+   "aliases": {
+    "it": [
+     "mare nostrum",
+     "Mediterraneo",
+     "Mare Mediterraneo"
+    ],
+    "es": [
+     "mar Mediterráneo"
+    ],
+    "fr": [
+     "Méditerranée"
+    ],
+    "de": [
+     "Mittelländisches Meer"
+    ],
+    "en": [
+     "The Mediterranean",
+     "the Mediterranean Sea"
+    ]
+   },
+   "instance_of": [
+    "Q1973404",
+    "Q166620"
+   ]
+  },
+  "Q504922": {
+   "labels": {
+    "en": "Emscher",
+    "de": "Emscher",
+    "sv": "Emscher",
+    "fr": "Emscher",
+    "cs": "Emscher",
+    "es": "Emscher",
+    "it": "Emscher",
+    "pl": "Emscher",
+    "pt": "Emscher",
+    "sk": "Emscher"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q5077": {
+   "labels": {
+    "fr": "Garonne",
+    "de": "Garonne",
+    "en": "Garonne",
+    "cs": "Garonna",
+    "es": "Garona",
+    "it": "Garonna",
+    "pl": "Garonna",
+    "pt": "Rio Garona",
+    "sk": "Garonne",
+    "sv": "Garonne"
+   },
+   "aliases": {
+    "en": [
+     "Garonne river"
+    ],
+    "it": [
+     "río Garona",
+     "fiume Garonna"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q524569": {
+   "labels": {
+    "cs": "Bodva",
+    "de": "Bodva",
+    "en": "Bodva",
+    "pl": "Bodva",
+    "sk": "Bodva",
+    "fr": "Bodva",
+    "sv": "Bodva"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q545": {
+   "labels": {
+    "pl": "Morze Bałtyckie",
+    "fr": "mer Baltique",
+    "en": "Baltic Sea",
+    "de": "Ostsee",
+    "it": "mar Baltico",
+    "es": "Mar Báltico",
+    "cs": "Baltské moře",
+    "pt": "Mar Báltico",
+    "sk": "Baltské more",
+    "sv": "Östersjön"
+   },
+   "aliases": {
+    "de": [
+     "Baltisches Meer",
+     "Baltische See"
+    ],
+    "pl": [
+     "Bałtyk"
+    ],
+    "cs": [
+     "Balt",
+     "Baltik",
+     "Baltické moře"
+    ],
+    "sv": [
+     "Baltiska havet",
+     "Baltiska sjön"
+    ],
+    "es": [
+     "Mar Baltico"
+    ],
+    "en": [
+     "Baltic",
+     "the Baltic",
+     "Baltick Sea",
+     "East Sea",
+     "Sarmatian Ocean"
+    ],
+    "fr": [
+     "Baltique"
+    ]
+   },
+   "instance_of": [
+    "Q204894",
+    "Q2578218"
+   ]
+  },
+  "Q546600": {
+   "labels": {
+    "fr": "Aniene",
+    "pt": "Rio Aniene",
+    "de": "Aniene",
+    "sv": "Aniene",
+    "it": "Aniene",
+    "en": "Aniene",
+    "es": "río Aniene",
+    "pl": "Aniene",
+    "cs": "Aniene"
+   },
+   "aliases": {
+    "fr": [
+     "Teverone",
+     "Anio"
+    ],
+    "pt": [
+     "Aniene",
+     "Rio aniene"
+    ],
+    "de": [
+     "Anio"
+    ],
+    "it": [
+     "Anio",
+     "Parenzio",
+     "Parensius",
+     "Anius"
+    ],
+    "es": [
+     "Aniene",
+     "rio Aniene",
+     "Anio",
+     "río Anio",
+     "rio Anio",
+     "Anius"
+    ],
+    "en": [
+     "Anio",
+     "Anius"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q548": {
+   "labels": {
+    "pl": "Wisła",
+    "en": "Vistula",
+    "de": "Weichsel",
+    "fr": "Vistule",
+    "cs": "Visla",
+    "es": "Vístula",
+    "it": "Vistola",
+    "pt": "Rio Vístula",
+    "sk": "Visla",
+    "sv": "Wisła"
+   },
+   "aliases": {
+    "en": [
+     "Wisła",
+     "Wisla",
+     "Weichsel",
+     "Visla"
+    ],
+    "es": [
+     "Rio Vistula",
+     "Río Vístula"
+    ]
+   },
+   "instance_of": [
+    "Q4022",
+    "Q573344"
+   ]
+  },
+  "Q552": {
+   "labels": {
+    "pl": "Odra",
+    "fr": "Oder",
+    "en": "Oder",
+    "de": "Oder",
+    "cs": "Odra",
+    "es": "Óder",
+    "it": "Oder",
+    "pt": "Rio Oder",
+    "sk": "Odra",
+    "sv": "Oder"
+   },
+   "aliases": {
+    "it": [
+     "Odra"
+    ],
+    "en": [
+     "Odra",
+     "Oder River"
+    ],
+    "es": [
+     "Oder"
+    ],
+    "sv": [
+     "Oder River"
+    ],
+    "de": [
+     "Viadra",
+     "Odra"
+    ],
+    "pl": [
+     "Oder"
+    ],
+    "cs": [
+     "Oder",
+     "řeka Odra"
+    ],
+    "fr": [
+     "Odra"
+    ]
+   },
+   "instance_of": [
+    "Q4022",
+    "Q573344"
+   ]
+  },
+  "Q5566": {
+   "labels": {
+    "it": "Sile",
+    "fr": "Sile",
+    "en": "Sile",
+    "de": "Sile",
+    "es": "Sile"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q51205815"
+   ]
+  },
+  "Q5568": {
+   "labels": {
+    "it": "Botteniga",
+    "en": "Botteniga",
+    "de": "Botteniga",
+    "fr": "Botteniga",
+    "es": "Botteniga"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q51205815"
+   ]
+  },
+  "Q5602": {
+   "labels": {
+    "de": "Lausitzer Neiße",
+    "en": "Lusatian Nysa",
+    "cs": "Lužická Nisa",
+    "es": "Neisse",
+    "fr": "Neisse",
+    "it": "Neiße",
+    "pl": "Nysa Łużycka",
+    "pt": "Rio Neisse",
+    "sk": "Lužická Nisa",
+    "sv": "Neisse"
+   },
+   "aliases": {
+    "de": [
+     "Neiße",
+     "Görlitzer Neiße"
+    ],
+    "en": [
+     "Neisse",
+     "Neisse River",
+     "Nisa"
+    ],
+    "es": [
+     "Neisse Lusacio"
+    ],
+    "it": [
+     "Neisse",
+     "Nysa Łużycka"
+    ],
+    "sv": [
+     "Neisse River"
+    ],
+    "cs": [
+     "Nisa"
+    ]
+   },
+   "instance_of": [
+    "Q4022",
+    "Q3089228"
+   ]
+  },
+  "Q569068": {
+   "labels": {
+    "de": "Santerno",
+    "en": "Santerno",
+    "fr": "Santerno",
+    "it": "Santerno",
+    "es": "Santerno"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q570008": {
+   "labels": {
+    "de": "Nežárka",
+    "cs": "Nežárka",
+    "en": "Nežárka",
+    "sk": "Nežárka",
+    "fr": "Nežárka",
+    "pl": "Nežárka",
+    "sv": "Nežárka",
+    "it": "Nežárka"
+   },
+   "aliases": {
+    "de": [
+     "Naser"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q572191": {
+   "labels": {
+    "pl": "Volturno",
+    "cs": "Volturno",
+    "de": "Volturno",
+    "en": "Volturno",
+    "es": "Volturno",
+    "fr": "Volturno",
+    "it": "Volturno",
+    "pt": "Rio Volturno",
+    "sv": "Volturno"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q576032": {
+   "labels": {
+    "de": "Sajó",
+    "cs": "Slaná",
+    "en": "Sajó",
+    "es": "Sajó",
+    "fr": "Sajó",
+    "pl": "Sajó",
+    "sk": "Slaná",
+    "sv": "Sajó",
+    "it": "Sajó"
+   },
+   "aliases": {
+    "es": [
+     "Slaná"
+    ],
+    "en": [
+     "Slaná"
+    ],
+    "de": [
+     "Slaná"
+    ],
+    "fr": [
+     "Slaná"
+    ],
+    "it": [
+     "Slaná"
+    ],
+    "pl": [
+     "Slaná"
+    ],
+    "sv": [
+     "Slaná"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q577026": {
+   "labels": {
+    "it": "Opava",
+    "cs": "Opava",
+    "de": "Opava",
+    "en": "Opava",
+    "pl": "Opawa",
+    "sk": "Opava",
+    "fr": "Opava",
+    "sv": "Opawa",
+    "es": "Opava (río)",
+    "pt": "Rio Opava"
+   },
+   "aliases": {
+    "de": [
+     "Oppa"
+    ],
+    "cs": [
+     "Opawa",
+     "Opavice",
+     "Opa",
+     "Černá Opavice",
+     "Oppa",
+     "řeka Opava"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q582675": {
+   "labels": {
+    "cs": "Jizera",
+    "de": "Jizera",
+    "en": "Jizera",
+    "fr": "Jizera",
+    "pl": "Izera",
+    "sk": "Jizera",
+    "sv": "Jizera",
+    "es": "Río Jizera",
+    "it": "Jizera"
+   },
+   "aliases": {
+    "es": [
+     "Rio Jizera"
+    ],
+    "de": [
+     "Iser"
+    ],
+    "it": [
+     "Iser",
+     "Izera"
+    ],
+    "en": [
+     "Iser"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q584": {
+   "labels": {
+    "en": "Rhine",
+    "pl": "Ren",
+    "it": "Reno",
+    "de": "Rhein",
+    "fr": "Rhin",
+    "es": "Rin",
+    "cs": "Rýn",
+    "pt": "Rio Reno",
+    "sk": "Rýn",
+    "sv": "Rhen"
+   },
+   "aliases": {
+    "fr": [
+     "le Rhin"
+    ],
+    "en": [
+     "Rhine River"
+    ]
+   },
+   "instance_of": [
+    "Q4022",
+    "Q573344",
+    "Q1267889",
+    "Q1009249"
+   ]
+  },
+  "Q60055": {
+   "labels": {
+    "pl": "Narew",
+    "fr": "Narew",
+    "es": "Río Narew",
+    "it": "Narew",
+    "de": "Narew",
+    "sv": "Narew",
+    "pt": "Narew",
+    "en": "Narew",
+    "cs": "Narew",
+    "sk": "Narew"
+   },
+   "aliases": {
+    "es": [
+     "Narew",
+     "Rio Narew"
+    ],
+    "it": [
+     "Fiume Narew"
+    ],
+    "sv": [
+     "Narev",
+     "Narva"
+    ],
+    "cs": [
+     "Narau",
+     "Narev"
+    ],
+    "fr": [
+     "Narev"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q602": {
+   "labels": {
+    "fr": "Rhône",
+    "it": "Rodano",
+    "en": "Rhône",
+    "de": "Rhone",
+    "es": "Ródano",
+    "cs": "Rhôna",
+    "pl": "Rodan",
+    "pt": "Rio Ródano",
+    "sk": "Rhôna",
+    "sv": "Rhône"
+   },
+   "aliases": {
+    "de": [
+     "Rhône",
+     "Rotten"
+    ],
+    "en": [
+     "Rhone",
+     "Rhône River",
+     "Rhone River"
+    ]
+   },
+   "instance_of": [
+    "Q4022",
+    "Q573344"
+   ]
+  },
+  "Q603664": {
+   "labels": {
+    "cs": "Latorica",
+    "de": "Latorica",
+    "en": "Latorica",
+    "es": "Río Latorica",
+    "fr": "Latorica",
+    "it": "Latorica",
+    "pl": "Latorica",
+    "sk": "Latorica",
+    "pt": "Rio Latorica"
+   },
+   "aliases": {
+    "es": [
+     "Rio Latorica"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q63109": {
+   "labels": {
+    "it": "Adda",
+    "cs": "Adda",
+    "de": "Adda",
+    "en": "Adda",
+    "es": "Adda",
+    "fr": "Adda",
+    "pl": "Adda",
+    "pt": "Rio Adda",
+    "sv": "Adda",
+    "sk": "Adda"
+   },
+   "aliases": {
+    "it": [
+     "Il fiume Adda"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q643": {
+   "labels": {
+    "es": "Río Po",
+    "en": "Po",
+    "fr": "Pô",
+    "it": "Po",
+    "cs": "Pád",
+    "de": "Po",
+    "pl": "Pad",
+    "pt": "Rio Pó",
+    "sk": "Pád",
+    "sv": "Po"
+   },
+   "aliases": {
+    "es": [
+     "Po",
+     "Rio Po"
+    ],
+    "en": [
+     "River Po",
+     "Po River"
+    ],
+    "it": [
+     "il Po",
+     "fiume Po"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q643525": {
+   "labels": {
+    "sk": "Regnitz",
+    "pl": "Regnitz",
+    "en": "Regnitz",
+    "it": "Regnitz",
+    "de": "Regnitz",
+    "cs": "Regnitz",
+    "fr": "Regnitz",
+    "es": "Río Regnitz",
+    "pt": "Regnitz",
+    "sv": "Regnitz"
+   },
+   "aliases": {
+    "cs": [
+     "Regnice"
+    ],
+    "es": [
+     "Rio Regnitz"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q6444540": {
+   "labels": {
+    "en": "Kungsbacka Fjord",
+    "sv": "Kungsbackafjorden"
+   },
+   "aliases": {
+    "en": [
+     "Kungsbackafjorden"
+    ]
+   },
+   "instance_of": [
+    "Q45776"
+   ]
+  },
+  "Q6444545": {
+   "labels": {
+    "de": "Kungsbackaån",
+    "en": "Kungsbackaån",
+    "sv": "Kungsbackaån"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q3529419",
+    "Q4022"
+   ]
+  },
+  "Q644669": {
+   "labels": {
+    "cs": "Ondava",
+    "de": "Ondava",
+    "en": "Ondava",
+    "es": "Ondava",
+    "fr": "Ondava",
+    "it": "Ondava",
+    "pl": "Ondava",
+    "sk": "Ondava"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q657615": {
+   "labels": {
+    "fr": "Krzna",
+    "de": "Krzna",
+    "en": "Krzna",
+    "es": "Río Krzna",
+    "pl": "Krzna"
+   },
+   "aliases": {
+    "es": [
+     "Rio Krzna"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q658594": {
+   "labels": {
+    "de": "Reno",
+    "cs": "Reno",
+    "en": "Reno",
+    "es": "Reno",
+    "fr": "Reno",
+    "it": "Reno",
+    "pl": "Reno",
+    "sv": "Reno"
+   },
+   "aliases": {
+    "es": [
+     "río Reno",
+     "rio Reno"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q659817": {
+   "labels": {
+    "pl": "Litawa",
+    "fr": "Leitha",
+    "es": "Leita",
+    "en": "Leitha",
+    "it": "Leita",
+    "de": "Leitha",
+    "cs": "Litava",
+    "sv": "Leitha",
+    "sk": "Litava",
+    "pt": "Rio Leita"
+   },
+   "aliases": {
+    "fr": [
+     "Lajta"
+    ],
+    "es": [
+     "Lajta",
+     "Sárviz",
+     "Leitha",
+     "Sarviz"
+    ],
+    "it": [
+     "Leitha"
+    ],
+    "de": [
+     "Leithatal"
+    ],
+    "cs": [
+     "Leitha",
+     "Lajta"
+    ],
+    "sv": [
+     "Leitha (vattendrag i Österrike)"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q660208": {
+   "labels": {
+    "pl": "Dyja",
+    "sk": "Dyje",
+    "fr": "Thaya",
+    "es": "Dyje",
+    "en": "Thaya",
+    "it": "Thaya",
+    "de": "Thaya",
+    "cs": "Dyje",
+    "sv": "Thaya"
+   },
+   "aliases": {
+    "fr": [
+     "Dyje"
+    ],
+    "es": [
+     "Thaya"
+    ],
+    "cs": [
+     "Thaya"
+    ],
+    "sv": [
+     "Dyje"
+    ],
+    "en": [
+     "Dyje",
+     "Dyja"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q668156": {
+   "labels": {
+    "de": "Alcanadre",
+    "en": "Alcanadre",
+    "es": "Alcanadre",
+    "fr": "Alcanadre",
+    "sv": "Río Alcanadre",
+    "it": "Alcanadre (fiume)"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q668472": {
+   "labels": {
+    "pl": "Ill",
+    "fr": "Ill",
+    "es": "Ill",
+    "it": "Ill",
+    "de": "Ill",
+    "pt": "Rio Ill",
+    "en": "Ill",
+    "sv": "Ill",
+    "cs": "Ill"
+   },
+   "aliases": {
+    "es": [
+     "río Ill",
+     "rio Ill"
+    ],
+    "pt": [
+     "Ill"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q672208": {
+   "labels": {
+    "de": "Tordino",
+    "en": "Tordino",
+    "es": "Río Tordino",
+    "it": "Tordino",
+    "fr": "Tordino",
+    "cs": "Tordino"
+   },
+   "aliases": {
+    "es": [
+     "Rio Tordino"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q679808": {
+   "labels": {
+    "de": "Toce",
+    "en": "Toce",
+    "fr": "Toce",
+    "it": "Toce",
+    "sv": "Toce",
+    "cs": "Toce",
+    "sk": "Toce"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q681354": {
+   "labels": {
+    "de": "Suize",
+    "es": "Suize",
+    "fr": "Suize",
+    "en": "Suize"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022",
+    "Q47521"
+   ]
+  },
+  "Q688454": {
+   "labels": {
+    "pl": "Ill",
+    "fr": "Ill",
+    "en": "Ill",
+    "de": "Ill",
+    "es": "Ill",
+    "it": "Ill",
+    "sv": "Ill",
+    "cs": "Ill"
+   },
+   "aliases": {
+    "de": [
+     "Ill Vorarlberg"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q688880": {
+   "labels": {
+    "de": "Maltsch",
+    "sk": "Malše",
+    "cs": "Malše",
+    "en": "Malše",
+    "fr": "Malše",
+    "sv": "Malše",
+    "it": "Malše",
+    "pl": "Malše",
+    "es": "Malše"
+   },
+   "aliases": {
+    "de": [
+     "Malše"
+    ],
+    "pl": [
+     "Maltsch"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q694389": {
+   "labels": {
+    "fr": "Rednitz",
+    "en": "Rednitz",
+    "it": "Rednitz",
+    "de": "Rednitz",
+    "es": "Río Rednitz",
+    "cs": "Rednitz",
+    "pl": "Rednitz",
+    "pt": "Rednitz",
+    "sk": "Rednitz",
+    "sv": "Rednitz"
+   },
+   "aliases": {
+    "es": [
+     "Rio Rednitz"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q6978986": {
+   "labels": {
+    "en": "Vege River",
+    "sv": "Vege å"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q3529419"
+   ]
+  },
+  "Q6980744": {
+   "labels": {
+    "es": "Río Albaida",
+    "de": "Albaida",
+    "en": "Albaida River",
+    "pt": "Rio Albaida",
+    "sv": "Río Albaida"
+   },
+   "aliases": {
+    "es": [
+     "Rio Albaida"
+    ],
+    "de": [
+     "Río Albaida",
+     "Riu Albaida",
+     "Riu d'Albaida"
+    ],
+    "en": [
+     "Río Albaida",
+     "Riu Albaida",
+     "Riu d'Albaida",
+     "Rio Albaida"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q698586": {
+   "labels": {
+    "de": "Bregenzerach",
+    "en": "Bregenzerach",
+    "it": "Bregenzer Ach",
+    "fr": "Bregenzer Ach",
+    "sv": "Bregenzer Ach"
+   },
+   "aliases": {
+    "de": [
+     "Bregenzerache",
+     "Bregenzer Ache",
+     "Bregenzer Ach"
+    ],
+    "en": [
+     "Bregenzer Ache",
+     "Bregenzer Ach"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q702691": {
+   "labels": {
+    "fr": "baie de Heligoland",
+    "en": "Heligoland Bight",
+    "de": "Helgoländer Bucht",
+    "sv": "Helgolandsbukten",
+    "cs": "Helgolandský záliv",
+    "pl": "Zatoka Helgolandzka",
+    "es": "Bahía de Heligoland",
+    "it": "baia di Helgoland",
+    "sk": "Helgolandský záliv"
+   },
+   "aliases": {
+    "fr": [
+     "Baie de Helgoland",
+     "Baie d'Helgoland",
+     "Baie d'Heligoland",
+     "Baie d'Héligoland"
+    ],
+    "sv": [
+     "Helgolandbukten"
+    ]
+   },
+   "instance_of": [
+    "Q39594"
+   ]
+  },
+  "Q708356": {
+   "labels": {
+    "de": "Fränkische Saale",
+    "pl": "Soława Frankońska",
+    "fr": "Saale franconienne",
+    "en": "Franconian Saale",
+    "it": "Saale di Franconia",
+    "es": "Saale en Franconia",
+    "cs": "Franská Sála",
+    "sv": "Frankiska Saale",
+    "sk": "Franská Sála"
+   },
+   "aliases": {
+    "pl": [
+     "Frankońska Soława",
+     "Fränkische Saale"
+    ],
+    "fr": [
+     "Fränkische Saale"
+    ],
+    "en": [
+     "Fränkische Saale"
+    ],
+    "cs": [
+     "Sála",
+     "Francká Sála"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q7166886": {
+   "labels": {
+    "en": "Perales River",
+    "es": "Perales",
+    "sv": "Río de Perales"
+   },
+   "aliases": {
+    "es": [
+     "Rio Perales",
+     "Río Perales",
+     "Rio de Perales",
+     "Río de Perales"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q747929": {
+   "labels": {
+    "pt": "Rio Tagliamento",
+    "pl": "Tagliamento",
+    "sk": "Tagliamento",
+    "fr": "Tagliamento",
+    "en": "Tagliamento",
+    "es": "Tagliamento",
+    "it": "Tagliamento",
+    "de": "Tagliamento",
+    "sv": "Tagliamento",
+    "cs": "Tagliamento"
+   },
+   "aliases": {
+    "es": [
+     "Tajamento",
+     "Tiliment",
+     "río Tagliamento",
+     "río Tiliment",
+     "río Tajamento",
+     "rio Tagliamento",
+     "rio Tiliment",
+     "rio Tajamento"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q754718": {
+   "labels": {
+    "pt": "Rio Durance",
+    "pl": "Durance",
+    "fr": "Durance",
+    "es": "Durance",
+    "en": "Durance",
+    "it": "Durance",
+    "de": "Durance",
+    "cs": "Durance",
+    "sv": "Durance",
+    "sk": "Durance"
+   },
+   "aliases": {
+    "fr": [
+     "Durançole",
+     "La Durance"
+    ],
+    "es": [
+     "Duranza",
+     "río Durance",
+     "río Duranza",
+     "rio Durance",
+     "rio Duranza"
+    ],
+    "it": [
+     "Druenza"
+    ],
+    "de": [
+     "Durançole",
+     "Durancetal"
+    ],
+    "en": [
+     "Durença",
+     "Durènço"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q756302": {
+   "labels": {
+    "sk": "Poprad",
+    "pl": "Poprad",
+    "fr": "Poprad",
+    "es": "Río Poprad",
+    "en": "Poprad",
+    "it": "Poprad",
+    "de": "Poprad",
+    "cs": "Poprad"
+   },
+   "aliases": {
+    "es": [
+     "Rio Poprad"
+    ],
+    "it": [
+     "Fiume Poprad"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q763066": {
+   "labels": {
+    "de": "Moson-Donau",
+    "pl": "Dunaj Moszoński",
+    "sv": "Mosoni-Duna",
+    "en": "Moson-Danube",
+    "sk": "Mošonské rameno",
+    "fr": "Danube de Moson"
+   },
+   "aliases": {
+    "de": [
+     "Kleine Donau",
+     "Wieselburger Donau"
+    ],
+    "en": [
+     "Moson-Donau",
+     "Kleine Donau"
+    ],
+    "sk": [
+     "Mošonský Dunaj"
+    ]
+   },
+   "instance_of": [
+    "Q591942",
+    "Q4022"
+   ]
+  },
+  "Q76925": {
+   "labels": {
+    "fr": "lagune de Venise",
+    "es": "Laguna de Venecia",
+    "it": "laguna di Venezia",
+    "de": "Lagune von Venedig",
+    "pt": "Lagoa de Veneza",
+    "en": "Venetian Lagoon",
+    "pl": "Laguna Wenecka",
+    "sv": "Venetianska lagunen",
+    "cs": "Benátská laguna"
+   },
+   "aliases": {
+    "es": [
+     "Laguna Veneta"
+    ],
+    "it": [
+     "laguna veneta",
+     "laguna veneziana"
+    ],
+    "pt": [
+     "Laguna de Veneza",
+     "Lagoa veneziana"
+    ],
+    "en": [
+     "Laguna di Venezia",
+     "Lagoon of Venice",
+     "Laguna Veneta",
+     "Veneta Lagoon"
+    ],
+    "sv": [
+     "Laguna di Venezia",
+     "Laguna Veneta"
+    ],
+    "de": [
+     "Laguna di Venezia",
+     "Laguna Veneta"
+    ]
+   },
+   "instance_of": [
+    "Q39594",
+    "Q187223"
+   ]
+  },
+  "Q79185": {
+   "labels": {
+    "de": "Peenestrom",
+    "en": "Peenestrom",
+    "es": "Peenestrom",
+    "it": "Peenestrom",
+    "pl": "Piana",
+    "pt": "Rio Peenestrom",
+    "sv": "Peenestrom",
+    "fr": "Peenestrom",
+    "cs": "Pěna"
+   },
+   "aliases": {
+    "cs": [
+     "Peenestrom"
+    ]
+   },
+   "instance_of": [
+    "Q37901"
+   ]
+  },
+  "Q819278": {
+   "labels": {
+    "pl": "Jagst",
+    "fr": "Jagst",
+    "es": "Río Jagst",
+    "en": "Jagst",
+    "de": "Jagst",
+    "sv": "Jagst",
+    "cs": "Jagst",
+    "it": "Jagst",
+    "pt": "Jagst",
+    "sk": "Jagst"
+   },
+   "aliases": {
+    "es": [
+     "Rio jagst",
+     "Jagst"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q821992": {
+   "labels": {
+    "de": "Novohradka",
+    "cs": "Novohradka",
+    "fr": "Novohradka",
+    "en": "Novohradka",
+    "sv": "Novohradka"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q827033": {
+   "labels": {
+    "en": "Berounka",
+    "de": "Beraun",
+    "sv": "Berounka",
+    "sk": "Berounka",
+    "cs": "Berounka",
+    "pl": "Berounka",
+    "it": "Berounka",
+    "fr": "Berounka",
+    "es": "Río Berounka"
+   },
+   "aliases": {
+    "sv": [
+     "Mže",
+     "Mies",
+     "Berounka (vattendrag i Tjeckien)"
+    ],
+    "es": [
+     "Rio Berounka"
+    ],
+    "en": [
+     "Beraun"
+    ],
+    "sk": [
+     "Beraun"
+    ],
+    "pl": [
+     "Beraun"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q828570": {
+   "labels": {
+    "sk": "Bodrog",
+    "pl": "Bodrog",
+    "fr": "Bodrog",
+    "en": "Bodrog",
+    "es": "Río Bodrog",
+    "it": "Bodrog",
+    "de": "Bodrog",
+    "cs": "Bodrog",
+    "sv": "Bodrog",
+    "pt": "Rio Bodrog"
+   },
+   "aliases": {
+    "es": [
+     "Bodrog",
+     "Rio Bodrog"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q8343335": {
+   "labels": {
+    "es": "Cega",
+    "pt": "Rio Cega",
+    "it": "Cega",
+    "sv": "Río Cega",
+    "en": "Cega",
+    "fr": "Cega"
+   },
+   "aliases": {
+    "es": [
+     "Cega (río)",
+     "Rio Cega",
+     "Cega (rio)",
+     "río Cega"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q8346607": {
+   "labels": {
+    "es": "Río Clariano",
+    "de": "Clariano",
+    "en": "Clariano River",
+    "sv": "Río Clariano"
+   },
+   "aliases": {
+    "es": [
+     "Pou Clar",
+     "Rio Clariano"
+    ],
+    "de": [
+     "Riu Clariano",
+     "Rio Clariano"
+    ],
+    "en": [
+     "Riu Clariano",
+     "Rio Clariano"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q840694": {
+   "labels": {
+    "pl": "Dunajec",
+    "sk": "Dunajec",
+    "fr": "Dunajec",
+    "es": "Río Dunajec",
+    "en": "Dunajec",
+    "de": "Dunajec",
+    "cs": "Dunajec",
+    "it": "Dunajec",
+    "sv": "Dunajec",
+    "pt": "Rio Dunajec"
+   },
+   "aliases": {
+    "es": [
+     "Dunajec",
+     "Rio Dunajec"
+    ],
+    "de": [
+     "Dohnst"
+    ],
+    "en": [
+     "Dunajec River"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q846744": {
+   "labels": {
+    "pl": "Hornad",
+    "sk": "Hornád",
+    "fr": "Hornád",
+    "en": "Hornád",
+    "es": "Hernád",
+    "it": "Hornád",
+    "de": "Hornád",
+    "cs": "Hornád",
+    "sv": "Hernád"
+   },
+   "aliases": {
+    "pl": [
+     "Hornád"
+    ],
+    "es": [
+     "Hernad",
+     "Hornad",
+     "Hornád"
+    ],
+    "it": [
+     "Hornad"
+    ],
+    "de": [
+     "Hornad",
+     "Hernád",
+     "Hernad"
+    ],
+    "cs": [
+     "Hernád"
+    ],
+    "en": [
+     "Hornad"
+    ],
+    "sv": [
+     "Hornád"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q848670": {
+   "labels": {
+    "pt": "Rio Oglio",
+    "pl": "Oglio",
+    "fr": "Oglio",
+    "en": "Oglio",
+    "es": "Oglio",
+    "it": "Oglio",
+    "de": "Oglio",
+    "cs": "Oglio",
+    "sv": "Oglio"
+   },
+   "aliases": {
+    "pt": [
+     "Oglio"
+    ],
+    "it": [
+     "Fiume Oglio"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q852308": {
+   "labels": {
+    "pl": "Laborec",
+    "sk": "Laborec",
+    "fr": "Laborec",
+    "es": "Río Laborec",
+    "en": "Laborec",
+    "de": "Laborec",
+    "cs": "Laborec",
+    "it": "Laborec"
+   },
+   "aliases": {
+    "es": [
+     "Rio Laborec"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q857160": {
+   "labels": {
+    "en": "Biebrza",
+    "de": "Biebrza",
+    "it": "Biebrza",
+    "cs": "Biebrza",
+    "pl": "Biebrza",
+    "fr": "Biebrza",
+    "es": "Biebrza",
+    "pt": "Biebrza",
+    "sk": "Biebrza",
+    "sv": "Biebrza"
+   },
+   "aliases": {
+    "sv": [
+     "Bebzja",
+     "Bobra"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q857589": {
+   "labels": {
+    "en": "Calore Irpino",
+    "de": "Calore Irpino",
+    "it": "Calore Irpino",
+    "sv": "Calore Irpino",
+    "es": "Calore Irpino",
+    "fr": "Calore Irpino"
+   },
+   "aliases": {
+    "it": [
+     "fiume Calore",
+     "Calore Beneventano",
+     "Calore Volturno",
+     "Calore Irpino",
+     "Calore (fiume)"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q895966": {
+   "labels": {
+    "de": "Boye",
+    "en": "Boye"
+   },
+   "aliases": {
+    "de": [
+     "Boye-System",
+     "Boye-Flusssystem"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q9071816": {
+   "labels": {
+    "es": "río Gévora",
+    "pt": "Rio Xévora",
+    "sv": "Rio Xévora",
+    "en": "Gévora River",
+    "de": "Río Gévora"
+   },
+   "aliases": {
+    "es": [
+     "Rio Gevora",
+     "Gevora",
+     "Río Gevora",
+     "Rio Gévora",
+     "Xévora",
+     "Río Xévora",
+     "Xevora",
+     "Rio Xevora"
+    ],
+    "pt": [
+     "rio Gévora"
+    ],
+    "en": [
+     "Gévora"
+    ]
+   },
+   "instance_of": [
+    "Q4022",
+    "Q796174"
+   ]
+  },
+  "Q9072129": {
+   "labels": {
+    "es": "Río Sonella",
+    "sv": "Río Sonella",
+    "en": "Veo River, Spain"
+   },
+   "aliases": {
+    "es": [
+     "Río Veo",
+     "Río Anna",
+     "Riu sec de betxí",
+     "Río Seco de Bechí",
+     "Sonella",
+     "Rio Sonella",
+     "Rio Anna",
+     "Riu sec de betxi",
+     "Rio Veo",
+     "Rio Seco de Bechi",
+     "Rio Seco de Bechí"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q907254": {
+   "labels": {
+    "fr": "Brembo",
+    "en": "Brembo",
+    "it": "Brembo",
+    "de": "Brembo"
+   },
+   "aliases": {
+    "it": [
+     "Brembo fiume"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q9174874": {
+   "labels": {
+    "pl": "Bobrówka (dopływ Olzy)",
+    "cs": "Bobrůvka",
+    "en": "Bobrówka"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q925450": {
+   "labels": {
+    "de": "Brok",
+    "pl": "Brok",
+    "en": "Brok",
+    "fr": "Brok"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q9264025": {
+   "labels": {
+    "pl": "Fryba",
+    "de": "Fryba",
+    "en": "Fryba"
+   },
+   "aliases": {
+    "pl": [
+     "Browina (rzeka)"
+    ]
+   },
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q927195": {
+   "labels": {
+    "de": "Soła",
+    "en": "Soła",
+    "it": "Soła",
+    "pl": "Soła",
+    "sv": "Soła",
+    "fr": "Soła",
+    "cs": "Soła",
+    "es": "Soła"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q4022"
+   ]
+  },
+  "Q958359": {
+   "labels": {
+    "de": "Nissan",
+    "cs": "Nissan",
+    "en": "Nissan",
+    "fr": "Nissan",
+    "it": "Nissan",
+    "pt": "Nissan",
+    "sv": "Nissan",
+    "pl": "Nissan (rzeka)",
+    "es": "Nissan"
+   },
+   "aliases": {},
+   "instance_of": [
+    "Q3529419",
+    "Q4022"
+   ]
+  },
+  "Q97": {
+   "labels": {
+    "en": "Atlantic Ocean",
+    "de": "Atlantischer Ozean",
+    "fr": "océan Atlantique",
+    "it": "Oceano Atlantico",
+    "es": "Océano Atlántico",
+    "cs": "Atlantský oceán",
+    "pl": "Ocean Atlantycki",
+    "pt": "Oceano Atlântico",
+    "sk": "Atlantický oceán",
+    "sv": "Atlanten"
+   },
+   "aliases": {
+    "de": [
+     "Atlantik"
+    ],
+    "fr": [
+     "Atlantique"
+    ],
+    "pl": [
+     "Atlantyk"
+    ],
+    "en": [
+     "Atlantic",
+     "Atlantic Sea",
+     "Great Western Ocean",
+     "Oceanus",
+     "the Atlantic",
+     "Atlantick",
+     "Atlantick Ocean",
+     "Atlantick Sea",
+     "the Atlantick",
+     "the Atlantic Ocean"
+    ],
+    "sv": [
+     "Atlantiska havet",
+     "Atlantiska oceanen",
+     "Stora västra oceanen",
+     "Stora västerhavet"
+    ],
+    "it": [
+     "Atlantico"
+    ],
+    "cs": [
+     "Atlantický oceán",
+     "Atlantik"
+    ],
+    "es": [
+     "Atlántico"
+    ]
+   },
+   "instance_of": [
+    "Q9430"
+   ]
+  }
+ }
+}
