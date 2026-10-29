@@ -150,3 +150,18 @@ arrows, with fake "new" towns (today's slots with renamed QIDs; known doubled to
 the ≥ 30 gate). All paths run: hash check, size gate, permutation p, bootstraps, P1a
 paired difference, S2 interval, refusal to score twice. Real `runs/prereg/` holds
 only the three arrows and their hashes; no `p1-result.json` exists.
+
+**11:52 · Second-pass sizing (no run yet).** Targets, per Thomas: known-by-retrieval
+balanced by country, and right-by-prior. P1 needs ≥ 30 new known-by-retrieval AND
+≥ 30 new unstable. Today's yield of known-by-retrieval is low and fame-dependent:
+by sitelinks 0/8 (<20), 1/93 (20–40), 13/159 (40–80), 6/34 (≥ 80). By country it is
+DE 3, AT 1, PL 1, CZ 2, SK 2, FR 6, IT 0, ES 5, PT 0, SE 0. The seed script caps
+population at 200 000 and samples evenly over sitelinks, which starves the known
+cell. Proposed pull: exclude today's 294 QIDs; per country, oversample towns with
+sitelinks ≥ 60 and no population cap, aiming at ~30 graded towns per country for
+known-by-retrieval. Add a right-by-prior arm: small towns whose river is the
+leave-one-out regional modal river. Grading cost on HF log-prob: 46 s/town (294
+towns took 3 h 46), so ~300 towns ≈ 3.8 h. Alternative: an Ollama pre-screen
+(~14 s/town sampled) on ~600 candidates (≈ 2.3 h), then HF only on likely-known
+plus a random unstable sample (~160 towns ≈ 2 h). Waiting for Thomas's choice before
+pulling.
