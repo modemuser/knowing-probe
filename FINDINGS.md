@@ -328,3 +328,24 @@ the same fame band. At ≥ 40 sitelinks, 82–92 % of towns are still not
 known-by-retrieval, so known and unstable come out fame-matched and roughly
 tokenization-matched. Registered as P1b, with a functional surface control and a
 fame-only baseline.
+
+## 2026-10-29 · Errata, found while writing the README (publication pass)
+
+Every number below was re-read from the committed result files. The files are
+unchanged; four sentences above misquoted them.
+
+1. *Entity token entry, right-by-prior table.* The row "last prompt token, L22"
+   (right-by-prior median 0.60) comes from the **raw** last-prompt-token arrow
+   (`runs/river/prompt-last/`), not the country-centred one as the table heading says.
+   Like for like: country-centred, 0.49 at the last prompt token (L22) vs 0.23 at the
+   town name (L21) (`*-country-centred/known-vs-unstable-summary.json`); raw, 0.60
+   (L22) vs 0.27 (L21). The move persists either way, smaller than the table implied.
+2. *Entity token entry.* "0.80–0.85 over layers 12–28" (town-name token,
+   country-centred, known vs unstable): the range in the summary is **0.77–0.85**.
+3. *Step 0 entry.* "P(shuffled AUC ≥ real) … 0.005–0.075 in layers 14–36" (cities):
+   the range is **0.005–0.105** (0.105 at layer 30). For sp_en_trans "0.10–0.28 beyond"
+   is **0.10–0.31** over layers 16–36.
+4. Not an error in this file, but a quote that could travel: known vs country-prior
+   after country-centring at the last prompt token is **0.78–0.83** in layers 19–24
+   (permutation p 0.045–0.080). The value of about 0.74 belongs to known vs unstable
+   after centring (0.71–0.75).
