@@ -204,3 +204,11 @@ now carry the author Thomas Misera; `Co-Authored-By` lines removed from the mess
 Trees, author dates and committer dates are unchanged (P1's commit is still 11:40:57,
 before the pass it governs). Hashes cited in this notebook and in FINDINGS.md updated:
 911d9e0 → e61627a (Step 0), 9a5517b → 221646c (river cells), a1fb877 → 50500b5 (P1).
+
+**15:41 · Publication pass, section 0: freeze.** Before any change: frozen arrows
+`runs/prereg/p1-arrow.npz` eca30c29…c463, `s1-arrow.npz` 33a7252b…0665,
+`p1lex-arrow.npz` 93fef88e…c000, each equal to `runs/prereg/frozen-hashes.json`.
+No `p1-result.json` exists (P1 unrun). Fast tests: 3 passed. The venv runs contrastset
+0.1.0.post1 from the PyPI registry (`uv.lock` source = pypi.org/simple, not editable);
+the pin itself was made at 15:21 (61a1907). Commits of this pass carry no
+attribution lines, matching the 15:25 rewrite.
