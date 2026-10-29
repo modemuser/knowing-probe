@@ -6,8 +6,10 @@
       token, layer 1; lexical control, P1a). Refuses to refreeze a name. Prints the
       sha256 of each, for NOTEBOOK.md.
   uv run python scripts/prereg_p1.py score NEW_CELLS.jsonl NEW_ACTS_ENTITY NEW_ACTS_PROMPT
-      Scores the new towns once. Refuses if the arrow files' hashes do not match
-      the ones recorded at freeze time, or if a cell has fewer than 30 towns.
+      Scores the new towns once, as amended by P1b (new-pass country centring, >= 40
+      per cell, surface controls P1a and P1c, descriptive D1/D2/S1/S2). Refuses if
+      the arrow files' hashes differ from those recorded at freeze time, if a cell
+      is short, or if any new town was in today's set.
 """
 
 from __future__ import annotations
@@ -21,7 +23,7 @@ import numpy as np
 
 from knowing_probe import arrow
 
-MIN_PER_CELL = 30
+MIN_PER_CELL = 40  # P1b (P1 said 30)
 N_PERM, N_BOOT = 10_000, 10_000
 OUT = Path("runs/prereg")
 # name: (today's activations, layer). p1lex is the lexical control of P1a (registered after P1).
@@ -63,7 +65,20 @@ def freeze(names: list[str]) -> None:
     hash_file.write_text(json.dumps(hashes, indent=1))
 
 
+def paired_diff(a: tuple[np.ndarray, np.ndarray], b: tuple[np.ndarray, np.ndarray], seed: int) -> dict:
+    """AUC(a) - AUC(b) on the identical towns; 95 % interval from bootstraps that draw the same towns for both."""
+    (pa, na), (pb, nb) = a, b
+    rng = np.random.default_rng(seed)
+    diffs = []
+    for _ in range(N_BOOT):
+        i, j = rng.integers(0, len(pa), len(pa)), rng.integers(0, len(na), len(na))
+        diffs.append(arrow.auc(pa[i], na[j]) - arrow.auc(pb[i], nb[j]))
+    ci = [float(x) for x in np.percentile(diffs, [2.5, 97.5])]
+    return {"diff": arrow.auc(pa, na) - arrow.auc(pb, nb), "ci95": ci, "above_zero": bool(ci[0] > 0)}
+
+
 def score(new_cells: str, stems: dict[str, str]) -> None:
+    """P1 as amended by P1b. stems: {"entity": new entity-token acts, "prompt": new last-prompt-token acts}."""
     out = OUT / "p1-result.json"
     if out.exists():
         raise SystemExit(f"{out} exists: P1 is scored once")
@@ -72,52 +87,66 @@ def score(new_cells: str, stems: dict[str, str]) -> None:
     today = set(country_of(CELLS_TODAY))
     if today & set(rows):
         raise SystemExit(f"{len(today & set(rows))} of the new towns were in today's set: P1 scores new towns only")
-    result = {}
-    for name, stem in stems.items():
+    frozen = {}
+    for name in ("p1", "s1", "p1lex"):
         path = OUT / f"{name}-arrow.npz"
         if hashlib.sha256(path.read_bytes()).hexdigest() != recorded[name]:
             raise SystemExit(f"{path} changed since freeze: refusing to score")
-        z = np.load(path)
-        keys = list(z["country_keys"])
-        side = json.loads(Path(f"{stem}.json").read_text())
-        acts = np.load(f"{stem}.npy")[:, int(z["layer"]), :].astype(np.float64)
-        items = side["items"]
-        cell = np.array([it["cell"] for it in items])
-        country = [rows[it["qid"]]["country_qid"] for it in items]
-        centred = acts - z["country_means"][[keys.index(c) for c in country]]
-        s = (centred @ z["arrow"] - z["lo"]) / (z["hi"] - z["lo"])
-        pos, neg = s[cell == "known-by-retrieval"], s[cell == "unstable"]
-        if min(len(pos), len(neg)) < MIN_PER_CELL:
-            raise SystemExit(f"{name}: {len(pos)} known / {len(neg)} unstable, below {MIN_PER_CELL}: pull more towns first")
+        frozen[name] = np.load(path)
+    sides = {k: json.loads(Path(f"{v}.json").read_text()) for k, v in stems.items()}
+    items = sides["entity"]["items"]
+    if [it["qid"] for it in items] != [it["qid"] for it in sides["prompt"]["items"]]:
+        raise SystemExit("entity and prompt activation files list different towns")
+    cell = np.array([it["cell"] for it in items])
+    country = np.array([rows[it["qid"]]["country_qid"] for it in items])
+    P, N, R = cell == "known-by-retrieval", cell == "unstable", cell == "right-by-prior"
+    if min(P.sum(), N.sum()) < MIN_PER_CELL:
+        raise SystemExit(f"{P.sum()} known / {N.sum()} unstable, below {MIN_PER_CELL}: pull more towns first")
+
+    def layer(stem_key: str, l: int) -> np.ndarray:
+        """New towns at layer l, centred with NEW-pass country means (all new slots of the country; P1b)."""
+        x = np.load(f"{stems[stem_key]}.npy")[:, l, :].astype(np.float64)
+        for c in set(country):
+            x[country == c] -= x[country == c].mean(axis=0)
+        return x
+
+    def scores(x: np.ndarray, z) -> np.ndarray:
+        return (x @ z["arrow"] - z["lo"]) / (z["hi"] - z["lo"])
+
+    e21, e1, p21 = layer("entity", 21), layer("entity", 1), layer("prompt", 21)
+    u = frozen["p1lex"]["arrow"] / np.linalg.norm(frozen["p1lex"]["arrow"])
+    variants = {
+        "p1": scores(e21, frozen["p1"]),                      # primary
+        "s1": scores(p21, frozen["s1"]),                      # secondary, last prompt token
+        "p1lex": scores(e1, frozen["p1lex"]),                 # P1a: surface at layer 1
+        "p1c_L1_arrow_on_L21": scores(e21, frozen["p1lex"]),  # P1c: surface direction carried to layer 21
+        "d2_L1_removed": scores(e21 - np.outer(e21 @ u, u), frozen["p1"]),
+        "d1_log_sitelinks": np.log(np.array([rows[it["qid"]]["sitelinks"] for it in items], dtype=float)),
+    }
+    rng = np.random.default_rng(0)
+    result: dict = {"n_known": int(P.sum()), "n_unstable": int(N.sum()), "n_right_by_prior": int(R.sum()),
+                    "centring": "new-pass country means (P1b)", "frozen_hashes": recorded}
+    for name, s in variants.items():
+        pos, neg = s[P], s[N]
         auc = arrow.auc(pos, neg)
-        rng = np.random.default_rng(0)
         both = np.concatenate([pos, neg])
         perm = [arrow.auc(*np.split(rng.permutation(both), [len(pos)])) for _ in range(N_PERM)]
-        p = (1 + sum(a >= auc for a in perm)) / (1 + N_PERM)
         boot = [arrow.auc(rng.choice(pos, len(pos)), rng.choice(neg, len(neg))) for _ in range(N_BOOT)]
-        rbp = s[cell == "right-by-prior"]
-        result[name] = {"auc": auc, "perm_p_one_sided": p, "pass": bool(auc > 0.5 and p < 0.05) if name == "p1" else None,
-                        "auc_ci95": [float(x) for x in np.percentile(boot, [2.5, 97.5])],
-                        "balanced_acc_at_0.5": float(((pos > 0.5).mean() + (neg <= 0.5).mean()) / 2),
-                        "n_known": len(pos), "n_unstable": len(neg),
-                        "s2_right_by_prior_median": float(np.median(rbp)) if len(rbp) else None,
-                        "s2_median_ci95": [float(x) for x in np.percentile(
-                            [np.median(rng.choice(rbp, len(rbp))) for _ in range(N_BOOT)], [2.5, 97.5])] if len(rbp) else None,
-                        "n_right_by_prior": len(rbp)}
-        result[name]["_scores"] = (pos, neg)
-        print(name, json.dumps({k: v for k, v in result[name].items() if k != "_scores"}))
-    # P1a: does layer 21 add to the name's surface (layer 1)? Paired bootstrap over the same new towns.
-    (p21, n21), (p01, n01) = result["p1"].pop("_scores"), result["p1lex"].pop("_scores")
-    result["s1"].pop("_scores")
-    rng = np.random.default_rng(1)
-    diffs = []
-    for _ in range(N_BOOT):
-        i, j = rng.integers(0, len(p21), len(p21)), rng.integers(0, len(n21), len(n21))
-        diffs.append(arrow.auc(p21[i], n21[j]) - arrow.auc(p01[i], n01[j]))
-    ci = [float(x) for x in np.percentile(diffs, [2.5, 97.5])]
-    result["p1a"] = {"auc_l21_minus_l1": result["p1"]["auc"] - result["p1lex"]["auc"], "ci95": ci,
-                     "beyond_surface": bool(ci[0] > 0)}
-    print("p1a", json.dumps(result["p1a"]))
+        result[name] = {"auc": auc, "perm_p_one_sided": (1 + sum(a >= auc for a in perm)) / (1 + N_PERM),
+                        "auc_ci95": [float(x) for x in np.percentile(boot, [2.5, 97.5])]}
+        if name in ("p1", "s1"):
+            rbp = s[R]
+            result[name]["balanced_acc_at_0.5"] = float(((pos > 0.5).mean() + (neg <= 0.5).mean()) / 2)
+            result[name]["s2_right_by_prior_median"] = float(np.median(rbp)) if len(rbp) else None
+            result[name]["s2_median_ci95"] = [float(x) for x in np.percentile(
+                [np.median(rng.choice(rbp, len(rbp))) for _ in range(N_BOOT)], [2.5, 97.5])] if len(rbp) else None
+        print(name, json.dumps(result[name]))
+    pair = lambda k: (variants[k][P], variants[k][N])
+    result["p1"]["pass"] = bool(result["p1"]["auc"] > 0.5 and result["p1"]["perm_p_one_sided"] < 0.05)
+    result["p1a"] = paired_diff(pair("p1"), pair("p1lex"), seed=1)
+    result["p1c"] = paired_diff(pair("p1"), pair("p1c_L1_arrow_on_L21"), seed=2)
+    result["beyond_surface"] = bool(result["p1"]["pass"] and result["p1a"]["above_zero"] and result["p1c"]["above_zero"])
+    print("p1a", json.dumps(result["p1a"]), "\np1c", json.dumps(result["p1c"]), "\nbeyond_surface", result["beyond_surface"])
     out.write_text(json.dumps(result, indent=1))
 
 
@@ -125,4 +154,4 @@ if __name__ == "__main__":
     if sys.argv[1] == "freeze":
         freeze(sys.argv[2:] or list(TODAY))
     elif sys.argv[1] == "score":
-        score(sys.argv[2], {"p1": sys.argv[3], "s1": sys.argv[4], "p1lex": sys.argv[3]})
+        score(sys.argv[2], {"entity": sys.argv[3], "prompt": sys.argv[4]})

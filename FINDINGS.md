@@ -218,7 +218,7 @@ layers 19–29, uncorrected p ≈ 0.03–0.07 over 36 layers) survives country-c
 It becomes a pre-registered test on the second pass (next entry). Per the rules: no
 logistic regression, 2D projection or ablation until this is followed up.
 
-## 2026-10-29 · Entity token and country-centring: stronger at the town name, but a lexical floor under it
+## 2026-10-29 · Entity token and country-centring: higher AUC at the town name, mostly the name's surface (demoted, see next entry)
 
 **Setup.** Same 200 slots, labels, split and code as the first river probe. Two
 changes, each run alone and together. (1) Position: the last token of the town name
@@ -243,9 +243,12 @@ P1 was pre-registered and committed (a1fb877) before this pass ran. Figures in
 - **Country-centring does not explain the late-layer trend at the last prompt
   token**: 0.70–0.75 in layers 19–24 either way. It was explaining the known vs
   country-prior contrast (0.84 → 0.78–0.83 centred at the last prompt token).
-- **At the entity token the separation is stronger and survives centring**:
-  0.80–0.85 over layers 12–28, permutation p ≤ 0.005 at 21–28. The entity-recognition
-  position carries more than the end of the prompt.
+- At the entity token, held-out AUC is 0.80–0.85 over layers 12–28 after centring
+  (permutation p ≤ 0.005 at 21–28). *First written as "the separation is stronger
+  [and] the entity-recognition position carries more than the end of the prompt".
+  Demoted at 11:57: raw layer 0, the bare token embedding, is already 0.79, higher
+  than the last prompt token ever reached. The next entry shows that a layer-1 arrow
+  does as well at layer 21.*
 - **But part of it is surface.** Layer 0 is the bare embedding of the name's last
   subword, with no context at all, and it already gives 0.66 centred (0.79 raw). Layer 1
   gives 0.76. Name length in tokens and word-initial endings do not differ between
@@ -278,3 +281,50 @@ names may do part of this too. Registered as descriptive S2 for the second pass.
 **Status.** Underpowered for a modest direction, as before. The entity token is
 the better candidate, with the lexical floor as its main threat. Both are now
 fixed in PREREGISTRATION.md (P1, P1a, S1, S2), to be scored once on the second pass.
+
+## 2026-10-29 · The layer-1 (surface) arrow does as well at layer 21 as layer 21's own arrow
+
+**Question** (Thomas). The residual stream is additive, so unless something
+overwrites it, the token embedding is still present at layer 21. Is the entity-token
+separation one surface direction carried through the stream?
+
+**Setup.** Entity token, country-centred (training-slot means), known-by-retrieval
+vs unstable, arrows on the 13 + 55 training towns, held-out 7 + 28, 200 shuffles.
+`scripts/river_surface.py` → `runs/river/surface.json`.
+
+| layer | \|cos(L1 arrow, L arrow)\| | AUC (p) | L1 arrow removed: AUC (p) | L0 + L1 removed: AUC (p) |
+|---|---|---|---|---|
+| 4 | 0.67 | 0.76 (0.045) | 0.69 (0.11) | 0.69 (0.12) |
+| 12 | 0.21 | 0.85 (0.000) | 0.83 (0.015) | 0.83 (0.015) |
+| 21 | 0.16 | 0.83 (0.005) | 0.81 (0.010) | 0.81 (0.015) |
+| 28 | 0.21 | 0.82 (0.000) | 0.80 (0.000) | 0.80 (0.000) |
+
+Taken alone, this table says "different directions, removing the surface costs
+nothing". **Both readings fail the noise check:**
+- Two layer-21 arrows from random halves of the training towns agree at a median
+  |cos| of only **0.12**. At 13 known towns an arrow in 4096 dimensions is mostly
+  noise, so a cosine of 0.16 between the L1 and L21 arrows is at the noise floor and
+  says nothing about shared direction. Adjacent layers (L20/L21: 0.95) share the
+  same noise, which is why they look alike.
+- Projecting out one noisy direction removes almost none of the surface
+  information, so the unchanged AUC after removal is no evidence either.
+- **Functional test, which does not depend on the arrows being clean:** the layer-1
+  arrow applied to layer-L activations gives held-out AUC 0.76 at L1, **0.85 at
+  L12, 0.81 at L21, 0.80 at L28**. That is the same as each layer's own arrow. A
+  direction fitted on the name's surface ranks the held-out towns at layer 21 as
+  well as anything fitted at layer 21.
+
+**Reading.** Today's towns cannot tell knowledge from surface at the entity token.
+The surface being the whole story is consistent with every number so far. The extra
+0.07 over layer 1 is the only part not yet explained, and it is within the noise of
+7 held-out towns. **P1 as originally written could pass for the wrong reason.**
+
+**Why the floor exists, and what it means for the second pass** (Thomas). Known
+towns are famous. Famous names occur more often in the tokenizer's training corpus
+and end in different subwords, so the last subword is a fame proxy, and fame is
+what the label tracks. Pulling famous towns for the known cell and leaving the
+unstable towns obscure would strengthen the confound. Fix: draw *both* cells from
+the same fame band. At ≥ 40 sitelinks, 82–92 % of towns are still not
+known-by-retrieval, so known and unstable come out fame-matched and roughly
+tokenization-matched. Registered as P1b, with a functional surface control and a
+fame-only baseline.

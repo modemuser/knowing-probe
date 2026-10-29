@@ -75,3 +75,48 @@ entity token), at layer 1 instead of 21: `runs/prereg/p1lex-arrow.npz`.
 the new towns, AUC(layer 21) − AUC(layer 1) > 0 with a paired bootstrap 95 %
 interval (10 000 resamples of the same towns) excluding 0. If P1 passes and P1a
 does not, report: "separates, but no more than the name's surface does".
+
+## P1b · 2026-10-29 · Amendment: sampling, centring, size, surface controls (P1 and P1a unchanged in text; this entry overrides where they differ)
+
+**Registered** at ~12:00, after the surface analysis on today's towns
+(`runs/river/surface.json`, FINDINGS "The layer-1 (surface) arrow does as well at
+layer 21…") and Thomas's review, before any town of the second pass was pulled.
+
+**Sampling.** Every new town is drawn from the same fame band, sitelinks ≥ 40,
+with no population cap, about 35 per country across all ten countries (Italy,
+Portugal and Sweden included). None of today's 294 towns. Known-by-retrieval and
+unstable both come from this one pull, so they are fame-matched by construction.
+No separate pull per cell.
+
+**Binning.** `river_cells.py` rules and thresholds unchanged, run on the merged pool
+(today's 294 + the new towns) so that leave-one-out regional defaults and the basin
+check see all towns. Only new towns enter the test.
+
+**Centring (changes P1 step 2 for the new towns).** New towns are centred with
+new-pass country means: per country, the mean residual over all new slots of that
+country (all five cells), at the layer being scored. Today's means are not used for
+new towns: today's Italian mean is an all-unstable mean, and it would push a new
+known Italian town towards the unstable side by construction. The frozen arrows
+(direction and 0/1 scale, from today's towns) are unchanged.
+
+**Minimum size (changes P1).** ≥ 40 new known-by-retrieval and ≥ 40 new unstable.
+Below that, pull more from the same band before scoring.
+
+**Paired comparisons.** Every comparison of two AUCs uses the identical set of new
+towns. The 95 % interval comes from 10 000 bootstrap resamples that draw the same
+towns for both AUCs.
+
+**Surface controls (decide whether a P1 pass counts as more than the surface).**
+P1 counts as evidence of something beyond the name's surface only if BOTH:
+- P1a: AUC(frozen L21 arrow on L21) − AUC(frozen L1 arrow on L1) > 0, paired CI above 0;
+- P1c (new): AUC(frozen L21 arrow on L21) − AUC(frozen L1 arrow applied to the L21
+  activations) > 0, paired CI above 0. This is the functional surface test that
+  today's data could not decide: it asks whether layer 21 knows more than the
+  surface direction carried along to layer 21.
+
+**Descriptive, registered so they are not chosen later.**
+- D1, fame baseline: AUC of log(sitelinks) alone, known vs unstable, new towns.
+- D2, projection-out: the frozen L1 direction projected out of the new L21
+  activations, then scored with the frozen L21 arrow.
+- S1 and S2 as before (S2, right-by-prior position, is the line the write-up would
+  want if it replicates on ≥ 30 new right-by-prior towns).

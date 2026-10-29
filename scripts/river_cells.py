@@ -151,7 +151,7 @@ def main() -> None:
             "prior_kind": prior_kind,
             "prior_guess_flag": bool(river.get("prior_guess")), "default_guess": is_default_guess,
             "default": label.get(default) if default else None, "default_qid": default, "default_kind": default_kind,
-            "region_known": region_known,
+            "region_known": region_known, "sitelinks": r["meta"].get("sitelinks"),
         })
 
     # Split by town, stratified by cell.

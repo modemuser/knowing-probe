@@ -165,3 +165,25 @@ towns took 3 h 46), so ~300 towns ≈ 3.8 h. Alternative: an Ollama pre-screen
 (~14 s/town sampled) on ~600 candidates (≈ 2.3 h), then HF only on likely-known
 plus a random unstable sample (~160 towns ≈ 2 h). Waiting for Thomas's choice before
 pulling.
+
+**~11:53 · Thomas's second review.** (1) Demote the entity-token headline: raw L0 is
+already 0.79. (2) Test the surface directly: cos(L1 arrow, L21 arrow), and project the
+L1 arrow out of L21. (3) The floor is a fame proxy; draw known and unstable from the
+same fame band (≥ 40 sitelinks), no population cap. (4) Centre new towns with new-pass
+country means; ≥ 40 known; paired comparisons on identical towns. (5) Direct HF, ~350
+towns, balanced over all ten countries; split across both Macs if the second is free.
+
+**11:55 · Surface test** (`scripts/river_surface.py` → `runs/river/surface.json`).
+|cos(L1, L21 arrow)| 0.16; L1 direction removed → L21 AUC 0.81 (from 0.83). Looked like
+"different direction", but the noise check kills that reading: split-half |cos| of
+the L21 arrow itself is 0.12 (13 known towns). Functional test: the L1 arrow scored on
+L21 activations gives 0.81, the same as L21's own arrow. Undecidable on today's towns;
+the surface may be the whole story. FINDINGS headline demoted (11:57), new entry added.
+
+**~12:00 · Registered P1b** (sampling ≥ 40 sitelinks for all new towns; merged-pool
+binning; new-pass country centring; ≥ 40 per cell; paired CIs; new control P1c = the
+frozen L1 arrow applied to L21; descriptive D1 log-sitelinks, D2 projection-out).
+`prereg_p1.py score` rewritten for P1b; dry run on a scratch copy passes. Side
+observation from the dry run (today's towns, in-sample): log(sitelinks) alone gives
+AUC 0.67 for known vs unstable, so fame tracks the label even inside today's pool.
+`river_cells.py` now also writes `sitelinks` (no rule change).
