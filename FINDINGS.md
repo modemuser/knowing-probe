@@ -169,11 +169,14 @@ activations (subtracting each country's mean training activation) leaves 0.78–
 in layers 19–26, p 0.02–0.10. Contrast 1 survives country-centring unchanged
 (0.70–0.75 in layers 19–29); there country alone gives only 0.58.
 
-**Is it the cell size?** No, not for an effect of Step 0's strength. Cities subsampled
-to the river's exact sizes (13 + 7 vs 55 + 28, one statement per city, 300 draws)
-still give a median held-out AUC of 1.000 from layer 16 (5th percentile ≥ 0.94). A
-known/unknown direction as strong as the truth direction would have shown up. A
-weak one (AUC around 0.7) is neither established nor ruled out by 7 held-out towns.
+**Is it the cell size?** Only for a dominant direction. Cities subsampled to the
+river's exact sizes (13 + 7 vs 55 + 28, one statement per city, 300 draws) still
+give a median held-out AUC of 1.000 from layer 16 (5th percentile ≥ 0.94). But
+true/false is PC1 of those layers, the largest axis of variance in the stream: an
+unusually easy target. A knowing direction a tenth that size would at 13 training
+and 7 held-out towns look exactly like what we see: AUC 0.70–0.75, p ≈ 0.06, an
+arrow that overfits its training towns. *(Corrected 11:40 after Thomas's review; the
+first version said "not a lack of data", which the check does not support.)*
 
 **Where the other cells fall** (median position on the arrow, 0 = unstable/prior mean,
 1 = known mean; held-out only for the two fitted cells):
@@ -197,16 +200,19 @@ weak one (AUC around 0.7) is neither established nor ruled out by 7 held-out tow
   rests on 19 towns, half of them weakly basin-checked: a hint, nothing more.
 
 **Bracketing (Step 0 vs river).** Free labels separate perfectly through the same
-code. Graded labels give at best a weak trend that a strong direction would not
-hide behind at this n. On the plan's rule that points at the labels, not the probe.
+code. Graded labels give at best a weak trend; a dominant direction would not hide
+behind it at this n, a modest one could. On the plan's rule that points at the
+labels (or their number), not the probe.
 Three readings remain open. (a) The pre-answer state carries no strong knowing
 signal at this position. (b) Known-by-retrieval (20 towns, 6 FR, 5 ES, 0 SE/PT/IT) is too
 thin and too country-skewed to define the positive pole. (c) The contrast is subtler
 than true/false and needs more items, not a different probe. The targeted second
-Wikidata pass should fatten the known-by-retrieval cell first, balanced by country,
-as well as right-by-prior and the prior cells.
+Wikidata pass is for known-by-retrieval, balanced by country, and right-by-prior
+(the "correct because it is the default river" contamination of known that the
+prior cells were meant to catch). The prior cells are not its target.
 
-**Outcome.** Reported as a null for a strong direction (cell sizes above), with
-a weak late-layer known-vs-unstable trend (AUC ≈ 0.7–0.75, layers 19–29, uncorrected
-p ≈ 0.03–0.07 over 36 layers) that survives country-centring. Per the rules: no
+**Outcome.** A null for a dominant direction; **underpowered for a modest one**
+(cell sizes above). A weak late-layer known-vs-unstable trend (AUC ≈ 0.7–0.75,
+layers 19–29, uncorrected p ≈ 0.03–0.07 over 36 layers) survives country-centring.
+It becomes a pre-registered test on the second pass (next entry). Per the rules: no
 logistic regression, 2D projection or ablation until this is followed up.
