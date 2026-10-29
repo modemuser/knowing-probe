@@ -2,7 +2,7 @@
  "activations": "runs/river/acts-entity.npy",
  "activations_sha256": "65333a78b5f72f6e5ac6ddb23ce3df7b188daa4a7fedb0f2954faa3bb9b85842",
  "template": {
-  "path": "/Users/tom/dev/contrastset/experiments/templates/qwen3-name-only.txt",
+  "path": "data/templates/qwen3-name-only.txt",
   "sha256": "be01394753d480ebbee0b4317ce7281fd3f1bb0870b762ce4d9591f3d18bbcae"
  },
  "position_rule": "last token of the entity name: the last token whose character span starts before the end of the entity string (its last occurrence in the prompt)",

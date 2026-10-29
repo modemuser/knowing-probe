@@ -1,7 +1,7 @@
 # Findings
 
 Results of the probe experiments on Qwen/Qwen3-8B, kept with the data and code that
-produced them. Datasets come from [contrastset](../contrastset) (graded river slots)
+produced them. Datasets come from [contrastset](https://github.com/modemuser/contrastset) (graded river slots)
 or from public labelled sets (Step 0). Each entry says what was measured and how far
 it can be trusted.
 

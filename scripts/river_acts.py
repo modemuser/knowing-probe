@@ -18,7 +18,9 @@ from contrastset.grade import Template, require_same_template
 
 from knowing_probe import acts
 
-TEMPLATE = Path(__file__).resolve().parents[2] / "contrastset/experiments/templates/qwen3-name-only.txt"
+# Byte-identical copy of contrastset experiments/templates/qwen3-name-only.txt (template B);
+# body sha256 be01394753d4…, checked against the graded file by require_same_template.
+TEMPLATE = Path("data/templates/qwen3-name-only.txt")
 
 
 def main() -> None:

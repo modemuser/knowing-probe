@@ -40,7 +40,9 @@ from contrastset.grade import Template, normalise, require_same_template
 
 KNOWN_MIN, UNKNOWN_MAX = 0.875, 0.125
 SPLIT_SEED, HELD_OUT_FRAC = 20261029, 1 / 3
-TEMPLATE = Path(__file__).resolve().parents[2] / "contrastset/experiments/templates/qwen3-name-only.txt"
+# Byte-identical copy of contrastset experiments/templates/qwen3-name-only.txt (template B);
+# body sha256 be01394753d4…, checked against the graded file by require_same_template.
+TEMPLATE = Path("data/templates/qwen3-name-only.txt")
 LANGS = ("en", "de")
 GENERIC = {"river", "rio", "rzeka", "rieka", "reka", "fluss", "fleuve", "fiume", "alv", "alven"}
 CELLS = ["known-by-retrieval", "right-by-prior", "unstable", "parent-river", "country-prior"]

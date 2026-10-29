@@ -240,11 +240,11 @@
  ],
  "token_runs_past_entity": 0,
  "template": {
-  "path": "/Users/tom/dev/contrastset/experiments/templates/qwen3-name-only.txt",
+  "path": "data/templates/qwen3-name-only.txt",
   "sha256": "be01394753d480ebbee0b4317ce7281fd3f1bb0870b762ce4d9591f3d18bbcae"
  },
  "cells_file": "data/river-cells.jsonl",
- "graded_file": "../contrastset/runs/wikidata-qwen3-8b-hf-logprob-B-priors.jsonl",
+ "graded_file": "data/wikidata-qwen3-8b-hf-logprob-B-priors.jsonl",
  "position": "entity_last",
  "items": [
   {

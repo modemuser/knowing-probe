@@ -2,7 +2,7 @@
  "activations": "runs/river/acts.npy",
  "activations_sha256": "a25427f9257a948c6bd80a0e6a2252d1554b0700813ac51905de4dab7289cd21",
  "template": {
-  "path": "/Users/tom/dev/contrastset/experiments/templates/qwen3-name-only.txt",
+  "path": "data/templates/qwen3-name-only.txt",
   "sha256": "be01394753d480ebbee0b4317ce7281fd3f1bb0870b762ce4d9591f3d18bbcae"
  },
  "position_rule": "last token of the input text (for a chat prompt: the token right before the answer would begin)",

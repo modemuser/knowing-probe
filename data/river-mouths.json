@@ -1,7 +1,7 @@
 {
  "source": "Wikidata P403 (mouth of the watercourse), walked transitively",
  "retrieved": "2026-10-29",
- "graded_file": "../contrastset/runs/wikidata-qwen3-8b-hf-logprob-B-priors.jsonl",
+ "graded_file": "data/wikidata-qwen3-8b-hf-logprob-B-priors.jsonl",
  "languages": [
   "en",
   "de",

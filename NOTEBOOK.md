@@ -212,3 +212,32 @@ No `p1-result.json` exists (P1 unrun). Fast tests: 3 passed. The venv runs contr
 0.1.0.post1 from the PyPI registry (`uv.lock` source = pypi.org/simple, not editable);
 the pin itself was made at 15:21 (61a1907). Commits of this pass carry no
 attribution lines, matching the 15:25 rewrite.
+
+**15:43 · Section 1: repo hygiene.**
+- Grep of tracked files: no secrets, tokens or machine names. One leak: the template's
+  absolute path (`/Users/tom/dev/contrastset/experiments/templates/…`), 210 times, in
+  the cells file, the river sidecars and the river summaries. Fixed by committing a
+  byte-identical copy of the template as `data/templates/qwen3-name-only.txt`
+  (file sha256 01122ebc…, body sha256 be013947…) and replacing the path strings by
+  plain text substitution (no number touched). The same for the graded-file path:
+  the 294-town grade is now committed here as
+  `data/wikidata-qwen3-8b-hf-logprob-B-priors.jsonl` (2.8 MB, sha256 768070ea…,
+  identical to contrastset 514ed22 and to `graded_sha256` in the cells provenance).
+- History: two older commits still contain that absolute path in blobs. Not rewritten.
+  Nothing tracked is ignored; no blob was committed and later ignored; largest
+  blobs are `uv.lock` (413 kB) and strip-plot PNGs (~375 kB).
+- Reproducibility checks with no model: `river_cells.py` on the committed grade and
+  template regenerates the committed cell assignment exactly (200/200 slots: cell,
+  split, p_correct, modal answer, parent, prior kind, default; provenance equal).
+  `scripts/fetch_mt.sh` fetches the Marks & Tegmark CSVs at commit 5d1c630 and
+  verifies the recorded sha256 (both OK). `data/step0-split.json` records the Step 0
+  split (249 cities / 498 statements; 115 words / 118 statements held out), matching the
+  summaries. `runs/river/cells-summary.json` (`river_cells_summary.py`) puts the cell
+  numbers the README cites (sizes, 34 moved out of unstable, 12/12 basin failures,
+  known-by-retrieval yield by sitelinks band) into a committed result file.
+- `.gitignore`: `*.npy`, `*.npz` except `runs/prereg/*.npz`, `data/raw/`, model caches.
+  Ignored on disk: 1.3 GB of activations; committed tree: 10 MB.
+- `pyproject.toml`: 0.1.0, MIT (`LICENSE` copied from contrastset), Python ≥ 3.11,
+  `contrastset==0.1.0.post1`; torch 2.14.1 / transformers 5.21.0 /
+  `contrastset[hf]` moved to an `hf` extra. Resolved versions unchanged. With torch and
+  transformers blocked, all four `knowing_probe` modules import. Tests: 3 passed.
