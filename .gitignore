@@ -1,0 +1,5 @@
+.venv/
+__pycache__/
+# activations are large and reproducible from the scripts; sidecars and summaries are kept
+runs/**/*.npy
+data/raw/

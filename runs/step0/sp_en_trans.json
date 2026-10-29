@@ -1,0 +1,94 @@
+{
+ "model": {
+  "adapter": "hf",
+  "model": "Qwen/Qwen3-8B",
+  "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "device": "mps",
+  "dtype": "bfloat16",
+  "sampling": {
+   "order": "top_k -> top_p (both on untempered probabilities) -> temperature -> draw",
+   "top_k": "off",
+   "top_p": "off",
+   "min_p": "off",
+   "repetition_penalty": "off",
+   "temperature": "per call (provenance.sampling)"
+  },
+  "model_sampling_defaults_not_applied": {
+   "top_k": 20,
+   "top_p": 0.95,
+   "temperature": 0.6,
+   "min_p": null,
+   "repetition_penalty": null
+  },
+  "prefix_mass": {
+   "candidates": "every token consistent with the text (byte trie)",
+   "prune_below": 1e-05,
+   "max_paths_per_step": 512,
+   "bound": "logprob.p_correct_pruned_max: mass of dropped paths"
+  },
+  "transformers": "5.21.0",
+  "torch": "2.14.1"
+ },
+ "position_rule": "last token of the input text (for a chat prompt: the token right before the answer would begin)",
+ "residual": "forward hooks on embed_tokens (layer 0) and each decoder block (layer i); pre final norm",
+ "layers": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31,
+  32,
+  33,
+  34,
+  35,
+  36
+ ],
+ "n_items": 354,
+ "texts_sha256": "7d79a4a769f5286c87375618c8204b968f58319aefa2e69c04c714215fe0c9c3",
+ "last_tokens": [
+  "'."
+ ],
+ "dataset": {
+  "repo": "https://github.com/saprmarks/geometry-of-truth",
+  "commit": "5d1c630c44f7e50bda7ad86d601ccadf9abc5ddb",
+  "retrieved": "2026-10-29",
+  "file": "datasets/sp_en_trans.csv",
+  "sha256": "9afa97c1b8af539a05f47655a80a5c7832c6fdb914885fd24cb4bcccbe2795b5",
+  "n_rows": 354
+ },
+ "prompt": "statement text as-is, no chat template, no special tokens",
+ "shape": [
+  354,
+  37,
+  4096
+ ],
+ "dtype": "float32",
+ "npy_sha256": "62ed2835f53396d57c56d387b5fef66b5b597f4807ac72950a22058c46e33976"
+}
