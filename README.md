@@ -2,8 +2,13 @@
 
 **Status: the pre-registered confirmatory test P1 has not been run. Everything below
 is exploratory.** The second Wikidata pass that P1 needs (famous towns, ≥ 40
-sitelinks, country-balanced, both cells drawn from the same fame band) has not been
-graded.
+sitelinks, both cells drawn from the same fame band; countries with fewer than 10 new
+towns excluded, P1d) has not been graded.
+
+Exploratory, on 7 held-out known vs 28 unstable towns: held-out AUC 0.83 at the
+town-name token (layer 21, country-centred), which a layer-1 surface control matches at
+0.81 (the layer-1 arrow read out at layer 21). The entity-token result cannot yet be
+told apart from the name's surface form ([Exploratory results, item 3](#exploratory-results)).
 
 Built on [contrastset](https://github.com/modemuser/contrastset) 0.1.0.post1 (PyPI),
 which grades what the model knows; this repository reads activations and plots.
@@ -59,6 +64,13 @@ arrows above 0.5 at every layer) but not centred. Read as a permutation test, p 
 0.005–0.105 for cities and 0.10–0.31 for sp_en_trans in layers 16–36, where the real AUC
 is at or near 1.00 and random-sign arrows also reach it. In those layers the labels
 contribute only the sign. Figures: `figures/step0/`.
+
+![Step 0, cities: held-out AUC by layer](figures/step0/cities-by-layer.png)
+
+*Step 0, `cities`: what a real direction looks like in this pipeline. Held-out AUC
+(blue) and accuracy (orange) on 498 held-out statements, |cos| between the arrow and PC1
+(teal), permutation p (yellow), and the 5th–95th percentile of 200 shuffled-label
+arrows (grey band).*
 
 ## Cells
 
@@ -142,12 +154,13 @@ training activation before fitting. Figures: `figures/river/<variant>/`; numbers
   if layer 21 beats the layer-1 arrow at layer 1 (P1a) and the layer-1 arrow read out at
   layer 21 (P1c). Both comparisons are paired on identical towns, with bootstrap
   intervals above zero.
-- **The second pass** (P1b): every new town from the ≥ 40-sitelink band, so known and
-  unstable are fame-matched; no population cap; ≥ 40 known-by-retrieval and ≥ 40
-  unstable; new towns centred on their own country means; direct HF log-prob grading
-  of about 350 towns (about 4.5 h at 46 s per town).
+- **The second pass** (P1b, P1d): every new town from the ≥ 40-sitelink band, so known
+  and unstable are fame-matched; no population cap; ≥ 40 known-by-retrieval and ≥ 40
+  unstable; new towns centred on their own country means; a country is scored only
+  with ≥ 10 new slots in the cells; towns added in batches on cell counts alone; direct
+  HF log-prob grading of about 350 towns (about 4.5 h at 46 s per town).
 - **The outcome paragraphs** for pass and for failure are written in advance:
-  [PREREGISTRATION.md, last section](PREREGISTRATION.md#2026-10-29--before-publication-hashes-confirmed-ratified-choices-outcome-paragraphs-p1-still-unrun).
+  [PREREGISTRATION.md, outcome paragraphs](PREREGISTRATION.md#2026-10-29--before-publication-hashes-confirmed-ratified-choices-outcome-paragraphs-p1-still-unrun).
 - The frozen arrows and their sha256 are committed in `runs/prereg/`;
   `scripts/prereg_p1.py` refuses to refreeze an arrow or to score twice.
 
@@ -156,8 +169,13 @@ training activation before fitting. Figures: `figures/river/<variant>/`; numbers
 - **Country balance of the second pass.** The candidate pull (contrastset
   `experiments/wikidata-towns-pass2.jsonl`, 168 towns, ≥ 40 sitelinks) has 1 Polish,
   1 Portuguese and 2 Swedish towns. Few towns in those countries have both ≥ 40
-  sitelinks and a Wikidata river statement. "Country-balanced" as registered is not
-  reachable from this source; how to fill the pass is undecided.
+  sitelinks and a Wikidata river statement. "Country-balanced" as first registered
+  (P1b) is not reachable from this source. Decided before P1, as amendment
+  [P1d](PREREGISTRATION.md#p1d--2026-10-29--amendment-which-countries-enter-p1-and-where-the-towns-come-from-p1-still-unrun):
+  a country enters P1 only with ≥ 10 new slots in the cells, so Poland, Portugal and
+  Sweden are excluded and named in the result, and the rest of the band (mainly DE and
+  FR) supplies the towns, with no per-country quota. A country centred on one or two
+  towns would be centred onto the zero vector.
 - P1, P1a, P1c and the descriptive S1/S2/D1/D2 are unrun.
 - No layer search, logistic regression, 2D projection, ablation or steering has been
   run on purpose: they wait for P1.
@@ -190,6 +208,12 @@ bf16).
 uv sync --extra hf                       # torch 2.14.1, transformers 5.21.0, contrastset 0.1.0.post1
 uv run pytest -q                         # fast tests, no model
 ```
+
+The three tests cover the arrow maths: the group-preserving split, the projection
+scale and AUC, and the label shuffle within training items. The cell rules (including
+the basin rule) are checked by regenerating the committed cells from the committed grade
+(identical, 200/200), and the pre-registration script by dry runs on a scratch copy of
+the frozen arrows (NOTEBOOK.md 11:49 and 15:58); neither has unit tests.
 
 Step 0 (needs the model; about 10 min of activations at 0.28 s per statement):
 

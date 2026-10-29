@@ -218,3 +218,37 @@ filled in and nothing added:
 > arrow reading how famous or how tokenized the name is (the lexical floor), which
 > drawing both cells from one fame band reduced but did not remove. It does not show
 > a retrieval direction and is not reported as a positive result in any form.
+
+## P1d · 2026-10-29 · Amendment: which countries enter P1, and where the towns come from (P1 still unrun)
+
+**Registered** before any town of the second pass was graded. Nothing above this
+heading has been edited; this entry overrides P1b's sampling sentence ("about 35 per
+country across all ten countries") where they differ.
+
+**Why.** The ≥ 40-sitelink band cannot supply all ten countries. The candidate list
+(contrastset `experiments/wikidata-towns-pass2.jsonl`, 168 towns) has FR 32, DE 28,
+SK 27, ES 23, CZ 20, IT 20, AT 14, SE 2, PL 1, PT 1, because few Swedish, Polish and
+Portuguese towns have both ≥ 40 sitelinks and a Wikidata river statement. Centring a
+country with one or two new towns on its own mean is degenerate: a lone town is
+centred to the zero vector and lands at a fixed score. And 168 towns at the band's
+8–18 % yield give about 22 known-by-retrieval towns, below the registered 40.
+
+**Country rule.** A country enters P1, and every P1a/P1c/S1/S2/D1/D2 statistic, only
+if the second pass gives it at least 10 new slots in the five cells (after the gate,
+the familiar filter and the middle-band drop). Its new-pass country mean then rests on
+at least 10 towns. Towns of other countries are graded and binned, and appear in
+the merged pool for the defaults and the basin check, but they are not scored and the
+result says which countries were excluded. On the candidate list, Poland, Portugal and
+Sweden cannot reach 10 and will be excluded. Austria may or may not reach 10; the rule
+decides, not a choice made after seeing anything.
+
+**Where the towns come from.** The 168 candidates first. Then more towns from the
+same band (sitelinks ≥ 40, no population cap, none of today's 294, same seed script
+and filters), drawn at random among the eligible towns of the countries that have
+them, with no per-country quota, until the binned new towns hold ≥ 40
+known-by-retrieval and ≥ 40 unstable in countries that pass the country rule.
+Batches are added on cell counts alone. No activation of a new town is read, and no
+P1 statistic is computed, until the last batch is binned.
+
+**Unchanged:** the frozen arrows and their hashes, the position, layer, centring rule,
+thresholds, the paired comparisons, the surface controls P1a and P1c, and score-once.

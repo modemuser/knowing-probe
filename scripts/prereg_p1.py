@@ -7,7 +7,8 @@
       sha256 of each, for NOTEBOOK.md.
   uv run python scripts/prereg_p1.py score NEW_CELLS.jsonl NEW_ACTS_ENTITY NEW_ACTS_PROMPT
       Scores the new towns once, as amended by P1b (new-pass country centring, >= 40
-      per cell, surface controls P1a and P1c, descriptive D1/D2/S1/S2). Refuses if
+      per cell, surface controls P1a and P1c, descriptive D1/D2/S1/S2) and P1d (only
+      countries with >= 10 new slots in the five cells are scored). Refuses if
       the arrow files' hashes differ from those recorded at freeze time, if a cell
       is short, or if any new town was in today's set.
 """
@@ -24,6 +25,7 @@ import numpy as np
 from knowing_probe import arrow
 
 MIN_PER_CELL = 40  # P1b (P1 said 30)
+MIN_COUNTRY_SLOTS = 10  # P1d
 N_PERM, N_BOOT = 10_000, 10_000
 OUT = Path("runs/prereg")
 # name: (today's activations, layer). p1lex is the lexical control of P1a (registered after P1).
@@ -99,14 +101,18 @@ def score(new_cells: str, stems: dict[str, str]) -> None:
         raise SystemExit("entity and prompt activation files list different towns")
     cell = np.array([it["cell"] for it in items])
     country = np.array([rows[it["qid"]]["country_qid"] for it in items])
-    P, N, R = cell == "known-by-retrieval", cell == "unstable", cell == "right-by-prior"
+    # P1d: a country enters only with >= MIN_COUNTRY_SLOTS new slots in the five cells.
+    counts = {c: int((country == c).sum()) for c in set(country)}
+    keep = np.array([counts[c] >= MIN_COUNTRY_SLOTS for c in country])
+    excluded = sorted(c for c, n in counts.items() if n < MIN_COUNTRY_SLOTS)
+    P, N, R = (cell == "known-by-retrieval") & keep, (cell == "unstable") & keep, (cell == "right-by-prior") & keep
     if min(P.sum(), N.sum()) < MIN_PER_CELL:
         raise SystemExit(f"{P.sum()} known / {N.sum()} unstable, below {MIN_PER_CELL}: pull more towns first")
 
     def layer(stem_key: str, l: int) -> np.ndarray:
         """New towns at layer l, centred with NEW-pass country means (all new slots of the country; P1b)."""
         x = np.load(f"{stems[stem_key]}.npy")[:, l, :].astype(np.float64)
-        for c in set(country):
+        for c in set(country):  # excluded countries are centred too, but never scored
             x[country == c] -= x[country == c].mean(axis=0)
         return x
 
@@ -125,7 +131,9 @@ def score(new_cells: str, stems: dict[str, str]) -> None:
     }
     rng = np.random.default_rng(0)
     result: dict = {"n_known": int(P.sum()), "n_unstable": int(N.sum()), "n_right_by_prior": int(R.sum()),
-                    "centring": "new-pass country means (P1b)", "frozen_hashes": recorded}
+                    "centring": "new-pass country means (P1b)", "frozen_hashes": recorded,
+                    "countries_excluded_p1d": {c: counts[c] for c in excluded},
+                    "countries_scored": {c: counts[c] for c in sorted(counts) if c not in excluded}}
     for name, s in variants.items():
         pos, neg = s[P], s[N]
         auc = arrow.auc(pos, neg)

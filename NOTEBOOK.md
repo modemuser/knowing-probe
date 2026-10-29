@@ -178,3 +178,22 @@ found four misquoted ranges in FINDINGS. The most consequential: the right-by-pr
 0.49 → 0.23 (centred) or 0.60 → 0.27 (raw). Errata appended to FINDINGS (61f81d9).
 Related work checked against arXiv: all seven ids resolve to the cited titles and
 authors.
+
+**15:58 · Thomas's review of the publication draft.** Country balance as registered
+cannot be executed; decide before P1 how P1 runs without it. Decision, registered as
+P1d before any town is graded: a country enters P1 only with ≥ 10 new slots in the five
+cells. Centring a country with one or two towns on its own mean would put them at the
+zero vector. On the candidate list (FR 32, DE 28, SK 27, ES 23, CZ 20, IT 20, AT 14, SE 2,
+PL 1, PT 1), Poland, Portugal and Sweden are therefore out; Austria is decided by the
+rule. 168 candidates at the band's 8–18 % yield give about 22 known-by-retrieval
+towns, so the pass is topped up from the same band with no per-country quota (mainly
+DE, FR), in batches decided on cell counts alone, until ≥ 40 known and ≥ 40 unstable in
+the scored countries. The scorer applies the rule and reports the excluded countries.
+Checked on a scratch copy with a three-slot fake country (excluded and named; the rest
+scored). Frozen arrows unchanged.
+
+**16:01 · State at push.** P1 unrun; outcome paragraphs written (bd456cb); amendments
+P1b and P1d registered; no town of the second pass graded. Arrows frozen at p1
+eca30c291be69827deb4baab329070565622f491becb9984803cc301a26cc463, s1
+33a7252ba3b6be5debf7ce524265189e73e9dd26e54917e99590a66dce0c0665, p1lex
+93fef88e077f04709d4059bbc961da799a230f17809b31f44ea056269aebc000.
